@@ -1,28 +1,225 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+<html lang="en" data-ng-app="Wagnaria">
+<head>
+  <title>Wagnaria!/KN - Airing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/pure-min.css" rel="stylesheet" media="screen">
+  <link href="css/glyphs.min.css" rel="stylesheet" media="screen">
+  <link href="css/main.css" rel="stylesheet" media="screen">
+  <link rel="shortcut icon" href="http://puu.sh/kjiKX/97d5bb4118.png"/>
+  <style type="text/css">
+<!--
+.style4 {color: #FFFFFF}
+.style5 {color: #fbd3c3}
+.style6 {color: #2f7ab9}
+.style7 {color: #000000}
+-->
+  </style>
+</head>
+<body>
+
+<div id="basket" class="pure-g-r">
+  <div id="parasol" class="pure-u">
+    <div class="pure-menu pure-menu-open">
+      <a class="pure-menu-heading" href="http://www.kentutneraka.org">Kentutneraka</a>
+      <ul ng-controller="StatusCtrl">
+        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://wagnaria-kn.zz.mu/">Airing (6) </a></li>
+        <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://wagnaria-kn.zz.mu/incomplete.php">Incomplete (10)</a></li>
+        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria-kn.zz.mu/completed.php">Completed (29)</a></li>
+		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria-kn.zz.mu/future.php">Future (2)</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria-kn.zz.mu/staff.php">Staff</a></li>
+		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria-kn.zz.mu/recruitment.html">Recruitment?</a></li>
+		  <li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria-kn.zz.mu/showtimes">Ruang Staff KN</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="???" class="pure-u" data-ui-view></div>
+</div>  
+  <!-- JavaScript -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular-resource.min.js"></script>
+  <script src="lib/angular-piwik.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/lang/ja.js"></script>
+  <script src="js/main.js"></script>
+
+    <!-- Templates -->
+  <style type="text/css">
+<!--
+.style31 {color: 0000}
+-->
+</style>
+</head>
+<style type="text/css">
+<!--
+body {
+	margin-top: -20px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #fffff;
+}
+
+-->
+</style>
+<link href="favicon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body hola-ext-player="1">
+<div class="pure-g-r" id="basket"><span class="pure-menu-toggle" id="toggle" pbzloc="66">?</span>
+<div class="pure-u" data-ui-view="" id="?H???">
+<div class="ng-scope" data-ui-view="" id="muffinbox">
+<table class="pure-table pure-table-horizontal ng-scope">
+<thead>
+<tr><th width="20%">Series</th>
+<th width="10%">Episode</th>
+<th width="17%">Will air/has aired</th>
+<th width="12%">Translator</th>
+<th width="12%">Timer</th>
+<th width="12%">Editor</th>
+<th width="12%">Typesetter</th>
+<th width="12%">Encoded?</th>
+</tr></thead>
+<tbody>
+ <!-- tanda -->
+<tr class="subbing">
+<td class="title"></b> <a id="show_arslan" onclick="document.getElementById('spoiler_arslan').style.display=''; document.getElementById('show_arslan').style.display='none';" class="link">Arslan Senki</a><span id="spoiler_arslan" style="display: none"><a onclick="document.getElementById('spoiler_arslan').style.display='none'; document.getElementById('show_arslan').style.display='';" class="link">Arslan Senki</a><br> 
+<b>Airtime (local):</b> 
+<br>Sunday/4:00 PM<br>
+<b>Channel:</b> 
+<br>MBS<br><hr>
+<b>TL:</b>Zhara<br> 
+<b>Time:</b>OmBobby<br> 
+<b>Edit:</b>NandoL<br> 
+<b>TS:</b>NandoL<br> 
+<b>Encode:</b>Panji<br> 
+<b>QC:</b>rakaosd<br> <br>
+<a href="http://www.kentutneraka.org/search/label/Arslan%20Senki%20%28The%20Heroic%20Legend%20of%20Arslan%29">Release here.<br>
+<td>20 (of 25)</td>
+<td><b>4</b> week ago</td>
+<td class="staff-status-true">Zhara</td>
+<td class="staff-status-true">OmBobby</td>
+<td class="staff-status-false">NandoL</td>
+<td class="staff-status-false">NandoL</td>
+<td class="staff-status-true encoded-status">Yes</td>
+<!-- tanda -->
+<tr class="subbing">
+<td class="title"></b> <a id="show_rokka" onclick="document.getElementById('spoiler_rokka').style.display=''; document.getElementById('show_rokka').style.display='none';" class="link">Rokka no Yuusha</a><span id="spoiler_rokka" style="display: none"><a onclick="document.getElementById('spoiler_rokka').style.display='none'; document.getElementById('show_rokka').style.display='';" class="link">Rokka no Yuusha</a><br> 
+<b>Airtime (local):</b> 
+<br>Sunday/1:30 AM<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><hr>
+<b>TL:</b>titidus<br> 
+<b>Time:</b>HS/rakaosd<br> 
+<b>Edit:</b>NandoL<br> 
+<b>TS:</b>NandoL<br> 
+<b>Encode:</b>Hariri<br> 
+<b>QC:</b>rakaosd<br> <br>
+<a href="http://www.kentutneraka.org/search/label/Rokka%20no%20Yuusha">Release here.<br>
+</td>
+<td>8 (of 12)</td>
+<td><b>4</b> week ago</td>
+<td class="staff-status-true">titidus</td>
+<td class="staff-status-false">HSedit</td>
+<td class="staff-status-false">NandoL</td>
+<td class="staff-status-false">NandoL</td>
+<td class="staff-status-true encoded-status">Yes</td>
+<tr class="subbing">
+<td class="title"></b> <a id="show_bs" onclick="document.getElementById('spoiler_bs').style.display=''; document.getElementById('show_bs').style.display='none';" class="link">Baby Steps 2</a><span id="spoiler_bs" style="display: none"><a onclick="document.getElementById('spoiler_bs').style.display='none'; document.getElementById('show_bs').style.display='';" class="link">Baby Steps 2</a><br> 
+<b>Airtime (local):</b> 
+<br>Sunday/5:00 PM<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><hr>
+<b>TL:</b>OmBobby<br> 
+<b>Time:</b>HS/OmBobby<br> 
+<b>Edit:</b>rakaosd<br> 
+<b>TS:</b>rakaosd<br> 
+<b>Encode:</b>Panji<br> 
+<b>QC:</b>akarosd<br> <br>
+<a href="http://www.kentutneraka.org/search/label/Baby%20Steps%202">Release here.<br>
+<td>21 (of 25)</td>
+<td><b>4</b> week ago</td>
+<td class="staff-status-true">OmBobby</td>
+<td class="staff-status-true">OmBobby</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-true encoded-status">Yes</td>
+<!-- tanda -->
+<tr class="subbing">
+<td class="title"></b> <a id="show_working" onclick="document.getElementById('spoiler_working').style.display=''; document.getElementById('show_working').style.display='none';" class="link">Working!!!</a><span id="spoiler_working" style="display: none"><a onclick="document.getElementById('spoiler_working').style.display='none'; document.getElementById('show_working').style.display='';" class="link">Working!!!</a><br> 
+<b>Airtime (local):</b> 
+<br>Sunday/1:00 AM<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><hr>
+<b>TL:</b>calutak<br> 
+<b>Time:</b>HS/OmBobby<br> 
+<b>Edit:</b>OmBobby<br> 
+<b>TS:</b>rakaosd<br> 
+<b>Encode:</b>Panji<br> 
+<b>QC:</b>rakaosd<br> <br>
+<a href="http://www.kentutneraka.org/search/label/Working%21%21%21">Release here.<br>
+<td>12 (of 13)</td>
+<td><iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu2/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2015-09-20T01:00:00" allowtransparency="true" frameborder="0" width="21" height="14.7"></iframe> 
+hours ago</td>
+<td class="staff-status-false">calutak</td>
+<td class="staff-status-false">HSedit</td>
+<td class="staff-status-false">OmBobby</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false encoded-status">No</td>
+<!-- tanda -->
+<tr class="">
+<td class="title"></b> <a id="show_ore" onclick="document.getElementById('spoiler_ore').style.display=''; document.getElementById('show_ore').style.display='none';" class="link">Ore Monogatari!!</a><span id="spoiler_ore" style="display: none"><a onclick="document.getElementById('spoiler_ore').style.display='none'; document.getElementById('show_ore').style.display='';" class="link">Ore Monogatari!!</a><br> 
+<b>Airtime (local):</b> 
+<br>Thursday/2:00 AM<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><hr>
+<b>TL:</b>titidus<br> 
+<b>Time:</b>HS/rakaosd<br> 
+<b>Edit:</b>rakaosd<br> 
+<b>TS:</b>commie/rakaosd<br> 
+<b>Encode:</b>Berpergian<br> 
+<b>QC:</b>akarosd<br> <br>
+<a href="http://www.kentutneraka.org/search/label/Ore%20Monogatari%21%21">Release here.<br>
+<td>24 (of 24)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2015-09-24T02:15:05" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days </td>
+<td class="staff-status-false">titidus</td>
+<td class="staff-status-false">HSedit</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">commieosd</td>
+<td class="staff-status-false encoded-status">No</td>
+<!-- tanda -->
+<tr class="">
+<td class="title"></b> <a id="show_ps" onclick="document.getElementById('spoiler_ps').style.display=''; document.getElementById('show_ps').style.display='none';" class="link">Prison School</a><span id="spoiler_ps" style="display: none"><a onclick="document.getElementById('spoiler_ps').style.display='none'; document.getElementById('show_ps').style.display='';" class="link">Prison School</a><br> 
+<b>Airtime (local):</b> 
+<br>Saturday/0:30 AM<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><hr>
+<b>TL:</b>NandoL<br> 
+<b>Time:</b>rakaosd<br> 
+<b>Edit:</b>rakaosd<br> 
+<b>TS:</b>rakaosd<br> 
+<b>Encode:</b>rakaosd<br> 
+<b>QC:</b>akarosd<br> <br>
+<a href="http://www.kentutneraka.org/search/label/Prison%20School">Release here.<br>
+<td>12 (of 12)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2015-09-26T00:15:05" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+days</td>
+<td class="staff-status-false">NandoL</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false encoded-status">No</td>
+</tbody></table>
+</div>
+</body></html>
+<br>
+ <p align="right"><span class="style6"><br><br>Selamat datang di Wagnaria!/KN.&nbsp; &nbsp;<br>
+&nbsp; &nbsp;Merupakan status proyek yang sedang kami garap/aktivitas staf.&nbsp; &nbsp;<br>
+&nbsp; &nbsp;Klik kartun untuk info lebih detail.&nbsp; &nbsp;<br>
+&nbsp; &nbsp;Jam tayang sudah lokal (WIB).&nbsp; &nbsp;<br>
+&nbsp; &nbsp;Tetaplah sabar dan menjadi wibu yang baik.&nbsp; &nbsp;<br>
+<br><br>
+&nbsp; &nbsp;Kritik dan saran-&gt;</span><a href="https://twitter.com/rakapriadika" target="_blank" class="s">rakaosd&nbsp; &nbsp;</a></p>
+
+    </div>
