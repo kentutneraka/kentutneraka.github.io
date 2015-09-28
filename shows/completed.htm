@@ -19,9 +19,9 @@
     <div class="pure-menu pure-menu-open">
       <a class="pure-menu-heading" href="http://www.kentutneraka.org">Kentutneraka</a>
       <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://wagnaria.github.io/shows/airing.htm">Airing (10) </a></li>
+        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://wagnaria.github.io/shows/airing.htm">Airing (9) </a></li>
         <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://wagnaria.github.io/shows/incomplete.htm">Incomplete (10)</a></li>
-        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/shows/completed.htm">Completed (30)</a></li>
+        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/shows/completed.htm">Completed (31)</a></li>
         <li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.github.io/staff.htm">Staff</a></li>
 		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/recruitment.htm">Recruitment?</a></li>
 		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
@@ -347,6 +347,15 @@ body {
       <td><div align="left">NandoL</div></td>
       <td><div align="left">rakaosd</div></td>
       <td><div align="left">rakaosd</div></td>
+      <td><div align="left">rakaosd</div></td>
+    </tr>
+	<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+      <td><div align="left"><a href="http://www.kentutneraka.org/search/label/Working%21%21%21">Working!!!</a></div></td>
+      <td><div align="left">13</div></td>
+      <td><div align="left">Sep 27, 2015</div></td>
+      <td><div align="left">calutak</div></td>
+      <td><div align="left">OmBobby</div></td>
+      <td><div align="left">OmBobby</div></td>
       <td><div align="left">rakaosd</div></td>
     </tr>
     
