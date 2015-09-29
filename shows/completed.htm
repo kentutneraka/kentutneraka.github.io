@@ -19,9 +19,9 @@
     <div class="pure-menu pure-menu-open">
       <a class="pure-menu-heading" href="http://www.kentutneraka.org">Kentutneraka</a>
       <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://wagnaria.github.io/shows/airing.htm">Airing (9) </a></li>
+        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://wagnaria.github.io/shows/airing.htm">Airing (8) </a></li>
         <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://wagnaria.github.io/shows/incomplete.htm">Incomplete (10)</a></li>
-        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/shows/completed.htm">Completed (31)</a></li>
+        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/shows/completed.htm">Completed (32)</a></li>
         <li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.github.io/staff.htm">Staff</a></li>
 		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/recruitment.htm">Recruitment?</a></li>
 		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
@@ -339,6 +339,15 @@ body {
       <td><div align="left">OmBobby</div></td>
       <td><div align="left">BobbyOm</div></td>
       <td><div align="left">OmBobby</div></td>
+    </tr>
+	<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+      <td><div align="left"><a href="http://www.kentutneraka.org/search/label/Ore%20Monogatari%21%21">Ore Monogatari!!</a></div></td>
+      <td><div align="left">24</div></td>
+      <td><div align="left">Sep 24, 2015</div></td>
+      <td><div align="left">titidus</div></td>
+      <td><div align="left">HSedit</div></td>
+      <td><div align="left">Yupinaosd</div></td>
+      <td><div align="left">commieosd</div></td>
     </tr>
 	<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
       <td><div align="left"><a href="http://www.kentutneraka.org/search/label/Prison%20School">Prison School</a></div></td>
