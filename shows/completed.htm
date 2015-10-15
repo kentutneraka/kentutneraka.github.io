@@ -19,9 +19,9 @@
     <div class="pure-menu pure-menu-open">
       <a class="pure-menu-heading" href="http://www.kentutneraka.org">☭ Kentutneraka</a>
       <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://wagnaria.github.io/shows/airing.htm">Airing (9) </a></li>
+        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://wagnaria.github.io/shows/airing.htm">Airing (8) </a></li>
         <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://wagnaria.github.io/shows/incomplete.htm">Incomplete (10)</a></li>
-        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/shows/completed.htm">Completed (34)</a></li>
+        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/shows/completed.htm">Completed (35)</a></li>
         <li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.github.io/staff.htm">Staff</a></li>
 		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/recruitment.htm">Recruitment?</a></li>
 		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
@@ -462,6 +462,19 @@ Release Here <a href="http://www.kentutneraka.org/search/label/The%20Seven%20Dea
   <td><div align="left">irzie</div></td>
   <td><div align="left">calutak</div></td>
   <td><div align="left">OmBobby</div></td>
+  <td><div align="left">rakaosd</div></td>
+</tr>
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+	<td class="title"></b> <a id="show_Baby Steps 2" onclick="document.getElementById('spoiler_Baby Steps 2').style.display=''; document.getElementById('show_Baby Steps 2').style.display='none';" class="link">Baby Steps 2</a><span id="spoiler_Baby Steps 2" style="display: none"><a onclick="document.getElementById('spoiler_Baby Steps 2').style.display='none'; document.getElementById('show_Baby Steps 2').style.display='';" class="link">[-] Baby Steps 2</a><br><br>
+<a href="https://mega.nz/#F!ONNDRJrA!trtvSQr4pcCtzuNbkmuyWQ"target=_blank>[Mega]</a> |
+<a href="http://kumpulbagi.com/rakaosd/baby-steps-2-62278/list,1,1"target=_blank>[KB]</a> |
+<a href="http://wagnaria.github.io/mirror/baby-steps-s2.htm"target=_blank>[Mirror]</a> |
+<a href="http://www.kentutneraka.org/search/label/Baby%20Steps%202"target=_blank>Release here<br></a>
+  <td><div align="left">25</div></td>
+  <td><div align="left">Sep 20, 2015</div></td>
+  <td><div align="left">elexbobby</div></td>
+  <td><div align="left">OmBobby</div></td>
+  <td><div align="left">rakaosd</div></td>
   <td><div align="left">rakaosd</div></td>
 </tr>
 	<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
