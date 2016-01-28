@@ -1,50 +1,256 @@
-
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-          <title>Wagnaria/KentutNeraka!</title>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    
-    <meta content='INDEX, FOLLOW' name='GOOGLEBOT'/>
-    <meta content='index, follow, all' name='robots'/>
-    <meta content='all' name='googlebot'/>
-    <meta content='all' name='msnbot'/>
-    <meta content='all' name='Googlebot-Image'/>
-    
-  <meta name="keywords" content="KentutNeraka Fansubs, KentutNeraka, KN, Anime" />
-  <meta name="description" content="KentutNeraka Fansubs, KentutNeraka" />
+<html lang="en" data-ng-app="Wagnaria">
+<head>
+  <title>KentutNeraka - Anime Fansubs Indonesia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/pure-min.css" rel="stylesheet" media="screen">
+  <link href="css/glyphs.min.css" rel="stylesheet" media="screen">
+  <link href="css/main.css" rel="stylesheet" media="screen">
+  <link rel="shortcut icon" href="http://puu.sh/kjiKX/97d5bb4118.png"/>
+  <style type="text/css">
+<!--
+.style4 {color: #FFFFFF}
+.style5 {color: #fbd3c3}
+.style6 {color: #2f7ab9}
+.style7 {color: #000000}
+-->
+  </style>
+</head>
+<body>
+<div id="basket" class="pure-g-r">
+  <div id="parasol" class="pure-u">
+    <div class="pure-menu pure-menu-open">
+      <a class="pure-menu-heading" href="http://www.kentutneraka.org">☭ Kentutneraka</a>
+      <ul ng-controller="StatusCtrl">
+        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://wagnaria.github.io/shows/airing.htm">New Releases</a></li>
+        <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://wagnaria.github.io/shows/incomplete.htm">Incomplete</a></li>
+        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/shows/completed.htm">Completed</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.github.io/staff.htm">Staff</a></li>
+		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/recruitment.htm">About</a></li>
+		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://wagnaria.github.io/recruitment.htm">Recruitment?</a></li>
+		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="???" class="pure-u" data-ui-view></div>
+</div>  
+  <!-- JavaScript -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular-resource.min.js"></script>
+  <script src="lib/angular-piwik.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/lang/ja.js"></script>
+  <script src="js/main.js"></script>
 
-         <link rel="shortcut icon" href="http://puu.sh/kjiKX/97d5bb4118.png"/>
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <!-- Templates -->
+  <style type="text/css">
+<!--
+.style31 {color: 0000}
+-->
+</style>
+</head>
+<style type="text/css">
+<!--
+body {
+	margin-top: -20px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #fffff;
+}
+-->
+</style>
+<link href="favicon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body hola-ext-player="1">
+<div class="pure-g-r" id="basket"><span class="pure-menu-toggle" id="toggle" pbzloc="66">?</span>
+<div class="pure-u" data-ui-view="" id="?H???">
+<div class="ng-scope" data-ui-view="" id="muffinbox">
+<table class="pure-table pure-table-horizontal ng-scope">
+<thead>
+<tr><th width="20%">Series</th>
+<th width="10%">Episode</th>
+<th width="17%">Will air/has aired</th>
+<th width="12%">Translator</th>
+<th width="12%">Timer</th>
+<th width="12%">Editor</th>
+<th width="12%">Typesetter</th>
+<th width="12%">Encoded?</th>
+</tr></thead>
+<tbody>
+	<!-- tanda -->
+<tbody>
+<tr class="subbing">
+<td class="title"><a href="http://www.kentutneraka.org/search/label/One Outs">One Outs</a></td>
+<td>13 (of 25)</td>
+<td>TBA</td>
+<td class="staff-status-true">titidus</td>
+<td class="staff-status-true">rakaosd</td>
+<td class="staff-status-true">rakaosd</td>
+<td class="staff-status-true">rakaosd</td>
+<td class="staff-status-true encoded-status">Yes</td>
+<!-- tanda -->
+	
+<!-- tanda Yuru Yuri-->
+<tr class="subbing">
+<td class="title"></b> <a id="show_yuru" onclick="document.getElementById('spoiler_yuru').style.display=''; document.getElementById('show_yuru').style.display='none';" class="link">Yuru Yuri San☆Hai!</a><span id="spoiler_yuru" style="display: none"><a onclick="document.getElementById('spoiler_yuru').style.display='none'; document.getElementById('show_yuru').style.display='';" class="link">[-] Yuru Yuri San☆Hai!</a><br> 
+<b>Japanese Title:</b> 
+<br>ゆるゆり さん☆ハイ<br>
+<b>Short Title:</b> 
+<br>YY<br>
+<b>Airtime (local):</b> 
+<br>Tuesday - 00.05 WIB<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><br>
+<a href="http://wagnaria.github.io/mirror/yuru-yuri-san-hai.htm"target=_blank>Download</a> |
+<a href="http://www.kentutneraka.org/2015/10/yuru-yuri-sanhai-01.html">Release here<br> </td>
+<td>5 (of 12)</td>
+<td> <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2015-11-03T00:05:00" allowtransparency="true" frameborder="0" width="21" height="14.7"></iframe> 
+	   days ago</td>
+<td class="staff-status-true">irzie</td>
+<td class="staff-status-true">calutak</td>
+<td class="staff-status-false">OmBobby</td>
+<td class="staff-status-true">rakaosd</td>
+<td class="staff-status-true encoded-status">Yes</td>
 
-        <link rel="stylesheet" type="text/css" href="css/style3.css" />
-		<!--[if lt IE 10]>
-				<link rel="stylesheet" type="text/css" href="css/style3IE.css" />
-		<![endif]-->
-        <link rel="stylesheet" href="http://rosemaryskatepunk.com/home/templates/rosemary/res/colorbox.css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="http://rosemaryskatepunk.com/home/templates/rosemary/res/jquery.colorbox-min.js"></script>
-    </head>
-    <body>
-        <div class="container">
+<!-- tanda SFN-->
+<tr class="subbing">
+<td class="title"></b> <a id="show_hokuto" onclick="document.getElementById('spoiler_hokuto').style.display=''; document.getElementById('show_hokuto').style.display='none';" class="link">Subete ga F ni Naru: The Perfect Insider</a><span id="spoiler_hokuto" style="display: none"><a onclick="document.getElementById('spoiler_hokuto').style.display='none'; document.getElementById('show_hokuto').style.display='';" class="link">[-] Subete ga F ni Naru: The Perfect Insider</a><br>
+<b>Title:</b> 
+<br>Subete ga F ni Naru:<br>The Perfect Insider<br> 
+<b>Japanese Title:</b> 
+<br>すべてがFになる<br> 
+<b>Short Title:</b> 
+<br>SFN<br> 
+<b>Airtime (local):</b> 
+<br>Thursday - 00.55 WIB<br>
+<b>Channel:</b> 
+<br>TV Tokyo<br><br>
+<a href="http://wagnaria.github.io/mirror/SFN.htm"target=_blank>Download</a> |
+<a href="http://www.kentutneraka.org/search/label/Subete%20ga%20F%20ni%20Naru%20%28The%20Perfect%20Insider%29">Release here<br></td>
+      <td>5 (of 11)</td>
+<td><iframe src="http://free.timeanddate.com/countdown/i4v8vxna/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2015-11-06T00:35:00" allowTransparency="true" frameborder="0" width="21" height="14.7"></iframe>
+	   days ago</td>
+<td class="staff-status-false">calutak</td>
+<td class="staff-status-false">OmBobby</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-true encoded-status">Yes</td>
 
-			<div class="sp-container">
-				<div class="sp-content">
-				  <div class="sp-wrap sp-left">
-                    <h2> <span class="sp-top">Welcome</span> </h2>
-			      </div>
-			    <div class="sp-wrap sp-right">
-						<h2>
-							<span class="sp-top">to KN!</span>						</h2>
-					</div>
-				</div>
-				<div class="sp-full">
-					
-					<a href="http://wagnaria.github.io/shows/airing.htm">[Showtimes]</a>	</br>
-					<a href="http://www.kentutneraka.org/">[Blog/site]</a>
-				</div>
-			</div>
-        </div>
-    </body>
-</html>
+<!-- tanda Kowabon-->
+<tr class="subbing">
+<td class="title"></b> <a id="show_Kowabon" onclick="document.getElementById('spoiler_Kowabon').style.display=''; document.getElementById('show_Kowabon').style.display='none';" class="link">Kowabon</a><span id="spoiler_Kowabon" style="display: none"><a onclick="document.getElementById('spoiler_Kowabon').style.display='none'; document.getElementById('show_Kowabon').style.display='';" class="link">[-] Kowabon</a><br> 
+<b>Japanese Title:</b> 
+<br>こわぼん<br>
+<b>Airtime (local):</b> 
+<br>Sunday - 09.42 WIB<br>
+<b>Channel:</b> 
+<br>KBC<br><br>
+<a href="http://wagnaria.github.io/mirror/kowabon.htm"target=_blank>Download</a> |
+<a href="http://www.kentutneraka.org/search/label/Kowabon">Release here<br> </td>
+<td>10 (of 13)</td>
+<td><iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2015-12-13T09:00:00" allowtransparency="true" frameborder="0" width="21" height="14.7"></iframe> 
+	   days ago</td>
+<td class="staff-status-true">>prosubs</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-true encoded-status">Yes</td>
+
+<!-- tanda Erased -->
+<tr class="">
+<td class="title"></b> <a id="show_erased" onclick="document.getElementById('spoiler_erased').style.display=''; document.getElementById('show_erased').style.display='none';" class="link">Boku dake ga Inai Machi</a><span id="spoiler_erased" style="display: none"><a onclick="document.getElementById('spoiler_erased').style.display='none'; document.getElementById('show_erased').style.display='';" class="link">[-] Boku dake ga Inai Machi</a><br> 
+<b>Title:</b> 
+<br>Boku dake ga Inai Machi<br>
+<b>Short Title:</b> 
+<br>Erased<br>
+<b>Airtime (local):</b> 
+<br>Friday - 02.55 WIB<br>
+<a href="http://kumpulbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/"target=_blank>Download</a> |
+<a href="http://www.kentutneraka.org/search/label/Boku%20dake%20ga%20Inai%20Machi">Release here<br></td>
+     <td>4 (of 12)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-01-29T02:55:00" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days</td>
+<td class="staff-status-false">titidus</td> 
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">NandoL</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false encoded-status">No</td>
+
+<!-- tanda DimensionW -->
+<tr class="">
+<td class="title"></b> <a id="show_DimensionW" onclick="document.getElementById('spoiler_DimensionW').style.display=''; document.getElementById('show_DimensionW').style.display='none';" class="link">Dimension W</a><span id="spoiler_DimensionW" style="display: none"><a onclick="document.getElementById('spoiler_DimensionW').style.display='none'; document.getElementById('show_DimensionW').style.display='';" class="link">[-] Dimension W</a><br> 
+<b>Title:</b> 
+<br>Dimension W<br>
+<b>Japanese Title:</b> 
+<br>ディメンション ダブリュー<br> 
+<b>Short Title:</b> 
+<br>DW<br>
+<b>Airtime (local):</b> 
+<br>Sunday - 21.34 WIB<br>
+<b>Channel:</b> 
+<br>MX<br><br>
+<a href="http://kumpulbagi.com/rakaosd/dimension-w-271846/list,1,1"target=_blank>Download</a> |
+<a href="http://www.kentutneraka.org/search/label/Dimension%20W">Release here<br></td>
+     <td>4 (of 12)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-01-31T23:30:00" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days</td>
+<td class="staff-status-false">titidus</td> 
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false encoded-status">No</td>
+
+<!-- tanda AriaOVA -->
+<tr class="">
+<td class="title"></b> <a id="show_AriaOVA" onclick="document.getElementById('spoiler_AriaOVA').style.display=''; document.getElementById('show_AriaOVA').style.display='none';" class="link">Aria The Avvenire</a><span id="spoiler_AriaOVA" style="display: none"><a onclick="document.getElementById('spoiler_AriaOVA').style.display='none'; document.getElementById('show_AriaOVA').style.display='';" class="link">[-] Aria The Avvenire</a><br> 
+<b>Title:</b> 
+<br>Aria The Avvenire<br>
+<b>Short Title:</b> 
+<br>Aria OVA<br>
+<b>Airtime (local):</b> 
+<br>We don't know<br>
+<a href="#"target=_blank>Download</a> |
+<a href="#">Release here<br></td>
+     <td>2 (of 3)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-03-23T23:30:00" allowtransparency="true" frameborder="0" width="21" height="14.7"></iframe> 
+	   days</td>
+<td class="staff-status-false">titidus</td> 
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-true encoded-status">No</td>
+
+</tbody></table>
+</div>
+</body></html>
+ <p align="right"><span class="style6"><br><br>
+&nbsp; &nbsp;Klik kartun untuk info lebih detail.&nbsp; &nbsp;<br>
+&nbsp; &nbsp;Jam tayang sudah lokal (WIB).&nbsp; &nbsp;<br>
+&nbsp; &nbsp;Tetaplah sabar dan menjadi wibu yang baik.&nbsp; &nbsp;<br><br>
+&nbsp; &nbsp;Kritik dan saran-&gt;</span><a href="https://twitter.com/rakapriadika" target="_blank" class="s">rakaosd&nbsp; &nbsp;</a></p></div>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//kentutneraka.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><script id="dsq-count-scr" src="//kentutneraka.disqus.com/count.js" async></script>
+
