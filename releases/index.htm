@@ -75,6 +75,16 @@ body {
 <th width="25%">Description</th>
 <th width="10%">Category</th>
 </tr></thead>
+ 
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">Jan 30, 2016
+</div></td>
+  <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 04</a></div></td>
+  <td><div align="left">TV Series</div></td>
+</tr>
+
   <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 <tr class="">
