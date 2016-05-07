@@ -83,6 +83,15 @@ body {
 <th width="10%">Category</th>
 </tr></thead>
 
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">May 07, 2016
+</div></td>
+  <td><div align="left"><a href="http://www.kentutneraka.org/releases/burst-bd.htm">Shinmai Maou no Testament BURST - BD Batch</a></div></td>
+  <td><div align="left">Bluray</div></td>
+</tr>
+
  <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 <tr class="">
