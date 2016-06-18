@@ -75,7 +75,15 @@ body {
 			<th width="25%">Twitter</th>
 		</tr>
 	</thead>
-	<tbody><!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+	<tbody>
+	<!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Active</td>
+			<td class="ng-binding"></td>
+			<td><a class="ng-binding" href=""></a></td>
+		</tr>
+	<!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
 		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
 			<tr class="cowok">
 			<td class="ng-binding">rakaosd</td>
@@ -138,6 +146,19 @@ body {
 			<td class="ng-binding">Excalibur Fansub spy </td>
 			<td><a class="ng-binding" href="https://twitter.com/Fitri_Lupph">@Fitri_Lupph</a></td>
 		</tr>
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="cowok">
+			<td class="ng-binding">Berpergian</td>
+			<td class="ng-binding">Encoder</td>
+			<td><a class="ng-binding" href="https://twitter.com">@__</a></td>
+		</tr>
+		<!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Inactive</td>
+			<td class="ng-binding"></td>
+			<td><a class="ng-binding" href=""></a></td>
 		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
 		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
 			<tr class="delayed">
