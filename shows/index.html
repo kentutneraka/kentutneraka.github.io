@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="KentutNeraka">
+<head>
+  <title>KentutNeraka (BETA)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/pure-min.css" rel="stylesheet" media="screen">
+  <link href="css/glyphs.min.css" rel="stylesheet" media="screen">
+  <link href="css/main.css" rel="stylesheet" media="screen">
+  <link rel="shortcut icon" href="http://puu.sh/kjiKX/97d5bb4118.png"/>
+  <style type="text/css">
+<!--
+.style4 {color: #FFFFFF}
+.style5 {color: #fbd3c3}
+.style6 {color: #2f7ab9}
+.style7 {color: #000000}
+-->
+  </style>
+</head>
+<body>
+<div id="basket" class="pure-g-r">
+  <div id="parasol" class="pure-u">
+    <div class="pure-menu pure-menu-open">
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">☭ Kentutneraka</a>
+      <ul ng-controller="StatusCtrl">
+        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/releases">New Releases</a></li>
+        <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Incomplete</a></li>
+        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Completed</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staff</a></li>
+		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">About</a></li>
+		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Recruitment?</a></li>
+		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="???" class="pure-u" data-ui-view></div>
+</div>  
+  <!-- JavaScript -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular-resource.min.js"></script>
+  <script src="lib/angular-piwik.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/lang/ja.js"></script>
+  <script src="js/main.js"></script>
+
+    <!-- Templates -->
+  <style type="text/css">
+<!--
+.style31 {color: 0000}
+-->
+</style>
+</head>
+<style type="text/css">
+<!--
+body {
+	margin-top: -20px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #fffff;
+}
+-->
+</style>
+<style>
+#disqus_thread {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+</style>
+<link href="favicon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body hola-ext-player="1">
+<div class="pure-g-r" id="basket"><span class="pure-menu-toggle" id="toggle" pbzloc="66">?</span>
+<div class="pure-u" data-ui-view="" id="?H???">
+<div class="ng-scope" data-ui-view="" id="muffinbox">
+<table class="pure-table pure-table-horizontal ng-scope">
+<thead>
+<tr><th width="20%">Series</th>
+<th width="10%">Episode</th>
+<th width="17%">Will air/has aired</th>
+<th width="12%">Translator</th>
+<th width="12%">Timer</th>
+<th width="12%">Editor</th>
+<th width="12%">Typesetter</th>
+<th width="12%">Encoder</th>
+</tr></thead>
+<tbody>
+
+<!-- tanda sakamoto -->
+<tr class="subbing">
+<td class="title"></b> <a id="show_sakamoto" onclick="document.getElementById('spoiler_sakamoto').style.display=''; document.getElementById('show_sakamoto').style.display='none';" class="link">Sakamoto desu ga</a><span id="spoiler_sakamoto" style="display: none"><a onclick="document.getElementById('spoiler_sakamoto').style.display='none'; document.getElementById('show_sakamoto').style.display='';" class="link">Sakamoto desu ga</a><br>  
+<b>Title:</b> 
+<br>Sakamoto desu ga?<br>
+<b>Japanese Title:</b> 
+<br>坂本ですが？<br> 
+<b>Short Title:</b> 
+<br>Sakamoto<br>
+<b>Airtime (local):</b> 
+<br>Fridays - 01.28 WIB<br>
+<b>Channel:</b> 
+<br>TBS<br><br>
+<a href="http://www.kentutneraka.org/releases/sakamoto.htm">Release here<br></td>
+     <td>9 (of 12)</td>
+<td><iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-06-10T02:28:00" allowtransparency="true" frameborder="0" width="21" height="14.7"></iframe> 
+	 days ago</td>
+<td class="staff-status-false">m&c!</td> 
+<td class="staff-status-false">I'm</td>
+<td class="staff-status-false">Sakamoto</td>
+<td class="staff-status-false">You</td>
+<td class="staff-status-true">Know?</td>
+
+<!-- tanda kabaneri -->
+<tr class="subbing">
+<td class="title"></b> <a id="show_kabaneri" onclick="document.getElementById('spoiler_kabaneri').style.display=''; document.getElementById('show_kabaneri').style.display='none';" class="link">Kabaneri of the Iron Fortress</a><span id="spoiler_kabaneri" style="display: none"><a onclick="document.getElementById('spoiler_kabaneri').style.display='none'; document.getElementById('show_kabaneri').style.display='';" class="link">Kabaneri of the Iron Fortress</a><br> 
+<b>Title:</b> 
+<br>Koutetsujou no Kabaneri<br>
+<b>Japanese Title:</b> 
+<br>甲鉄城のカバネリ<br> 
+<b>Short Title:</b> 
+<br>kabaneri<br>
+<b>Airtime (local):</b> 
+<br>Thursdays - 23.00 WIB<br>
+<b>Channel:</b> 
+<br>THK<br><br>
+<a href="http://www.kentutneraka.org/releases/kabaneri.htm">Release here<br></td>
+     <td>10 (of 12)</td>
+<td><iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-06-16T23:00:00" allowtransparency="true" frameborder="0" width="21" height="14.7"></iframe> 
+	   days ago</td>
+<td class="staff-status-true">NandoL</td> 
+<td class="staff-status-true">rakaosd</td>
+<td class="staff-status-true">Switch</td>
+<td class="staff-status-true">rakaosd</td>
+<td class="staff-status-true">Yatogami</td>
+
+<!-- tanda Alderamin -->
+<tr class="subbing">
+<td class="title"></b> <a id="show_Alderamin" onclick="document.getElementById('spoiler_Alderamin').style.display=''; document.getElementById('show_Alderamin').style.display='none';" class="link">Alderamin on the Sky</a><span id="spoiler_Alderamin" style="display: none"><a onclick="document.getElementById('spoiler_Alderamin').style.display='none'; document.getElementById('show_Alderamin').style.display='';" class="link">[-]Alderamin on the Sky</a><br>   
+<b>Title:</b> 
+<br>Nejimaki Seirei Senki:<br> Tenkyou no Alderamin<br>
+<b>Japanese Title:</b> 
+<br>ねじ巻き精霊戦記 天鏡のアルデラミン<br> 
+<b>Short Title:</b> 
+<br>Alderamin<br>
+<b>Airtime (local):</b> 
+<br>Saturdays - 01:05 WIB<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><br>
+<a href="#">Release here<br></td>
+     <td>1 (of ?)</td>
+<td><iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-07-09T01:05:00" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days ago</td>
+<td class="staff-status-true">titidus</td> 
+<td class="staff-status-true">HS</td>
+<td class="staff-status-false">Switch</td>
+<td class="staff-status-false">Switch</td>
+<td class="staff-status-true">Yatogami</td>
+
+<!-- tanda HxH -->
+<tr class="">
+<td class="title"></b> <a id="show_HxH" onclick="document.getElementById('spoiler_HxH').style.display=''; document.getElementById('show_HxH').style.display='none';" class="link">Masou Gakuen HxH</a><span id="spoiler_HxH" style="display: none"><a onclick="document.getElementById('spoiler_HxH').style.display='none'; document.getElementById('show_HxH').style.display='';" class="link">[-] Masou Gakuen HxH</a><br>  
+<b>Title:</b> 
+<br>Masou Gakuen HxH<br>
+<b>Japanese Title:</b> 
+<br>魔装学園H×H<br> 
+<b>Short Title:</b> 
+<br>HxH<br>
+<b>Airtime (local):</b> 
+<br>Wednesdays - 02.30 WIB<br>
+<b>Channel:</b> 
+<br>AT-X<br><br>
+<a href="http://www.kentutneraka.org/releases/masou-gakuen-hxh.htm">Release here<br></td>
+     <td>2 (of 12)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-07-13T00:30:00" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days</td>
+<td class="staff-status-false">Bismarck</td> 
+<td class="staff-status-false">Bismarck</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">Yatogami</td>
+
+<!-- tanda Battery -->
+<tr class="">
+<td class="title"></b> <a id="show_battery" onclick="document.getElementById('spoiler_battery').style.display=''; document.getElementById('show_battery').style.display='none';" class="link">Battery</a><span id="spoiler_battery" style="display: none"><a onclick="document.getElementById('spoiler_battery').style.display='none'; document.getElementById('show_battery').style.display='';" class="link">[-] Battery</a><br>  
+<b>Title:</b> 
+<br>Battery<br>
+<b>Japanese Title:</b> 
+<br>バッテリー<br> 
+<b>Short Title:</b> 
+<br>Battery<br>
+<b>Airtime (local):</b> 
+<br>Fridays - 02.55 WIB<br>
+<b>Channel:</b> 
+<br>?<br><br>
+<a href="http://myanimelist.net/anime/32947/Battery">Info<br></td>
+     <td>1 (of 11)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-07-15T02:55:00" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days</td>
+<td class="staff-status-false">titidus</td> 
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">irzie</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">Bismarck</td>
+
+<!-- tanda The Outcast -->
+<tr class="">
+<td class="title"></b> <a id="show_The_Outcast" onclick="document.getElementById('spoiler_The_Outcast').style.display=''; document.getElementById('show_The_Outcast').style.display='none';" class="link">hitorinoshita - The Outcast</a><span id="spoiler_The_Outcast" style="display: none"><a onclick="document.getElementById('spoiler_The_Outcast').style.display='none'; document.getElementById('show_The_Outcast').style.display='';" class="link">[-] hitorinoshita - The Outcast</a><br>   
+<b>Title:</b> 
+<br>hitorinoshita - The Outcast<br>
+<b>Japanese Title:</b> 
+<br> 一人之下 THE OUTCAST<br> 
+<b>Short Title:</b> 
+<br>The Outcast<br>
+<b>Airtime (local):</b> 
+<br>Saturdays - 21:00 WIB<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><br>
+<a href="http://www.kentutneraka.org/releases/outcast.htm">Release here<br></td>
+     <td>2 (of 12)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-07-16T21:00:00" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days</td>
+<td class="staff-status-false">NandoL-Subs</td> 
+<td class="staff-status-false">NandoL-Subs</td>
+<td class="staff-status-false">NandoL-Subs</td>
+<td class="staff-status-false">NandoL-Subs</td>
+<td class="staff-status-false">alphonse</td>
+
+<!-- tanda QC -->
+<tr class="">
+<td class="title"></b> <a id="show_QC" onclick="document.getElementById('spoiler_QC').style.display=''; document.getElementById('show_QC').style.display='none';" class="link">Qualidea Code</a><span id="spoiler_QC" style="display: none"><a onclick="document.getElementById('spoiler_QC').style.display='none'; document.getElementById('show_QC').style.display='';" class="link">[-] Qualidea Code</a><br>   
+<b>Title:</b> 
+<br>Qualidea Code<br>
+<b>Japanese Title:</b> 
+<br>クオリディア・コード<br> 
+<b>Short Title:</b> 
+<br>QCode<br>
+<b>Airtime (local):</b> 
+<br>Sundays - 02.00 WIB<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><br>
+<a href="http://www.kentutneraka.org/releases/qualidea-code.htm">Release here<br></td>
+     <td>2 (of ?)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-07-17T02:00:00" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days</td>
+<td class="staff-status-false">irzie</td> 
+<td class="staff-status-false">HS</td>
+<td class="staff-status-false">Bismarck</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">alphonse</td>
+
+<!-- tanda Days -->
+<tr class="">
+<td class="title"></b> <a id="show_Days" onclick="document.getElementById('spoiler_Days').style.display=''; document.getElementById('show_Days').style.display='none';" class="link">Days</a><span id="spoiler_Days" style="display: none"><a onclick="document.getElementById('spoiler_Days').style.display='none'; document.getElementById('show_Days').style.display='';" class="link">[-] Days</a><br>   
+<b>Title:</b> 
+<br>Days<br>
+<b>Airtime (local):</b> 
+<br>Sundays - 04.58 WIB<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><br>
+<a href="http://www.kentutneraka.org/releases/days.htm">Release here<br></td>
+     <td>3 (of 24)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-07-17T04:58:00" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days</td>
+<td class="staff-status-false">SVD</td> 
+<td class="staff-status-false">Atep</td>
+<td class="staff-status-false">Hariono</td>
+<td class="staff-status-false">Tantan</td>
+<td class="staff-status-false">I Made</td>
+
+<!-- tanda ArslanS2 -->
+<tr class="">
+<td class="title"></b> <a id="show_ArslanS2" onclick="document.getElementById('spoiler_ArslanS2').style.display=''; document.getElementById('show_ArslanS2').style.display='none';" class="link">Arslan Senki S2</a><span id="spoiler_ArslanS2" style="display: none"><a onclick="document.getElementById('spoiler_ArslanS2').style.display='none'; document.getElementById('show_ArslanS2').style.display='';" class="link">[-] Arslan Senki S2</a><br>  
+<b>Title:</b> 
+<br>The Heroic Legend of Arslan<br>
+<b>Japanese Title:</b> 
+<br>アルスラーン戦記 風塵乱舞<br> 
+<b>Short Title:</b> 
+<br>Arslan<br>
+<b>Airtime (local):</b> 
+<br>Sundays - 19.00 WIB<br>
+<b>Channel:</b> 
+<br>TBS<br><br>
+<a href="http://www.kentutneraka.org/releases/arslan-senki-2.htm">Release here<br></td>
+     <td>3 (of 8)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-07-17T15:00:00" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days</td>
+<td class="staff-status-false">Zhara</td> 
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">NandoL</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">Yatogami</td>
+
+<!-- tanda Orange -->
+<tr class="">
+<td class="title"></b> <a id="show_Orange" onclick="document.getElementById('spoiler_Orange').style.display=''; document.getElementById('show_Orange').style.display='none';" class="link">Orange</a><span id="spoiler_Orange" style="display: none"><a onclick="document.getElementById('spoiler_Orange').style.display='none'; document.getElementById('show_Orange').style.display='';" class="link">[-] Orange</a><br>  
+<b>Title:</b> 
+<br>Orange<br>
+<b>Japanese Title:</b> 
+<br>オレンジ<br> 
+<b>Short Title:</b> 
+<br>orenjing<br>
+<b>Airtime (local):</b> 
+<br>Sundays - 06.00 WIB<br>
+<b>Channel:</b> 
+<br>Crunchyroll<br><br>
+<a href="http://www.kentutneraka.org/releases/orange.htm">Release here<br></td>
+     <td>3 (of 13)</td>
+<td>in <iframe src="http://free.timeanddate.com/countdown/i4s5hza7/n108/cf11/cm1/cu1/ct1/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs48/szw516/szh240/iso2016-07-18T01:00:00" allowtransparency="true" frameborder="0" width="11" height="14.7"></iframe> 
+	   days</td>
+<td class="staff-status-false">calutak</td> 
+<td class="staff-status-false">HS</td>
+<td class="staff-status-false">Yupina</td>
+<td class="staff-status-false">rakaosd</td>
+<td class="staff-status-false">Yatogami</td>
+
+</tbody></table>
+</div>
+</body></html>
+<br>
+<p align="center"><span class="style6"><br>
+&nbsp; &nbsp;Ayo gabung di kanal discord Wagnaria!/KN dan ngegosip bareng para staf > <a href="https://discord.gg/MvUCMdr"target=_blank>https://discord.gg/MvUCMdr</a>&nbsp; &nbsp;<br><br>
+&nbsp; &nbsp;Klik kartun untuk info lebih detail.&nbsp; &nbsp;<br>
+&nbsp; &nbsp;Jam tayang sudah lokal (WIB).&nbsp; &nbsp;<br>
+&nbsp; &nbsp;Tetaplah sabar dan menjadi wibu yang baik.&nbsp; &nbsp;<br><br>
+&nbsp; &nbsp;☭ KentutNeraka - Anime Fansubs Indonesia.<br>Illegal © 2013 - 2016&nbsp; &nbsp;
+</a></p></div>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//kentutneraka.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><script id="dsq-count-scr" src="//kentutneraka.disqus.com/count.js" async></script>
+
