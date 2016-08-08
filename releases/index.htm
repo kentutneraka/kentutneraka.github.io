@@ -84,6 +84,15 @@ body {
 </tr></thead>
 
 <!-- tanda -->
+
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">Aug 08, 2016
+</div></td>
+  <td><div align="left"><a href="http://www.kentutneraka.org/releases/under-the-dog-ova.htm">Under the Dog - OVA</a></div></td>
+  <td><div align="left">OVA</div></td>
+</tr>
+
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 <tr class="">
 <td class="tanggal rilis">Aug 07, 2016
