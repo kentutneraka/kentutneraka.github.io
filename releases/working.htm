@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app="kentutneraka">
 <head>
-  <title>Working!! [BD]</title>
+  <title>Working!!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/pure-min.css" rel="stylesheet" media="screen">
   <link href="css/glyphs.min.css" rel="stylesheet" media="screen">
@@ -17,22 +17,24 @@
   </style>
 </head>
 <body>
-div id="basket" class="pure-g-r">
+<br>
   <div id="parasol" class="pure-u">
     <div class="pure-menu pure-menu-open">
-      <a class="pure-menu-heading" href="http://kentutneraka.org/">☭ Kentutneraka</a>
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
       <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/releases">New Releases</a></li>
-        <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Incomplete</a></li>
-        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Completed</a></li>
-        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staff</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">About</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Recruitment?</a></li>
-		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://www.nyaa.se/?user=252429">Torrent</a></li>
       </ul>
     </div>
   </div>
-  <div i
   <!-- JavaScript -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
   <script src="lib/angular-ui-router.min.js"></script>
@@ -56,7 +58,7 @@ body {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 191px;
-	background-color: #fffff;
+	background-color: #98d9a8;
 }
 
 -->
@@ -67,7 +69,7 @@ body {
 border-left: 1px solid #00000;
 border-bottom: 1px solid #00000;
 background:#00000;
-width:362px;
+width:500px;
 float:right;
 padding:0px;
 }
@@ -108,37 +110,46 @@ width:400x;
 word-wrap:break-word;
 }
 </style>
+<style>
+#disqus_thread {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+</style>
+
 <body><div id="???" class="pure-u"><table class="pure-table pure-table-horizontal">
  <div id="" class="well"><thead>
 <tr>
-<th><center><h1>Working!! [BD]</h1></center></th>
+<th><center><h1>Working</h1></center></th>
 </tbody>
 </table>
-<br><center><img src="image/working.jpg"></center><hr>
-&nbsp;&nbsp;<b><u>Staff</u></b><br>
-&nbsp;&nbsp;<b>Translation:</b> Aleki<br>
-&nbsp;&nbsp;<b>Timing:</b> OmBobby<br>
-&nbsp;&nbsp;<b>Editing/Typesetting:</b> rakaosd<br>
-&nbsp;&nbsp;<b>Encoding:</b> panji<br>
-<hr>
-&nbsp;&nbsp;<b>Episode 01:</b> "Selamat Datang di Wagnaria ♪ Takanashi Mulai Bekerja"<br>
-&nbsp;&nbsp;<b>Episode 02:</b> "Inami Fobia Cowok. Tapi Kamu Menakutkan ...."<br>
-&nbsp;&nbsp;<b>Episode 03:</b> "Yachiyo, Kyouko, Satou ..., dan kembalinya Pak Otoo"<br>
-&nbsp;&nbsp;<b>Episode 04:</b> "Souma, Pemuda yang Terlalu Menyegarkan"<br>
-&nbsp;&nbsp;<b>Episode 05:</b> "Hari yang Dingin ..., Di Wagnaria Tidak Seperti Biasanya"<br>
-&nbsp;&nbsp;<b>Episode 06:</b> "Nasib Malang Souta, Perempuan di Keluarga Takanashi"<br>
-&nbsp;&nbsp;<b>Episode 07:</b> "Rindu Pak Otoo, dan karyawan baru = Yamada (?!)"<br>
-&nbsp;&nbsp;<b>Episode 08:</b> "Inami, Pergi Pertama Kalinya? Ber-tama-sya!"<br>
-&nbsp;&nbsp;<b>Episode 09:</b> "Munculnya Kotori!!"<br>
-&nbsp;&nbsp;<b>Episode 10:</b> "Situasi yang Mencurigakan ..., Nazuna Bekerja"<br>
-&nbsp;&nbsp;<b>Episode 11:</b> "Masa Lalu Mereka, Mbak Yachiyo dan Mas Satou, Selamat Datang di Keluarga Takanashi"<br>
-&nbsp;&nbsp;<b>Episode 12:</b> "Kenapa?! Malam Sebelum Pertempuran yang Menentukan. Permohonan Taneshima"<br>
-&nbsp;&nbsp;<b>Episode 13:</b> "Pertempuran yang Disebut Kencan, Takanashi dan Inami Kemudian ...."<br>
+<br><center><img src="image/working.jpg"></center><hr><div id="sidebar-right">
+<div id="sidebar" class="sidebar section">
+&nbsp;&nbsp;<strong>Skrip:</strong> Aleki<br> 
+&nbsp;&nbsp;<strong>Penyelaras Waktu:</strong> OmBobby<br>
+&nbsp;&nbsp;<strong>Penyunting:</strong> rakaosd<br> 
+&nbsp;&nbsp;<strong>Pengolah Video:</strong> Panji<br> 
+</div></div>
 
-&nbsp;&nbsp;Download: <a href="
-https://mega.nz/#F!nccCgCIS!AEc5MyyRfZ_5EHXFya4tYg
-">[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/working-bd-106946/list,1,1">[KumpulBagi]</a><br>
-<br>
+<!-- Sekat -->
+ 
+<div id="sidebar-left">
+<div id="sidebar" class="sidebar section">
+&nbsp;&nbsp;<strong>Kategori</strong> Bluray<br> 
+&nbsp;&nbsp;<strong>Video:</strong> H.264 10 bit (1280x720 @ crf 19)<br>
+&nbsp;&nbsp;<strong>Audio:</strong> Jepang/AAC 2.0 - 48.0 KHz<br> 
+&nbsp;&nbsp;<strong>Episode:</strong> 13<br> 
+&nbsp;&nbsp;<strong>Status:</strong> Selesai<br>
+<br></div></div>
+<br><br><br><br><br><br><br><hr>
+</div></div>
+&nbsp;&nbsp;<strong>Sinopsis:</strong> Taneshima Popura mulai mencari orang maupun teman yang berminat untuk bekerja di Wagnaria. Setelah menawarkan ke teman-temannya dan beberapa pejalan kaki, dia belum menemukan orang yang bekerja di Wagnaria. Tanpa menyerah, akhirnya dia bertemu dengan Takanashi Souta yang ternyata junior di sekolahnya. Dia pun berhasil mengajak Takanashi untuk bekerja di Wagnaria. Sebetulnya alasan terbesar Takanashi bekerja bukan demi uang, melainkan demi melihat Popura 
+setiap hari.
+<hr>
+&nbsp;&nbsp;<b>Tautan Unduh:</b><br>
+&nbsp;&nbsp;<a href="https://mega.nz/#F!nccCgCIS!AEc5MyyRfZ_5EHXFya4tYg"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/working-bd-106946/list,1,1"target=_blank>[kbagi]</a> 
+<hr>
 <div id="disqus_thread"></div>
 <script>
 /**
