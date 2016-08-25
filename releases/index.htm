@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app="Wagnaria">
 <head>
-  <title>New Releases</title>
+  <title>Rilisan Terbaru</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/pure-min.css" rel="stylesheet" media="screen">
   <link href="css/glyphs.min.css" rel="stylesheet" media="screen">
@@ -14,23 +14,24 @@
   </style>
 </head>
 <body>
-<div id="basket" class="pure-g-r">
+<br>
   <div id="parasol" class="pure-u">
     <div class="pure-menu pure-menu-open">
-      <a class="pure-menu-heading" href="http://kentutneraka.org/">☭ Kentutneraka</a>
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
       <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/releases">New Releases</a></li>
-        <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Incomplete</a></li>
-        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Completed</a></li>
-        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staff</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">About</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Recruitment?</a></li>
-		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://www.nyaa.se/?user=252429">Torrent</a></li>
       </ul>
     </div>
   </div>
-  <div id="???" class="pure-u" data-ui-view></div>
-</div>  
   <!-- JavaScript -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
   <script src="lib/angular-ui-router.min.js"></script>
@@ -78,9 +79,9 @@ body {
 <div class="ng-scope" data-ui-view="" id="muffinbox">
 <table class="pure-table pure-table-horizontal ng-scope">
 <thead>
-<tr><th width="10%">Release Date</th>
-<th width="25%">Description</th>
-<th width="10%">Category</th>
+<tr><th width="10%">Tanggal Rilis</th>
+<th width="25%">Judul Anime</th>
+<th width="10%">Kategori</th>
 </tr></thead>
 
 <!-- tanda -->
@@ -89,7 +90,7 @@ body {
 <td class="tanggal rilis">Aug 24, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/orange.htm">Orange - 07</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -98,7 +99,7 @@ body {
 <td class="tanggal rilis">Aug 23, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/arslan-senki-2.htm">Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -107,7 +108,7 @@ body {
 <td class="tanggal rilis">Aug 23, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/qualidea-code.htm">Qualidea Code - 07</a></div></td>
-  <td><div align="left"></div>TV Series</td>
+  <td><div align="left"></div>Serial TV</td>
 </tr>
 
 <!-- tanda -->
@@ -116,7 +117,7 @@ body {
 <td class="tanggal rilis">Aug 21, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/days.htm">Days - 08</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -125,7 +126,7 @@ body {
 <td class="tanggal rilis">Aug 19, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/orange.htm">Orange - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -134,7 +135,7 @@ body {
 <td class="tanggal rilis">Aug 18, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/masou-gakuen-hxh.htm">Masou Gakuen HxH - 07</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -152,7 +153,7 @@ body {
 <td class="tanggal rilis">Aug 14, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/qualidea-code.htm">Qualidea Code - 06</a></div></td>
-  <td><div align="left"></div>TV Series</td>
+  <td><div align="left"></div>Serial TV</td>
 </tr>
 
 <!-- tanda -->
@@ -161,7 +162,7 @@ body {
 <td class="tanggal rilis">Aug 14, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/days.htm">Days - 07</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 
@@ -171,7 +172,7 @@ body {
 <td class="tanggal rilis">Aug 13, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/masou-gakuen-hxh.htm">Masou Gakuen HxH - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -180,7 +181,7 @@ body {
 <td class="tanggal rilis">Aug 13, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/battery.htm">Battery - 04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -189,7 +190,7 @@ body {
 <td class="tanggal rilis">Aug 11, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/arslan-senki-2.htm">Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -198,7 +199,7 @@ body {
 <td class="tanggal rilis">Aug 10, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/outcast.htm">hitorinoshita - The Outcast 02-04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
@@ -214,7 +215,7 @@ body {
 <td class="tanggal rilis">Aug 07, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/qualidea-code.htm">Qualidea Code - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -223,7 +224,7 @@ body {
 <td class="tanggal rilis">Aug 07, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/days.htm">Days - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -232,7 +233,7 @@ body {
 <td class="tanggal rilis">Aug 07, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/masou-gakuen-hxh.htm">Masou Gakuen HxH - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -241,7 +242,7 @@ body {
 <td class="tanggal rilis">Aug 07, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/battery.htm">Battery - 03</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -250,7 +251,7 @@ body {
 <td class="tanggal rilis">Aug 04, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/qualidea-code.htm">Qualidea Code - 04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -259,7 +260,7 @@ body {
 <td class="tanggal rilis">Aug 04, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/orange.htm">Orange - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -268,7 +269,7 @@ body {
 <td class="tanggal rilis">Aug 03, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/arslan-senki-2.htm">Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) 03-04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -277,7 +278,7 @@ body {
 <td class="tanggal rilis">Jul 31, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/days.htm">Days - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -286,7 +287,7 @@ body {
 <td class="tanggal rilis">Jul 31, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/masou-gakuen-hxh.htm">Masou Gakuen HxH - 04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -295,7 +296,7 @@ body {
 <td class="tanggal rilis">Jul 31, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/orange.htm">Orange - 04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -304,7 +305,7 @@ body {
 <td class="tanggal rilis">Jul 31, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/battery.htm">Battery - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -313,7 +314,7 @@ body {
 <td class="tanggal rilis">Jul 29, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/qualidea-code.htm">Qualidea Code - 03</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -322,7 +323,7 @@ body {
 <td class="tanggal rilis">Jul 24, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/days.htm">Days 03-04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -331,7 +332,7 @@ body {
 <td class="tanggal rilis">Jul 24, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/masou-gakuen-hxh.htm">Masou Gakuen HxH - 03</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -340,7 +341,7 @@ body {
 <td class="tanggal rilis">Jul 23, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/orange.htm">Orange - 03</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -349,7 +350,7 @@ body {
 <td class="tanggal rilis">Jul 21, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/qualidea-code.htm">Qualidea Code - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -358,7 +359,7 @@ body {
 <td class="tanggal rilis">Jul 20, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/alderamin-on-the-sky.htm">Alderamin on the Sky - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -367,7 +368,7 @@ body {
 <td class="tanggal rilis">Jul 17, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kabaneri.htm">Kabaneri of the Iron Fortress - Batch</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -376,7 +377,7 @@ body {
 <td class="tanggal rilis">Jul 16, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/alderamin-on-the-sky.htm">Alderamin on the Sky - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -385,7 +386,7 @@ body {
 <td class="tanggal rilis">Jul 15, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/battery.htm">Battery - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -394,7 +395,7 @@ body {
 <td class="tanggal rilis">Jul 13, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/masou-gakuen-hxh.htm">Masou Gakuen HxH - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -403,7 +404,7 @@ body {
 <td class="tanggal rilis">Jul 12, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/days.htm">Days - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -412,7 +413,7 @@ body {
 <td class="tanggal rilis">Jul 12, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/orange.htm">Orange - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -421,7 +422,7 @@ body {
 <td class="tanggal rilis">Jul 11, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/arslan-senki-2.htm">Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -430,7 +431,7 @@ body {
 <td class="tanggal rilis">Jul 11, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/qualidea-code.htm">Qualidea Code - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -439,7 +440,7 @@ body {
 <td class="tanggal rilis">Jul 10, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/outcast.htm">hitorinoshita - The Outcast - 01v2</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -457,7 +458,7 @@ body {
 <td class="tanggal rilis">Jul 07, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/masou-gakuen-hxh.htm">Masou Gakuen HxH - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -466,7 +467,7 @@ body {
 <td class="tanggal rilis">Jul 06, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/arslan-senki-2.htm">Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 
@@ -476,7 +477,7 @@ body {
 <td class="tanggal rilis">Jul 05, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/orange.htm">Orange - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -485,7 +486,7 @@ body {
 <td class="tanggal rilis">Jul 03, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/days.htm">Days - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -494,7 +495,7 @@ body {
 <td class="tanggal rilis">Jul 03, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/fw.htm">Flying Witch 11-12</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -503,7 +504,7 @@ body {
 <td class="tanggal rilis">Jul 02, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days 23-24</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -512,7 +513,7 @@ body {
 <td class="tanggal rilis">Jun 29, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days 20-22</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -521,7 +522,7 @@ body {
 <td class="tanggal rilis">Jun 27, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/fw.htm">Flying Witch - 10</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -530,7 +531,7 @@ body {
 <td class="tanggal rilis">Jun 27, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days 18-19</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -539,7 +540,7 @@ body {
 <td class="tanggal rilis">Jun 27, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 12</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -548,7 +549,7 @@ body {
 <td class="tanggal rilis">Jun 26, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kagewani2.htm">Kagewani S2 - 13</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -557,7 +558,7 @@ body {
 <td class="tanggal rilis">Jun 25, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days 15-17</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -566,7 +567,7 @@ body {
 <td class="tanggal rilis">Jun 24, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kabaneri.htm">Kabaneri of the Iron Fortress 07-09</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -575,7 +576,7 @@ body {
 <td class="tanggal rilis">Jun 24, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/fw.htm">Flying Witch 07-09</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -584,7 +585,7 @@ body {
 <td class="tanggal rilis">Jun 20, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kagewani2.htm">Kagewani S2 09-12</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -593,7 +594,7 @@ body {
 <td class="tanggal rilis">Jun 19, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/sakamoto.htm">Sakamoto desu ga - 08</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -602,7 +603,7 @@ body {
 <td class="tanggal rilis">Jun 18, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 14</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -611,7 +612,7 @@ body {
 <td class="tanggal rilis">Jun 16, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 11</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 
@@ -621,7 +622,7 @@ body {
 <td class="tanggal rilis">Jun 12, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/fw.htm">Flying Witch - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -630,7 +631,7 @@ body {
 <td class="tanggal rilis">Jun 10, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 10</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -639,7 +640,7 @@ body {
 <td class="tanggal rilis">Jun 09, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/dimension-w.htm">Dimension W - batch</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -648,7 +649,7 @@ body {
 <td class="tanggal rilis">Jun 04, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 09</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -666,7 +667,7 @@ body {
 <td class="tanggal rilis">May 29, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 13</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -675,7 +676,7 @@ body {
 <td class="tanggal rilis">May 29, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 08</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -684,7 +685,7 @@ body {
 <td class="tanggal rilis">May 27, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/sakamoto.htm">Sakamoto desu ga - 07</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -693,7 +694,7 @@ body {
 <td class="tanggal rilis">May 26, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kagewani2.htm">Kagewani S2 07-08</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -702,7 +703,7 @@ body {
 <td class="tanggal rilis">May 24, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kabaneri.htm">Kabaneri of the Iron Fortress - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -711,7 +712,7 @@ body {
 <td class="tanggal rilis">May 23, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 07</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -720,7 +721,7 @@ body {
 <td class="tanggal rilis">May 20, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/sakamoto.htm">Sakamoto desu ga - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -729,7 +730,7 @@ body {
 <td class="tanggal rilis">May 19, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/sakamoto.htm">Sakamoto desu ga 03-05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -738,7 +739,7 @@ body {
 <td class="tanggal rilis">May 16, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -747,7 +748,7 @@ body {
 <td class="tanggal rilis">May 16, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kabaneri.htm">Kabaneri of the Iron Fortress - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -756,7 +757,7 @@ body {
 <td class="tanggal rilis">May 12, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kabaneri.htm">Kabaneri of the Iron Fortress - 04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -765,7 +766,7 @@ body {
 <td class="tanggal rilis">May 11, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/fw.htm">Flying Witch - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -774,7 +775,7 @@ body {
 <td class="tanggal rilis">May 09, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kagewani2.htm">Kagewani S2 - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -783,7 +784,7 @@ body {
 <td class="tanggal rilis">May 08, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -801,7 +802,7 @@ body {
 <td class="tanggal rilis">May 04, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/fw.htm">Flying Witch - 04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -810,7 +811,7 @@ body {
 <td class="tanggal rilis">May 03, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kabaneri.htm">Kabaneri of the Iron Fortress - 03</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -819,7 +820,7 @@ body {
 <td class="tanggal rilis">May 02, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kagewani2.htm">Kagewani S2 - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -828,7 +829,7 @@ body {
 <td class="tanggal rilis">May 01, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 04v2</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -837,7 +838,7 @@ body {
 <td class="tanggal rilis">Apr 27, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kowabon.htm">Kowabon - Batch</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -846,7 +847,7 @@ body {
 <td class="tanggal rilis">Apr 26, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days 10-12</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -855,7 +856,7 @@ body {
 <td class="tanggal rilis">Apr 25, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/fw.htm">Flying Witch - 03</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -864,7 +865,7 @@ body {
 <td class="tanggal rilis">Apr 24, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kabaneri.htm">Kabaneri of the Iron Fortress - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -873,7 +874,7 @@ body {
 <td class="tanggal rilis">Apr 24, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 03v3</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 
@@ -883,7 +884,7 @@ body {
 <td class="tanggal rilis">Apr 22, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/sakamoto.htm">Sakamoto desu ga - 02v2</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -892,7 +893,7 @@ body {
 <td class="tanggal rilis">Apr 18, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/fw.htm">Flying Witch - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -901,7 +902,7 @@ body {
 <td class="tanggal rilis">Apr 17, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kagewani2.htm">Kagewani S2 - 03</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -910,7 +911,7 @@ body {
 <td class="tanggal rilis">Apr 17, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kagewani2.htm">Kagewani S2 - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -919,7 +920,7 @@ body {
 <td class="tanggal rilis">Apr 17, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -928,7 +929,7 @@ body {
 <td class="tanggal rilis">Apr 14, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kabaneri.htm">Kabaneri of the Iron Fortress - 01v2</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -937,7 +938,7 @@ body {
 <td class="tanggal rilis">Apr 11, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/fw.htm">Flying Witch - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -946,7 +947,7 @@ body {
 <td class="tanggal rilis">Apr 10, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/bungo-stray-dogs.htm">Bungo Stray Dogs - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -955,7 +956,7 @@ body {
 <td class="tanggal rilis">Apr 08, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/sakamoto.htm">Sakamoto desu ga - 01v1</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -964,7 +965,7 @@ body {
 <td class="tanggal rilis">Apr 07, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 09</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -973,7 +974,7 @@ body {
 <td class="tanggal rilis">Apr 05, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 08</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -991,7 +992,7 @@ body {
 <td class="tanggal rilis">Apr 02, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 07</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -1000,7 +1001,7 @@ body {
 <td class="tanggal rilis">Apr 02, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/kagewani2.htm">Kagewani S2 - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 
@@ -1010,7 +1011,7 @@ body {
 <td class="tanggal rilis">Apr 01, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1027,7 +1028,7 @@ body {
 <td class="tanggal rilis">Mar 26, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 12</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -1036,7 +1037,7 @@ body {
 <td class="tanggal rilis">Mar 25, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -1045,7 +1046,7 @@ body {
 <td class="tanggal rilis">Mar 25, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -1054,7 +1055,7 @@ body {
 <td class="tanggal rilis">Mar 21, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 11</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -1063,7 +1064,7 @@ body {
 <td class="tanggal rilis">Mar 18, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 10</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1082,7 +1083,7 @@ body {
 <td class="tanggal rilis">Mar 10, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 09</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 
@@ -1092,7 +1093,7 @@ body {
 <td class="tanggal rilis">Mar 09, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/one-outs.htm">One Outs - TV Batch</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -1101,7 +1102,7 @@ body {
 <td class="tanggal rilis">Mar 08, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 03</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1119,7 +1120,7 @@ body {
 <td class="tanggal rilis">Feb 28, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/dimension-w.htm">Dimension W - 07</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1128,7 +1129,7 @@ body {
 <td class="tanggal rilis">Feb 28, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/dimension-w.htm">Dimension W - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -1137,7 +1138,7 @@ body {
 <td class="tanggal rilis">Feb 28, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 08</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
 <!-- tanda -->
@@ -1146,7 +1147,7 @@ body {
 <td class="tanggal rilis">Feb 23, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -1155,7 +1156,7 @@ body {
 <td class="tanggal rilis">Feb 20, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 07</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -1164,7 +1165,7 @@ body {
 <td class="tanggal rilis">Feb 20, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/rainbow-days.htm">Rainbow Days - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -1173,7 +1174,7 @@ body {
 <td class="tanggal rilis">Feb 14, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 06</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1182,7 +1183,7 @@ body {
 <td class="tanggal rilis">Feb 08, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/dimension-w.htm">Dimension W - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -1191,7 +1192,7 @@ body {
 <td class="tanggal rilis">Feb 08, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 05</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1218,7 +1219,7 @@ body {
 <td class="tanggal rilis">Feb 03, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/dimension-w.htm">Dimension W - 04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
  
  <!-- tanda -->
@@ -1227,7 +1228,7 @@ body {
 <td class="tanggal rilis">Jan 30, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 04</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1236,7 +1237,7 @@ body {
 <td class="tanggal rilis">Jan 25, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/dimension-w.htm">Dimension W - 03</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
  <!-- tanda -->
@@ -1245,7 +1246,7 @@ body {
 <td class="tanggal rilis">Jan 23, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 03</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1254,7 +1255,7 @@ body {
 <td class="tanggal rilis">Jan 20, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/dimension-w.htm">Dimension W - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1263,7 +1264,7 @@ body {
 <td class="tanggal rilis">Jan 18, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 02</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1272,7 +1273,7 @@ body {
 <td class="tanggal rilis">Jan 15, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/dimension-w.htm">Dimension W - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1290,7 +1291,7 @@ body {
 <td class="tanggal rilis">Jan 12, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/erased.htm">Boku dake ga Inai Machi - 01</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
@@ -1299,7 +1300,7 @@ body {
 <td class="tanggal rilis">Jan 03, 2016
 </div></td>
   <td><div align="left"><a href="http://www.kentutneraka.org/releases/sakurako.htm">A Corpse is Buried Under Sakurako's Feet - 12</a></div></td>
-  <td><div align="left">TV Series</div></td>
+  <td><div align="left">Serial TV</div></td>
 </tr>
 
   <!-- tanda -->
