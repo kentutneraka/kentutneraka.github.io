@@ -14,23 +14,24 @@
   </style>
 </head>
 <body>
-<div id="basket" class="pure-g-r">
+<br>
   <div id="parasol" class="pure-u">
     <div class="pure-menu pure-menu-open">
-      <a class="pure-menu-heading" href="http://kentutneraka.org/">☭ Kentutneraka</a>
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
       <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/releases">New Releases</a></li>
-        <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Incomplete</a></li>
-        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Completed</a></li>
-        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staff</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">About</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Recruitment?</a></li>
-		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://www.nyaa.se/?user=252429">Torrent</a></li>
       </ul>
     </div>
   </div>
-  <div id="???" class="pure-u" data-ui-view></div>
-</div>  
   <!-- JavaScript -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
   <script src="lib/angular-ui-router.min.js"></script>
@@ -71,13 +72,13 @@ body {
 <div class="ng-scope" data-ui-view="" id="muffinbox">
 <table class="pure-table pure-table-horizontal ng-scope">
 <thead>
-<tr><th width="25%">Series</th>
+<tr><th width="25%">Judul Anime</th>
 <th width="9%">Episode</th>
-<th width="10%">Last Aired</th>
-<th width="12%">Translator</th>
-<th width="12%">Timer</th>
-<th width="12%">Editor</th>
-<th width="12%">Typesetter</th>
+<th width="10%">Terakhir Tayang</th>
+<th width="12%">Penerjemah</th>
+<th width="12%">Penyunting</th>
+<th width="12%">Penata Rias</th>
+<th width="12%">Pengolah Video</th>
 </tr></thead>
   <!-- tanda -->
 
