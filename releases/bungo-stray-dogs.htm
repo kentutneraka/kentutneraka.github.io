@@ -17,22 +17,24 @@
   </style>
 </head>
 <body>
-div id="basket" class="pure-g-r">
+<br>
   <div id="parasol" class="pure-u">
     <div class="pure-menu pure-menu-open">
-      <a class="pure-menu-heading" href="http://kentutneraka.org/">☭ Kentutneraka</a>
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
       <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/releases">New Releases</a></li>
-        <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Incomplete</a></li>
-        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Completed</a></li>
-        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staff</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">About</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Recruitment?</a></li>
-		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://www.nyaa.se/?user=252429">Torrent</a></li>
       </ul>
     </div>
   </div>
-  <div i
   <!-- JavaScript -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
   <script src="lib/angular-ui-router.min.js"></script>
@@ -125,78 +127,79 @@ word-wrap:break-word;
 </table>
 <br><center><img src="image/bsd.jpg"></center><hr><div id="sidebar-right">
 <div id="sidebar" class="sidebar section">
-&nbsp;&nbsp;<strong>Translation:</strong> irzie<br> 
-&nbsp;&nbsp;<strong>Timing:</strong> Hsedit<br> 
-&nbsp;&nbsp;<strong>Editing/Typesetting:</strong> rakaosd<br> 
-&nbsp;&nbsp;<strong>Encoding:</strong> Yatogami<br> 
-&nbsp;&nbsp;<strong>QC:</strong> titidus<br> 
+&nbsp;&nbsp;<strong>Penerjemah:</strong> irzie<br>  
+&nbsp;&nbsp;<strong>Penyunting/Penata Rias:</strong> rakaosd<br> 
+&nbsp;&nbsp;<strong>Pengolah Video:</strong> Yatogami<br> 
+&nbsp;&nbsp;<strong>Penyelaras Akhir:</strong> titidus<br> 
 </div></div>
 
 <!-- Sekat -->
  
 <div id="sidebar-left">
 <div id="sidebar" class="sidebar section">
-&nbsp;&nbsp;<strong>Type:</strong> TV Series<br> 
+&nbsp;&nbsp;<strong>Kategori:</strong> Serial TV<br> 
 &nbsp;&nbsp;<strong>Video:</strong> H.264 10 bit (1280x720 @ crf 19 - 848x480 @ crf 23)<br>
-&nbsp;&nbsp;<strong>Audio:</strong> Japan/AAC 2.0 - 41.1 KHz<br> 
-&nbsp;&nbsp;<strong>Episode:</strong> 12 (of 12)<br> 
-&nbsp;&nbsp;<strong>Status:</strong> TO BE CONTINUED<br>
+&nbsp;&nbsp;<strong>Audio:</strong> Jepang/AAC 2.0 - 41.1 KHz<br> 
+&nbsp;&nbsp;<strong>Episode:</strong> 12<br> 
+&nbsp;&nbsp;<strong>Status:</strong> Selesai<br>
 <br></div></div>
 <br><br><br><br><br><br><hr>
 </div></div>
-&nbsp;&nbsp;<strong>Sinopsis:</strong> Atsushi Nakajima, seorang yatim piatu yang diusir dari panti asuhan. Setibanya di Yokohama, dia menyelamatkan seseorang yang mencoba bunuh diri &nbsp;&nbsp;di sebuah sungai, bernama Osamu Dazai yang merupakan anggota dari detektif bersenjata. Atsushi kemudian terpikat untuk menginvestigasi kejadian misterius &nbsp;&nbsp;bersama Dazai.
+&nbsp;&nbsp;<strong>Sinopsis:</strong> Atsushi Nakajima, seorang yatim piatu yang diusir dari panti asuhan. Setibanya di Yokohama, dia menyelamatkan seseorang yang mencoba bunuh diri <br>
+&nbsp;&nbsp;di sebuah sungai, bernama Osamu Dazai yang merupakan anggota dari detektif bersenjata. Atsushi kemudian terpikat untuk menginvestigasi kejadian misterius <br>
+&nbsp;&nbsp;bersama Dazai.
 <hr>
-&nbsp;&nbsp;<a id="show_unduh" onclick="document.getElementById('spoiler_unduh').style.display=''; document.getElementById('show_unduh').style.display='none';" class="link">Download Single Episodes</a><span id="spoiler_unduh" style="display: none"><a onclick="document.getElementById('spoiler_unduh').style.display='none'; document.getElementById('show_unduh').style.display='';" class="link">[-]Download Single Episodes</a><br><br>
+&nbsp;&nbsp;<a id="show_unduh" onclick="document.getElementById('spoiler_unduh').style.display=''; document.getElementById('show_unduh').style.display='none';" class="link">Tautan Unduh Eceran</a><span id="spoiler_unduh" style="display: none"><a onclick="document.getElementById('spoiler_unduh').style.display='none'; document.getElementById('show_unduh').style.display='';" class="link">[-] Tautan Unduh Eceran</a><br><br>
 &nbsp;&nbsp;<b>Episode 01:</b> "Nasib Tidak Dapat Diprediksi dan Diubah"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!gto3BQRL!tKBeKJ2NftuP4Ki72u4PPzuG_SnhRLSZ5aPOYqVYrfQ"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-01-720p-2a3f2e91,2560889,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/zetmzl4el056"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!94YhhAgS!4pdJeLSQy9oeZV9uxMQGt80OjRvs4Qd7Q8e7k0AqhvU"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-01-480p-9b618b87,2560888,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/gvj14xpqn8r1"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!gto3BQRL!tKBeKJ2NftuP4Ki72u4PPzuG_SnhRLSZ5aPOYqVYrfQ"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-01-720p-2a3f2e91,2560889,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/zetmzl4el056"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!94YhhAgS!4pdJeLSQy9oeZV9uxMQGt80OjRvs4Qd7Q8e7k0AqhvU"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-01-480p-9b618b87,2560888,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/gvj14xpqn8r1"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 02:</b> "Pengebom"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!cgYyxRbL!axI6SVpnwkd0Ba5rALRCmC9REWv1n2bdXf2vhzJ07gY"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-02-720p-008dcdf3,2605538,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/xe96oehjaofe"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!I8ZWARCT!jOQHw5cbqObMtQvqrxXsNaQUvdVz9rMYbg4PYqqgDqM"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-02-480p-7535f14f,2619402,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/tz1g919twqt8"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!cgYyxRbL!axI6SVpnwkd0Ba5rALRCmC9REWv1n2bdXf2vhzJ07gY"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-02-720p-008dcdf3,2605538,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/xe96oehjaofe"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!I8ZWARCT!jOQHw5cbqObMtQvqrxXsNaQUvdVz9rMYbg4PYqqgDqM"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-02-480p-7535f14f,2619402,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/tz1g919twqt8"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 03:</b> "Surganya Geng Yokohama"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!Aw5jGarB!qWOkPEKNGA9wyY7yE32LDh5tg7UIgc_EIlGH3EQS8zM"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-03v3-720p-f7e85378,2727612,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/5cyhte3v3x62"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!4gQWQQxD!hYzMMC4O4EmAuNVF0ZSz7wC_-KIgCnNED8cUd9DwGfI"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-03v3-480p-71ca67b4,2727611,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/7b5k9uj7debu"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!Aw5jGarB!qWOkPEKNGA9wyY7yE32LDh5tg7UIgc_EIlGH3EQS8zM"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-03v3-720p-f7e85378,2727612,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/5cyhte3v3x62"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!4gQWQQxD!hYzMMC4O4EmAuNVF0ZSz7wC_-KIgCnNED8cUd9DwGfI"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-03v3-480p-71ca67b4,2727611,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/7b5k9uj7debu"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 04:</b> "Tragedi Fatalis"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!1xgxnDKC!s9Ch65rRBBGCqQ3qYkjJ9LEPrgtQ_a7mRRmlL-jEGQk"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-04v2-720p-9d26063d,2727623,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/wxf9066mtglo"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!80ZWADJI!6piQqLq1awm_Xj7HTYoPIdad4QDHtHsrZNSd7nBEHwk"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-04v2-480p-cb38b16c,2727619,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/7le40dn1bt9y"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!1xgxnDKC!s9Ch65rRBBGCqQ3qYkjJ9LEPrgtQ_a7mRRmlL-jEGQk"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-04v2-720p-9d26063d,2727623,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/wxf9066mtglo"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!80ZWADJI!6piQqLq1awm_Xj7HTYoPIdad4QDHtHsrZNSd7nBEHwk"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-04v2-480p-cb38b16c,2727619,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/7le40dn1bt9y"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 05:</b> "Murder on D Street"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!EsYEhLTT!6M6pqh2bYWySCp_Imq_O6wnnWRNQxQTmaWRhl0o3QYE"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-05-720p-20ff1c5d,2727574,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/msfdzwxxw2l4"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!Q15A2BjC!W9sSIrsilqIAN9M1YEfI6dz7X3E3q4dcRUnBXI5qfkQ"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-05-480p-24bc04b6,2727565,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/5p8yshwn9s64"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!EsYEhLTT!6M6pqh2bYWySCp_Imq_O6wnnWRNQxQTmaWRhl0o3QYE"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-05-720p-20ff1c5d,2727574,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/msfdzwxxw2l4"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!Q15A2BjC!W9sSIrsilqIAN9M1YEfI6dz7X3E3q4dcRUnBXI5qfkQ"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-05-480p-24bc04b6,2727565,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/5p8yshwn9s64"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 06:</b> "Utusan Biru"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!g5AliLxL!WJinI-VTqV0Y3kIEMe1951UQ-W-Dq4OaPGTeSYAAOgo"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-06-720p-6d6b16e4,2749461,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/ayz3f3fmv4r8"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!spZj2D7a!cCnVYZbdVkmaX19De3_q0afsQN4eSASAKbrCbSq1eOU"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-06-480p-e576dfcd,2749460,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/t0isp2iviyjs"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!g5AliLxL!WJinI-VTqV0Y3kIEMe1951UQ-W-Dq4OaPGTeSYAAOgo"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-06-720p-6d6b16e4,2749461,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/ayz3f3fmv4r8"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!spZj2D7a!cCnVYZbdVkmaX19De3_q0afsQN4eSASAKbrCbSq1eOU"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-06-480p-e576dfcd,2749460,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/t0isp2iviyjs"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 07:</b> "Cinta untuk Penyakit yang Disebut Idealisme"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!wo4QCTIZ!-cILQ5r7lNOiXNmOy7ic57avBLoMsCDskeU18i1Zb-U"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-07-720p-8686670d,2767524,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/dgk3nyjauw60"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!J8xxyb7S!TU8N3R5Sy7X9mBv0wlN1byNyIB3StV0mV2xFGXgCi-M"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-07-480p-b4ea9e3f,2767523,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/ei3qvyfzn1wk"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!wo4QCTIZ!-cILQ5r7lNOiXNmOy7ic57avBLoMsCDskeU18i1Zb-U"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-07-720p-8686670d,2767524,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/dgk3nyjauw60"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!J8xxyb7S!TU8N3R5Sy7X9mBv0wlN1byNyIB3StV0mV2xFGXgCi-M"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-07-480p-b4ea9e3f,2767523,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/ei3qvyfzn1wk"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 08:</b> "Ajari Orang Membunuh, Lalu Matilah"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!o0IFzZrA!buSuNI5paq-OsUnXh_McWf4p-XOCr3RkdCqi-X8vjCU"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-08-720p-0fe3d96a,2789745,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/p1djtbslh4v9"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!htxCjJYZ!gt7jCuF7BSOXBQFG_owkMYj_De6BUpoUYTTwM5QgsWM"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-08-480p-f570fce1,2789744,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/n2t04jl51545"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!o0IFzZrA!buSuNI5paq-OsUnXh_McWf4p-XOCr3RkdCqi-X8vjCU"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-08-720p-0fe3d96a,2789745,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/p1djtbslh4v9"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!htxCjJYZ!gt7jCuF7BSOXBQFG_owkMYj_De6BUpoUYTTwM5QgsWM"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-08-480p-f570fce1,2789744,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/n2t04jl51545"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 09:</b> "Kecantikan Bagaikan Patung Batu yang Tenang"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!kxA3zQrB!d-MDxTvUQyoZVCSb_dX_hxniYIMLtOQJ2yP4hrTCXiA"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-09-720p-7005eba3,2816324,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/5rikjrfoz85y"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!do4lwbhC!5rlgUXi_81aM09BFfWBMew3n2SNkEZueYoU8CDWegtw"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-09-480p-f8091194,2816322,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/xgqarkve60vk"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!kxA3zQrB!d-MDxTvUQyoZVCSb_dX_hxniYIMLtOQJ2yP4hrTCXiA"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-09-720p-7005eba3,2816324,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/5rikjrfoz85y"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!do4lwbhC!5rlgUXi_81aM09BFfWBMew3n2SNkEZueYoU8CDWegtw"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-09-480p-f8091194,2816322,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/xgqarkve60vk"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 10:</b> "Rashoumon dan Harimau"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!ZkYzlbKJ!y1f-o4Jy6lLPcOV7BrnqhCeyK2AFSNcXmqyudYXLK3Y"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-10-720p-0746d6de,2840503,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/ruhnbyi07kx1"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!BoZm3CxY!zYY89MCnS6t7_bHIQoo81m38BoxSQegzQ94fTsC-zDA"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-10-480p-b3bb283b,2840502,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/478fy9ul2ssr"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!ZkYzlbKJ!y1f-o4Jy6lLPcOV7BrnqhCeyK2AFSNcXmqyudYXLK3Y"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-10-720p-0746d6de,2840503,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/ruhnbyi07kx1"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!BoZm3CxY!zYY89MCnS6t7_bHIQoo81m38BoxSQegzQ94fTsC-zDA"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-10-480p-b3bb283b,2840502,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/478fy9ul2ssr"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 11:</b> "Pertama, Profesi yang Tak Cocok Untuknya - Kedua, Kebanggaan Detektif Bersenjata"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!FlglWSYR!c5IGUxf1spjN4-U04OzEQxuhBFPv_S5r07QCmI5SeRo"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-11-720p-3825380c,2865034,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/wovmrq9zbbyj"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!AlojUYhT!fyGXn3gt0qVMLODuE7OM6exdgVpqWsvcm5mVhf88fEQ"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-11-480p-907d2eb1,2865032,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/yyl91i78pekh"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!FlglWSYR!c5IGUxf1spjN4-U04OzEQxuhBFPv_S5r07QCmI5SeRo"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-11-720p-3825380c,2865034,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/wovmrq9zbbyj"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!AlojUYhT!fyGXn3gt0qVMLODuE7OM6exdgVpqWsvcm5mVhf88fEQ"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-11-480p-907d2eb1,2865032,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/yyl91i78pekh"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 12</a></b> "Tak Henti-Hentinya Kembali ke Masa Lalu"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!J1IjSDbJ!ryrubAf0LoyK9CZraiWVBxeFGJBEV1XJ3MiNyDgL9VU"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-12-720p-ec2f6477,2902093,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/aofnjo1r7nvu"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!ZxI3lKDC!l0DhPmTfa4IwLn2E7dqEQwf48FdSF063JwHJDirgmJk"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-12-480p-bbe1651e,2902096,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/3vs27eesoejm"target=_blank>[Usersfiles]</a><br></span>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!J1IjSDbJ!ryrubAf0LoyK9CZraiWVBxeFGJBEV1XJ3MiNyDgL9VU"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-12-720p-ec2f6477,2902093,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/aofnjo1r7nvu"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!ZxI3lKDC!l0DhPmTfa4IwLn2E7dqEQwf48FdSF063JwHJDirgmJk"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137/kentutneraka-bungo-stray-dogs-12-480p-bbe1651e,2902096,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/3vs27eesoejm"target=_blank>[Usersfiles]</a><br></span>
 <hr>
-&nbsp;&nbsp;<a id="show_unduh_batch" onclick="document.getElementById('spoiler_unduh_batch').style.display=''; document.getElementById('show_unduh_batch').style.display='none';" class="link">Download Batches</a><span id="spoiler_unduh_batch" style="display: none"><a onclick="document.getElementById('spoiler_unduh_batch').style.display='none'; document.getElementById('show_unduh_batch').style.display='';" class="link">[-] Download Batches</a><br> 
-&nbsp;&nbsp;<b>Download:</b> <a href="https://mega.nz/#F!l5xlkSgD!z1LUfz9ZDacxv9yzoGfMrw"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/bungo-stray-dogs-349137"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/go/twtrj41jtfyl"target=_blank>[UsersFiles]</a> </span>
+&nbsp;&nbsp;<a id="show_unduh_batch" onclick="document.getElementById('spoiler_unduh_batch').style.display=''; document.getElementById('show_unduh_batch').style.display='none';" class="link">Tautan Unduh Batch</a><span id="spoiler_unduh_batch" style="display: none"><a onclick="document.getElementById('spoiler_unduh_batch').style.display='none'; document.getElementById('show_unduh_batch').style.display='';" class="link">[-] Tautan Unduh Batch</a><br> 
+&nbsp;&nbsp;<b>Tautan Unduh:</b> <a href="http://wagnaria.kentutneraka.org/[KentutNeraka]%20Bungo%20Stray%20Dogs%20[720p]/"target=_blank>[DDL]</a> <a href="https://mega.nz/#F!l5xlkSgD!z1LUfz9ZDacxv9yzoGfMrw"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/bungo-stray-dogs-349137"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/go/twtrj41jtfyl"target=_blank>[UsersFiles]</a> </span>
 <hr>
 <div id="disqus_thread"></div>
 <script>
