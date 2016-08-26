@@ -17,22 +17,24 @@
   </style>
 </head>
 <body>
-div id="basket" class="pure-g-r">
+<br>
   <div id="parasol" class="pure-u">
     <div class="pure-menu pure-menu-open">
-      <a class="pure-menu-heading" href="http://kentutneraka.org/">☭ Kentutneraka</a>
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
       <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/releases">New Releases</a></li>
-        <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Incomplete</a></li>
-        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Completed</a></li>
-        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staff</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">About</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Recruitment?</a></li>
-		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://www.nyaa.se/?user=252429">Torrent</a></li>
       </ul>
     </div>
   </div>
-  <div i
   <!-- JavaScript -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
   <script src="lib/angular-ui-router.min.js"></script>
@@ -125,81 +127,79 @@ word-wrap:break-word;
 <br><center><img src="image/kagewani2.png"></center><hr>
 <div id="sidebar-right">
 <div id="sidebar" class="sidebar section">
-&nbsp;&nbsp;<strong>Translation:</strong> rakaosd<br> 
-&nbsp;&nbsp;<strong>Timing:</strong> HS<br>  
-&nbsp;&nbsp;<strong>Typesetting:</strong> rakaosd<br> 
-&nbsp;&nbsp;<strong>Encoding:</strong> rakaosd<br> 
+&nbsp;&nbsp;<strong>Penerjemah:</strong> OmBobby<br> 
+&nbsp;&nbsp;<strong>Penyunting/Pengolah Video:</strong> rakaosd<br> 
 </div></div>
 
 <!-- Sekat -->
  
 <div id="sidebar-left">
 <div id="sidebar" class="sidebar section">
-&nbsp;&nbsp;<strong>Type:</strong> TV Series<br> 
+&nbsp;&nbsp;<strong>Kategori:</strong> Serial TV<br> 
 &nbsp;&nbsp;<strong>Video:</strong> H.264 10 bit (1280x720 @ crf 19 - 848x480 @ crf 23)<br>
-&nbsp;&nbsp;<strong>Audio:</strong> Japan/AAC 2.0 - 41.1 KHz<br> 
-&nbsp;&nbsp;<strong>Episode:</strong> 13 (of 13)<br> 
-&nbsp;&nbsp;<strong>Status:</strong> FINISHED<br>
+&nbsp;&nbsp;<strong>Audio:</strong> Jepang/AAC 2.0 - 41.1 KHz<br> 
+&nbsp;&nbsp;<strong>Episode:</strong> 13<br> 
+&nbsp;&nbsp;<strong>Status:</strong> Selesai<br>
 <br></div></div>
 <br><br><br><br><br><br><hr>
 </div></div>
 &nbsp;&nbsp;<strong>Sinopsis:</strong> Cerita lanjutan dari serial Kagewani.
 <hr>
-&nbsp;&nbsp;<a id="show_unduh" onclick="document.getElementById('spoiler_unduh').style.display=''; document.getElementById('show_unduh').style.display='none';" class="link">Download Single Episodes</a><span id="spoiler_unduh" style="display: none"><a onclick="document.getElementById('spoiler_unduh').style.display='none'; document.getElementById('show_unduh').style.display='';" class="link">[-]Download Single Episodes</a><br><br>
+&nbsp;&nbsp;<a id="show_unduh" onclick="document.getElementById('spoiler_unduh').style.display=''; document.getElementById('show_unduh').style.display='none';" class="link">Tautan Unduh Eceran</a><span id="spoiler_unduh" style="display: none"><a onclick="document.getElementById('spoiler_unduh').style.display='none'; document.getElementById('show_unduh').style.display='';" class="link">[-] Tautan Unduh Eceran</a><br><br>
 &nbsp;&nbsp;<b>Episode 01:</b> "Percepatan"<br>
-&nbsp;&nbsp;720p: </a> <a href="https://mega.nz/#!E8o2US6Y!dVyx_dFTRtJjKTV_ycK823ALx0KC2WA482afEvEDLeg"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-01-720p-3a94f2c6,2491581,list,1,2.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: </a> <a href="https://mega.nz/#!NwZC1CDT!XzeRHz7HnNtwoxY1qJUv5UKlx7QO-STh8MxCdf-L6xo"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-01-480p-25b7f2c6,2491571,list,1,2.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: </a> <a href="https://mega.nz/#!E8o2US6Y!dVyx_dFTRtJjKTV_ycK823ALx0KC2WA482afEvEDLeg"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-01-720p-3a94f2c6,2491581,list,1,2.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: </a> <a href="https://mega.nz/#!NwZC1CDT!XzeRHz7HnNtwoxY1qJUv5UKlx7QO-STh8MxCdf-L6xo"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-01-480p-25b7f2c6,2491571,list,1,2.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 02:</b> "Pengejaran"<br>
-&nbsp;&nbsp;720p: </a> <a href="https://mega.nz/#!E1gGnabC!bA0IjgXlqKdtVjh6JxbM0PVvg0ljQ0REFIDM0j3RqWw"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-02-720p-1dd79edb,2605806,list,1,2.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: </a> <a href="https://mega.nz/#!JtZXTTJZ!PtHWjf0MJDiORoF3wsoy-tpTrwSyuvefKWmqpVtkKvA"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-02-480p-b1b900ff,2605871,list,1,2.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: </a> <a href="https://mega.nz/#!E1gGnabC!bA0IjgXlqKdtVjh6JxbM0PVvg0ljQ0REFIDM0j3RqWw"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-02-720p-1dd79edb,2605806,list,1,2.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: </a> <a href="https://mega.nz/#!JtZXTTJZ!PtHWjf0MJDiORoF3wsoy-tpTrwSyuvefKWmqpVtkKvA"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-02-480p-b1b900ff,2605871,list,1,2.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 03:</b> "Ritual Rahasia"<br>
-&nbsp;&nbsp;720p: </a> <a href="https://mega.nz/#!Mkxl2Zzb!rTVSYh3uiVVAjuSWVaYCvC4IL4bBBH2adxwjaBC7vQ0"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-03-720p-683c724d,2608044,list,1,2.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: </a> <a href="https://mega.nz/#!kkQyXazQ!zQPSNtyzsbdFukcMfk4sY3bIbY93mssXk5xlXyHCOQc"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-03-480p-51b0ca31,2607557,list,1,2.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: </a> <a href="https://mega.nz/#!Mkxl2Zzb!rTVSYh3uiVVAjuSWVaYCvC4IL4bBBH2adxwjaBC7vQ0"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-03-720p-683c724d,2608044,list,1,2.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: </a> <a href="https://mega.nz/#!kkQyXazQ!zQPSNtyzsbdFukcMfk4sY3bIbY93mssXk5xlXyHCOQc"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-03-480p-51b0ca31,2607557,list,1,2.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 04:</b> "Percobaan"<br>
-&nbsp;&nbsp;720p: </a> <a href="https://mega.nz/#!0sY2lDaC!8_Du-aXuO9bEJA0sHPweOyHH05AImUGHNqTHn2uLgik"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-04-720p-cf26c8c0,2648178,list,1,2.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: </a> <a href="https://mega.nz/#!xg4QyayY!LvVNEbss_Jbhf-48C3CFc2FWundAriXA99l-B2ILsiQ"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-04-480p-837d0819,2648133,list,1,2.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: </a> <a href="https://mega.nz/#!0sY2lDaC!8_Du-aXuO9bEJA0sHPweOyHH05AImUGHNqTHn2uLgik"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-04-720p-cf26c8c0,2648178,list,1,2.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: </a> <a href="https://mega.nz/#!xg4QyayY!LvVNEbss_Jbhf-48C3CFc2FWundAriXA99l-B2ILsiQ"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-04-480p-837d0819,2648133,list,1,2.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 05:</b> "Bentrokan"<br>
-&nbsp;&nbsp;720p: </a> <a href="https://mega.nz/#!01Y1SCLK!G5FznDr3GUC4oF4TPbZfApedde6wemJoAe9yXlDY0S4"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-05-720p-74783ee3,2709030,list,1,2.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: </a> <a href="https://mega.nz/#!MpwikKJL!KV3gCWcdsWvClfZdClkmccTDhcv_y-Nyazx7-RPQ8ds"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-05-480p-98e9d8f8,2704125,list,1,2.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: </a> <a href="https://mega.nz/#!01Y1SCLK!G5FznDr3GUC4oF4TPbZfApedde6wemJoAe9yXlDY0S4"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-05-720p-74783ee3,2709030,list,1,2.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: </a> <a href="https://mega.nz/#!MpwikKJL!KV3gCWcdsWvClfZdClkmccTDhcv_y-Nyazx7-RPQ8ds"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-05-480p-98e9d8f8,2704125,list,1,2.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 06:</b> "Kebutaan"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!ElYj3BJQ!JZSWsRDkX3V-hT8aKP9-Hyf1qD-7EAf_XAdPsM9ADds"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-06-720p-71fc5332,2731645,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!04JRFBQC!oH-Sn--F1I8WhKmplQtOm1KARA3BSfSB_liHXyzeBDo"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-06-480p-5d11bf7f,2731597,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!ElYj3BJQ!JZSWsRDkX3V-hT8aKP9-Hyf1qD-7EAf_XAdPsM9ADds"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-06-720p-71fc5332,2731645,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!04JRFBQC!oH-Sn--F1I8WhKmplQtOm1KARA3BSfSB_liHXyzeBDo"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-06-480p-5d11bf7f,2731597,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
 <br>
 &nbsp;&nbsp;<b>Episode 07:</b> "Isolasi"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!10IjAJLA!PLdrG9LaqtlCDuayfJo4FyE4E9sGWLf4mFIFA6_g7kw"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-07-720p-73f9a808,2779202,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!ItxEWQrC!vKfWo6EdCKS7AD0crH3rp8eMi38A2AYRxSzq8cD5kOU"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-07-480p-f07eede4,2779134,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!10IjAJLA!PLdrG9LaqtlCDuayfJo4FyE4E9sGWLf4mFIFA6_g7kw"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-07-720p-73f9a808,2779202,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!ItxEWQrC!vKfWo6EdCKS7AD0crH3rp8eMi38A2AYRxSzq8cD5kOU"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-07-480p-f07eede4,2779134,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
 <br>
 &nbsp;&nbsp;<b>Episode 08:</b> "Ingatan"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!49Y3VBaA!JvwhFzNKIFsOg44thmBxDTXVvFu7o0VEJA7e7bZy_4s"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-08-720p-05631eef,2779422,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!0sgyWaiB!NcX1rl-cTmzvfOwnoe6iiPuHjYOQyzYZmYyjBLCU17k"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-08-480p-bb8d0b26,2779347,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!49Y3VBaA!JvwhFzNKIFsOg44thmBxDTXVvFu7o0VEJA7e7bZy_4s"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-08-720p-05631eef,2779422,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!0sgyWaiB!NcX1rl-cTmzvfOwnoe6iiPuHjYOQyzYZmYyjBLCU17k"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-08-480p-bb8d0b26,2779347,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
 <br>
 &nbsp;&nbsp;<b>Episode 09:</b> "Mangsa"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!EgBHGbSI!O2EjBPWHrMxfGcXHHPZMFF06mbZJw0cPfGesmKU_qqc"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-09-720p-735eb61e,2871876,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!58xi0LAI!DAQAZs9Lfh7Jdge7wITBiF6Axzz6xP37J7svUhzunM8"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-09-480p-60f41696,2871826,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!EgBHGbSI!O2EjBPWHrMxfGcXHHPZMFF06mbZJw0cPfGesmKU_qqc"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-09-720p-735eb61e,2871876,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!58xi0LAI!DAQAZs9Lfh7Jdge7wITBiF6Axzz6xP37J7svUhzunM8"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-09-480p-60f41696,2871826,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
 <br>
 &nbsp;&nbsp;<b>Episode 10:</b> "Mimpi Buruk"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!11YhyAob!Q4QWTwM1-tpSs8I4wsPA4CbXs_yMuD-ydEowUqaO6-o"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-10-720p-b8e08c99,2871881,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!IxYxGLya!_HIWsh_X0lAXSdnMk22qQcYhiPxxbCod-qFv8ad7eFg"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-10-480p-1af91eb7,2871844,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!11YhyAob!Q4QWTwM1-tpSs8I4wsPA4CbXs_yMuD-ydEowUqaO6-o"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-10-720p-b8e08c99,2871881,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!IxYxGLya!_HIWsh_X0lAXSdnMk22qQcYhiPxxbCod-qFv8ad7eFg"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-10-480p-1af91eb7,2871844,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
 <br>
 &nbsp;&nbsp;<b>Episode 11:</b> "Evolusi"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!c54GACoQ!LyuLqUCSH28lp1vsuHrUJNnTDveZYyRg3RjHtsZSKoc"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-11-720p-f4c66993,2872208,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!g55hAKbI!Wr7jxT7v4fgWrrgtr9n1GXmynCpC2_I-la8nOKRJpVc"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-11-480p-29fbbf77,2872094,list,1,2.mkv"target=_blank>[KumpulBagi]</a> <br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!c54GACoQ!LyuLqUCSH28lp1vsuHrUJNnTDveZYyRg3RjHtsZSKoc"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-11-720p-f4c66993,2872208,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!g55hAKbI!Wr7jxT7v4fgWrrgtr9n1GXmynCpC2_I-la8nOKRJpVc"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-11-480p-29fbbf77,2872094,list,1,2.mkv"target=_blank>[kbagi]</a> <br>
 <br>
 &nbsp;&nbsp;<b>Episode 12:</b> "Pertarungan Terakhir"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!A1QUAbLJ!Jt5JfSbw-jwX8-EHupGMdo6dK4wCGMCs46kXGlR5SuY"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-12-720p-11d8902c,2873958,list,1,3.mkv"target=_blank>[KumpulBagi]</a> <br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!lkojiZxb!DJxJc7uebaRPVLA_opmfO616z9rnUcygJuCkvsP7nFs"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-12-480p-f3f7b51a,2873938,list,1,3.mkv"target=_blank>[KumpulBagi]</a> <br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!A1QUAbLJ!Jt5JfSbw-jwX8-EHupGMdo6dK4wCGMCs46kXGlR5SuY"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-12-720p-11d8902c,2873958,list,1,3.mkv"target=_blank>[kbagi]</a> <br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!lkojiZxb!DJxJc7uebaRPVLA_opmfO616z9rnUcygJuCkvsP7nFs"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/kentutneraka-kagewani-s2-12-480p-f3f7b51a,2873938,list,1,3.mkv"target=_blank>[kbagi]</a> <br>
 <br>
 &nbsp;&nbsp;<b>Episode 13:</b> "Akhir"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!RxgXhAqT!vgvb9PBQCS6MJ_FeV_ffEeaThSf69m37AGp41vtwIq8"target=_blank>[Mega]</a> <a href=""target=_blank>[KumpulBagi]</a> <br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!QpwBEABL!8ez-H17Pbl831bjtFKsq34bIy4IfMVCd6Hl1_Tql_XY"target=_blank>[Mega]</a> <a href=""target=_blank>[KumpulBagi]</a> <br></span>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!RxgXhAqT!vgvb9PBQCS6MJ_FeV_ffEeaThSf69m37AGp41vtwIq8"target=_blank>[Mega]</a> <a href=""target=_blank>[kbagi]</a> <br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!QpwBEABL!8ez-H17Pbl831bjtFKsq34bIy4IfMVCd6Hl1_Tql_XY"target=_blank>[Mega]</a> <a href=""target=_blank>[kbagi]</a> <br></span>
 <hr>
-&nbsp;&nbsp;<a id="show_unduh_batch" onclick="document.getElementById('spoiler_unduh_batch').style.display=''; document.getElementById('show_unduh_batch').style.display='none';" class="link">Download Batches</a><span id="spoiler_unduh_batch" style="display: none"><a onclick="document.getElementById('spoiler_unduh_batch').style.display='none'; document.getElementById('show_unduh_batch').style.display='';" class="link">[-] Download Batches</a><br> 
-&nbsp;&nbsp;<b>Download:</b> <a href="https://mega.nz/#F!g1gExbQC!Z2JdlAqPfVuuIZ66UmxaOQ"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/kagewani-186190/list,1,1"target=_blank>[KumpulBagi]</a></span>
+&nbsp;&nbsp;<a id="show_unduh_batch" onclick="document.getElementById('spoiler_unduh_batch').style.display=''; document.getElementById('show_unduh_batch').style.display='none';" class="link">Tautan Unduh Batch</a><span id="spoiler_unduh_batch" style="display: none"><a onclick="document.getElementById('spoiler_unduh_batch').style.display='none'; document.getElementById('show_unduh_batch').style.display='';" class="link">[-] Tautan Unduh Batch</a><br> 
+&nbsp;&nbsp;<b>Tautan Unduh:</b> <a href="http://wagnaria.kentutneraka.org/[KentutNeraka]%20Kagewani%20S2%20[720p]/"target=_blank>[DDL]</a> <a href="https://mega.nz/#F!g1gExbQC!Z2JdlAqPfVuuIZ66UmxaOQ"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/kagewani-186190/list,1,1"target=_blank>[kbagi]</a></span>
 <hr>
 <div id="disqus_thread"></div>
 <script>
