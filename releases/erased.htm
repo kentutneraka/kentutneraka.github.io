@@ -14,25 +14,27 @@
 .style6 {color: #2f7ab9}
 .style7 {color: #000000}
 -->
-  </style>
+   </style>
 </head>
 <body>
-div id="basket" class="pure-g-r">
+<br>
   <div id="parasol" class="pure-u">
     <div class="pure-menu pure-menu-open">
-      <a class="pure-menu-heading" href="http://kentutneraka.org/">☭ Kentutneraka</a>
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
       <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/releases">New Releases</a></li>
-        <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Incomplete</a></li>
-        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Completed</a></li>
-        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staff</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">About</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Recruitment?</a></li>
-		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://www.nyaa.se/?user=252429">Torrent</a></li>
       </ul>
     </div>
   </div>
-  <div i
   <!-- JavaScript -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
   <script src="lib/angular-ui-router.min.js"></script>
@@ -125,79 +127,79 @@ word-wrap:break-word;
 <br><center><img src="image/erased.jpg"></center><hr>
 <div id="sidebar-right">
 <div id="sidebar" class="sidebar section">
-&nbsp;&nbsp;<strong>Translation:</strong> titidus, Bismarck<br> 
-&nbsp;&nbsp;<strong>Timing:</strong> rakaosd<br> 
-&nbsp;&nbsp;<strong>Editing:</strong> NandoL<br> 
-&nbsp;&nbsp;<strong>Typesetting:</strong> rakaosd<br> 
-&nbsp;&nbsp;<strong>Encoding:</strong> Yatogami<br> 
-&nbsp;&nbsp;<strong>QC:</strong> irzie<br> 
+&nbsp;&nbsp;<strong>Penerjemah:</strong> titidus, Bismarck<br> 
+&nbsp;&nbsp;<strong>Penyunting:</strong> NandoL<br> 
+&nbsp;&nbsp;<strong>Penata Rias:</strong> rakaosd<br> 
+&nbsp;&nbsp;<strong>Pengolah Video:</strong> Yatogami<br> 
+&nbsp;&nbsp;<strong>Penyelaras Akhir:</strong> irzie<br> 
 </div></div>
 
 <!-- Sekat -->
  
 <div id="sidebar-left">
 <div id="sidebar" class="sidebar section">
-&nbsp;&nbsp;<strong>Type:</strong> TV Series<br> 
+&nbsp;&nbsp;<strong>Kategori:</strong> Serial TV<br> 
 &nbsp;&nbsp;<strong>Video:</strong> H.264 10 bit (1280x720 @ crf 19 - 848x480 @ crf 23)<br>
-&nbsp;&nbsp;<strong>Audio:</strong> Japan/AAC 2.0 - 41.1 KHz<br> 
+&nbsp;&nbsp;<strong>Audio:</strong> Jepang/AAC 2.0 - 41.1 KHz<br> 
 &nbsp;&nbsp;<strong>Episode:</strong> 12<br> 
-&nbsp;&nbsp;<strong>Status:</strong> Finished<br>
+&nbsp;&nbsp;<strong>Status:</strong> Selesai<br>
 <br></div></div>
 <br><br><br><br><br><br><hr>
 </div></div>
-&nbsp;&nbsp;<strong>Sinopsis:</strong> Menceritakan tentang Satoru Fujinuma yang mempunyai kemampuan supernatural, memungkinkan dirinya untuk mencegah kematian dan bencana di &nbsp;&nbsp;sekitarnya dengan kembali ke masa lalu yang ia namakan "Revival".
+&nbsp;&nbsp;<strong>Sinopsis:</strong> Menceritakan tentang Satoru Fujinuma yang mempunyai kemampuan supernatural, memungkinkan dirinya untuk mencegah kematian dan bencana <br>
+&nbsp;&nbsp;di sekitarnya dengan kembali ke masa lalu yang ia namakan "Revival".
 <hr>
-&nbsp;&nbsp;<a id="show_unduh" onclick="document.getElementById('spoiler_unduh').style.display=''; document.getElementById('show_unduh').style.display='none';" class="link">Download Single Episodes</a><span id="spoiler_unduh" style="display: none"><a onclick="document.getElementById('spoiler_unduh').style.display='none'; document.getElementById('show_unduh').style.display='';" class="link">[-]Download Single Episodes</a><br><br>
+&nbsp;&nbsp;<a id="show_unduh" onclick="document.getElementById('spoiler_unduh').style.display=''; document.getElementById('show_unduh').style.display='none';" class="link">Tautan Unduh Eceran</a><span id="spoiler_unduh" style="display: none"><a onclick="document.getElementById('spoiler_unduh').style.display='none'; document.getElementById('show_unduh').style.display='';" class="link">[-]Tautan Unduh Eceran</a><br><br>
 &nbsp;&nbsp;<b>Episode 01:</b> "Kilas Balik"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!4gJDUAaI!uTvp_VBbP94GstzbB_gmffcTJ2afXduviGKJ_gu0WTU"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-01-720p-955cebbb,1940678,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!NhQwzZZZ!fTtdqkO2vqvsbysTXAmz75tc7QCEv0nM8XN3VW_S1lk">[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-01-480p-67fbe787,1940677,list,1,1.mkv">[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!4gJDUAaI!uTvp_VBbP94GstzbB_gmffcTJ2afXduviGKJ_gu0WTU"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-01-720p-955cebbb,1940678,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!NhQwzZZZ!fTtdqkO2vqvsbysTXAmz75tc7QCEv0nM8XN3VW_S1lk">[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-01-480p-67fbe787,1940677,list,1,1.mkv">[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 02:</b> "Telapak Tangan"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!pxYFESTZ!XKqN-8eiXb3-bGv-bDp6-USgshChV4_z7LkWrJkAAqg"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-02-720p-ab167928,1971812,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!ggIVwRxI!XUYaJqhfTmv-7Dhw2RGUgyGeJKcW5N77Idefjb2x3r0"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-02-480p-1bfdcca8,1971811,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!pxYFESTZ!XKqN-8eiXb3-bGv-bDp6-USgshChV4_z7LkWrJkAAqg"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-02-720p-ab167928,1971812,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!ggIVwRxI!XUYaJqhfTmv-7Dhw2RGUgyGeJKcW5N77Idefjb2x3r0"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-02-480p-1bfdcca8,1971811,list,1,1.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 03:</b> "Tanda Lahir"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!dxxljJKT!1meofoGJkTlu936O0gfwdbt5bD0M6RiDpGwj7jmNDbw"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-03-720p-e9609546,1992049,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!044ASSjI!ue26RtQlF-xR_M_hmB23E3YdzgJzubyuFfx4c0Ak5JA">[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-03-480p-1ec711cd,1992051,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!dxxljJKT!1meofoGJkTlu936O0gfwdbt5bD0M6RiDpGwj7jmNDbw"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-03-720p-e9609546,1992049,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!044ASSjI!ue26RtQlF-xR_M_hmB23E3YdzgJzubyuFfx4c0Ak5JA">[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-03-480p-1ec711cd,1992051,list,1,1.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 04:</b> "Pencapaian"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!0wgWCaxa!iZPi57BK8JGC77VtF6C7pkccNc2vZBK-IRag2lUjjKQ"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-04-720p-012c3621,2039589,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!tsZXWJiC!FzYGvYpXMqFSgQ8_hdlSAuZGzbLwkvvPuk4xFyVld2Q"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-04-480p-a17d507a,2039588,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!0wgWCaxa!iZPi57BK8JGC77VtF6C7pkccNc2vZBK-IRag2lUjjKQ"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-04-720p-012c3621,2039589,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!tsZXWJiC!FzYGvYpXMqFSgQ8_hdlSAuZGzbLwkvvPuk4xFyVld2Q"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-04-480p-a17d507a,2039588,list,1,1.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 05:</b> "Pelarian Diri"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!0go1xACK!Apz7ptDV5MCwrcshovMqs-V5F-1zp4rSbiRgM91SxW8"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-05-720p-60095cf9,2089815,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!o451yIqQ!EN59-YDF47vERe4pCuwFbE0i6owCo6ZQfPPf0kJTpJE"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-05-480p-3438a744,2089811,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!0go1xACK!Apz7ptDV5MCwrcshovMqs-V5F-1zp4rSbiRgM91SxW8"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-05-720p-60095cf9,2089815,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!o451yIqQ!EN59-YDF47vERe4pCuwFbE0i6owCo6ZQfPPf0kJTpJE"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-05-480p-3438a744,2089811,list,1,1.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 06:</b> "Dewa Kematian"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!tsRyALgQ!bFKnEBLTC8fxNd3xtlk539Cu_XSo2JlcWX7XfSyKwZ4"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-06-720p-30401e0f,2135838,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!Z4QWjDAC!b2wH6maSgZH22bE62fZJHR4R_tb3HF8I0CjLzZZJ9us"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-06-480p-a20fe072,2135781,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!tsRyALgQ!bFKnEBLTC8fxNd3xtlk539Cu_XSo2JlcWX7XfSyKwZ4"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-06-720p-30401e0f,2135838,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!Z4QWjDAC!b2wH6maSgZH22bE62fZJHR4R_tb3HF8I0CjLzZZJ9us"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-06-480p-a20fe072,2135781,list,1,1.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 07:</b> "Di Luar Kendali"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!IlwhUTzC!m3ayjh0Y0Fh-0fFvOcRu0qQtc9oIAPwV4KJ0MLNxQOo"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-07-720p-4610ad3c,2190572,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!M8wCVI7I!oET-SWHvaIoJ2x4-aijV7tdv54l-NWrVZl0e6Keiy78"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-07-480p-7a19beb2,2190570,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!IlwhUTzC!m3ayjh0Y0Fh-0fFvOcRu0qQtc9oIAPwV4KJ0MLNxQOo"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-07-720p-4610ad3c,2190572,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!M8wCVI7I!oET-SWHvaIoJ2x4-aijV7tdv54l-NWrVZl0e6Keiy78"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-07-480p-7a19beb2,2190570,list,1,1.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 08:</b> "Spiral"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!t5AzRLCC!2Z6l-Eys7Guymwp4j2xxfM_hKyCsVOCEUq7fIb--AaE"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-08-720p-9d33b5e9,2247194,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!1lZWBQRC!h75NAhjC1GynHtjFBVhufCJOFNDt4AFnF6PRqoC8egE"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-08-480p-68890f31,2247164,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!t5AzRLCC!2Z6l-Eys7Guymwp4j2xxfM_hKyCsVOCEUq7fIb--AaE"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-08-720p-9d33b5e9,2247194,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!1lZWBQRC!h75NAhjC1GynHtjFBVhufCJOFNDt4AFnF6PRqoC8egE"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-08-480p-68890f31,2247164,list,1,1.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 09:</b> "Penutupan"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!BkRgBLLJ!J80aEEkiWVPaPmlLw3QdLKlKEEkq4XWrDY_PxrqhcIE"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-09-720p-bc5aefa1,2338394,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!VpRTyL4Z!pQrIDl_lLa_hdc0G-XiVLJFMfTjybiyWbewu6bmRFIE"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-09-480p-7d36cfcc,2338385,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!BkRgBLLJ!J80aEEkiWVPaPmlLw3QdLKlKEEkq4XWrDY_PxrqhcIE"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-09-720p-bc5aefa1,2338394,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!VpRTyL4Z!pQrIDl_lLa_hdc0G-XiVLJFMfTjybiyWbewu6bmRFIE"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-09-480p-7d36cfcc,2338385,list,1,1.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 10:</b> "Kegembiraan"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!4tRU0DjS!sYx9s_2Tgvj-WVXAcX31hN1QY9RqzhJx_me22w82OEc"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-10-720p-10b750db,2398149,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!4tRU0DjS!sYx9s_2Tgvj-WVXAcX31hN1QY9RqzhJx_me22w82OEc"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-10-480p-3457ea75,2398147,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!4tRU0DjS!sYx9s_2Tgvj-WVXAcX31hN1QY9RqzhJx_me22w82OEc"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-10-720p-10b750db,2398149,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!4tRU0DjS!sYx9s_2Tgvj-WVXAcX31hN1QY9RqzhJx_me22w82OEc"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-10-480p-3457ea75,2398147,list,1,1.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 11:</b> "Masa Depan"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!htplwAbS!5XsSJAX1FAtBqRAdDfzLV0_NfvYG_j_coHp-SunJv0I"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-11-720p-bbd56aa9,2413407,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!wswGEQ4b!PmhJJBe3vJh8j7FivULCw0xXbqUZJJ0sgN6TxhLVogk"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-11-480p-e40cf4d1,2413406,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!htplwAbS!5XsSJAX1FAtBqRAdDfzLV0_NfvYG_j_coHp-SunJv0I"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-11-720p-bbd56aa9,2413407,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!wswGEQ4b!PmhJJBe3vJh8j7FivULCw0xXbqUZJJ0sgN6TxhLVogk"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-11-480p-e40cf4d1,2413406,list,1,1.mkv"target=_blank>[kbagi]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 12:</b> "Harta Karun"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!soBGkJII!CscDKvVIcwe92NhDPRPcee54wO7JFJNSYhb6LpPDenM"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-12-720p-e9284819,2447637,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!YgBWTALR!hlPavTN0HlLIrj3F8LyrTgQ5S4t0mMxQjkdGeQVgM1w"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-12-480p-93193d36,2447630,list,1,1.mkv"target=_blank>[KumpulBagi]</a><br></span>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!soBGkJII!CscDKvVIcwe92NhDPRPcee54wO7JFJNSYhb6LpPDenM"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-12-720p-e9284819,2447637,list,1,1.mkv"target=_blank>[kbagi]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!YgBWTALR!hlPavTN0HlLIrj3F8LyrTgQ5S4t0mMxQjkdGeQVgM1w"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/kentutneraka-boku-dake-ga-inai-machi-12-480p-93193d36,2447630,list,1,1.mkv"target=_blank>[kbagi]</a><br></span>
 <hr>
-&nbsp;&nbsp;<a id="show_unduh_batch" onclick="document.getElementById('spoiler_unduh_batch').style.display=''; document.getElementById('show_unduh_batch').style.display='none';" class="link">Download Batches</a><span id="spoiler_unduh_batch" style="display: none"><a onclick="document.getElementById('spoiler_unduh_batch').style.display='none'; document.getElementById('show_unduh_batch').style.display='';" class="link">[-] Download Batches</a><br> 
-&nbsp;&nbsp;<b>Download:</b> <a href="https://mega.nz/#F!Q9gQzRQS!tY8_3qK7YHAwe1o0Ew1HBA"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/boku-dake-ga-inai-machi-269860/list,1,1"target=_blank>[KumpulBagi]</a></span>
+&nbsp;&nbsp;<a id="show_unduh_batch" onclick="document.getElementById('spoiler_unduh_batch').style.display=''; document.getElementById('show_unduh_batch').style.display='none';" class="link">Tautan Unduh Batch</a><span id="spoiler_unduh_batch" style="display: none"><a onclick="document.getElementById('spoiler_unduh_batch').style.display='none'; document.getElementById('show_unduh_batch').style.display='';" class="link">[-] Tautan Unduh Batch</a><br> 
+&nbsp;&nbsp;<b>Tautan Unduh:</b> <a href="http://wagnaria.kentutneraka.org/[KentutNeraka]%20Boku%20dake%20ga%20Inai%20Machi%20[720p]/"target=_blank>[DDL]</a> <a href="https://mega.nz/#F!Q9gQzRQS!tY8_3qK7YHAwe1o0Ew1HBA"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/boku-dake-ga-inai-machi-269860/list,1,1"target=_blank>[kbagi]</a></span>
 <hr>
 <div id="disqus_thread"></div>
 <script>
