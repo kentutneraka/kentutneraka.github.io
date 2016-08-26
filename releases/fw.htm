@@ -17,22 +17,24 @@
   </style>
 </head>
 <body>
-div id="basket" class="pure-g-r">
+<br>
   <div id="parasol" class="pure-u">
     <div class="pure-menu pure-menu-open">
-      <a class="pure-menu-heading" href="http://kentutneraka.org/">☭ Kentutneraka</a>
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
       <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/releases">New Releases</a></li>
-        <li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Incomplete</a></li>
-        <li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Completed</a></li>
-        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staff</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">About</a></li>
-		<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Recruitment?</a></li>
-		  <li id="nav_staff" class="menu-item-divided"><a href="http://c.kentutneraka.org/">Lounge (Staff only)</a></li>
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://www.nyaa.se/?user=252429">Torrent</a></li>
       </ul>
     </div>
   </div>
-  <div i
   <!-- JavaScript -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
   <script src="lib/angular-ui-router.min.js"></script>
@@ -125,79 +127,79 @@ word-wrap:break-word;
 </table>
 <br><center><img src="image/fw.jpg"></center><hr><div id="sidebar-right">
 <div id="sidebar" class="sidebar section"> 
-&nbsp;&nbsp;<strong>Translation:</strong> NandoL<br> 
-&nbsp;&nbsp;<strong>Timing:</strong> HSedit<br> 
-&nbsp;&nbsp;<strong>Editing:</strong> Yupina<br> 
-&nbsp;&nbsp;<strong>Typesetting: </strong>rakaosd<br> 
-&nbsp;&nbsp;<strong>Encoding:</strong> Yatogami<br>  
-&nbsp;&nbsp;<strong>QC:</strong> Almighty KN<br>
+&nbsp;&nbsp;<strong>Penerjemah:</strong> NandoL<br> 
+&nbsp;&nbsp;<strong>Penyunting:</strong> Yupina<br> 
+&nbsp;&nbsp;<strong>Penata Rias: </strong>rakaosd<br> 
+&nbsp;&nbsp;<strong>Pengolah Video:</strong> Yatogami<br>  
+&nbsp;&nbsp;<strong>Penyelaras Akhir:</strong> KN yang Maha Agung<br>
 </div></div>
 
 <!-- Sekat -->
  
 <div id="sidebar-left">
 <div id="sidebar" class="sidebar section">
-&nbsp;&nbsp;<strong>Type:</strong> TV Series<br> 
+&nbsp;&nbsp;<strong>Kategori:</strong> Serial TV<br> 
 &nbsp;&nbsp;<strong>Video:</strong> H.264 10 bit (1280x720 @ crf 19 - 848x480 @ crf 23)<br>
-&nbsp;&nbsp;<strong>Audio:</strong> Japan/AAC 2.0 - 41.1 KHz<br> 
-&nbsp;&nbsp;<strong>Episode:</strong> 12 (of 12)<br> 
-&nbsp;&nbsp;<strong>Status:</strong> FINISHED<br>
+&nbsp;&nbsp;<strong>Audio:</strong> Jepang/AAC 2.0 - 41.1 KHz<br> 
+&nbsp;&nbsp;<strong>Episode:</strong> 12<br> 
+&nbsp;&nbsp;<strong>Status:</strong> Selesai<br>
 <br></div></div>
 <br><br><br><br><br><br><hr>
 </div></div>
-&nbsp;&nbsp;<strong>Sinopsis:</strong> Flying Witch, bercerita tentang Makoto Kowata, si penyihir amatir yang pindah ke rumah saudara jauhnya di kampung, untuk hidup sambil belajar &nbsp;&nbsp;menjadi penyihir yang baik di tengah lingkungan kampung yang dekat dengan alam. (JurnalOtaku)
+&nbsp;&nbsp;<strong>Sinopsis:</strong> Flying Witch, bercerita tentang Makoto Kowata, si penyihir amatir yang pindah ke rumah saudara jauhnya di kampung, untuk hidup sambil belajar <br>
+&nbsp;&nbsp;menjadi penyihir yang baik di tengah lingkungan kampung yang dekat dengan alam. 
 <hr>
-&nbsp;&nbsp;<a id="show_unduh" onclick="document.getElementById('spoiler_unduh').style.display=''; document.getElementById('show_unduh').style.display='none';" class="link">Download Single Episodes</a><span id="spoiler_unduh" style="display: none"><a onclick="document.getElementById('spoiler_unduh').style.display='none'; document.getElementById('show_unduh').style.display='';" class="link">[-]Download Single Episodes</a><br><br>
+&nbsp;&nbsp;<a id="show_unduh" onclick="document.getElementById('spoiler_unduh').style.display=''; document.getElementById('show_unduh').style.display='none';" class="link">Tautan Unduh Eceran</a><span id="spoiler_unduh" style="display: none"><a onclick="document.getElementById('spoiler_unduh').style.display='none'; document.getElementById('show_unduh').style.display='';" class="link">[-] Tautan Unduh Eceran</a><br><br>
 &nbsp;&nbsp;<b>Episode 01: </b>"Sudah Enam Tahun Berlalu"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!x9IHRRaC!B9cXx-Bt6IpO6cj7xr5qrGVpMe_NHPaEZbx47AlnqBg"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-01-720p-f22812fc,2568328,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/ok2wjcd2nft8"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!Mx40QKIS!0YeKf--3uMPJYMBGfVe4tZxLDvZLulA0jR59A5CaTAU"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-01-480p-783d20e2,2568327,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/dx97c6t08zsw"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!x9IHRRaC!B9cXx-Bt6IpO6cj7xr5qrGVpMe_NHPaEZbx47AlnqBg"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-01-720p-f22812fc,2568328,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/ok2wjcd2nft8"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!Mx40QKIS!0YeKf--3uMPJYMBGfVe4tZxLDvZLulA0jR59A5CaTAU"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-01-480p-783d20e2,2568327,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/dx97c6t08zsw"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 02: </b>"Tamu Si Penyihir"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!F9owRIqT!9B1r3NTKi2mtnSGWDqtTybfQhI3s1xODk6vjKTn4F64"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-02-720p-6e73e2af,2612260,gallery,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/moba8d54ser3"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!NspA3LrA!0U78s2REjIYsUUpVsLrTqLpJ6PY1Jt8C4S6Ubt7JC3Q"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-02-480p-c656b13e,2612249,gallery,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/gon07t3l18j7"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!F9owRIqT!9B1r3NTKi2mtnSGWDqtTybfQhI3s1xODk6vjKTn4F64"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-02-720p-6e73e2af,2612260,gallery,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/moba8d54ser3"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!NspA3LrA!0U78s2REjIYsUUpVsLrTqLpJ6PY1Jt8C4S6Ubt7JC3Q"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-02-480p-c656b13e,2612249,gallery,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/gon07t3l18j7"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 03: </b>"Belajar Budidaya dan Sihir"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!5wok0Q5Z!-SmDkOv8UYe9xLzjCWiAtMgKvNiRgYRNIlvQpYUcGWM"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-03-720p-3aed564f,2677302,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/g18duzit2kh3"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!d543xQwT!LttJMvxBtFs0sFKhLryuC986HlRh111CWr3s_L1axyY"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-03-480p-844efc33,2677300,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/awcw4j94trm2"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!5wok0Q5Z!-SmDkOv8UYe9xLzjCWiAtMgKvNiRgYRNIlvQpYUcGWM"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-03-720p-3aed564f,2677302,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/g18duzit2kh3"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!d543xQwT!LttJMvxBtFs0sFKhLryuC986HlRh111CWr3s_L1axyY"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-03-480p-844efc33,2677300,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/awcw4j94trm2"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 04:</b> "Peramal dalam Mekarnya Sakura"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!g9hRBRoY!m1saKGmDEU20pWjvbhrPmPdJJtlbnoH1IlEYcphXH-A"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-04-720p-9c6bc46e,2714066,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/4mgasv2x3cov"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!J55FwChD!OIKb82IfnH9K8R6dhW_9mQx5ogftngUjNUKCYqDZ9C4"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-04-480p-d3afa82b,2714065,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/346n2eatqly6"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!g9hRBRoY!m1saKGmDEU20pWjvbhrPmPdJJtlbnoH1IlEYcphXH-A"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-04-720p-9c6bc46e,2714066,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/4mgasv2x3cov"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!J55FwChD!OIKb82IfnH9K8R6dhW_9mQx5ogftngUjNUKCYqDZ9C4"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-04-480p-d3afa82b,2714065,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/346n2eatqly6"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 05:</b> "Cara Menggunakan Hewan Peliharaan"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!V1YF3SqZ!qW6TaJBn1vLYi2xzOv4IWa__PrheJLh_5okEYqXYzNU"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-05-720p-29e438f1,2738170,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/a4wslvfy3rjp"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!ItBBxK5C!quLADubPRZGIN43fBjKD5kx5PSg4V4TvSvCK9N0lo8w"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-05-480p-fcfa8cf6,2738166,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/dl7o4emnzkkf"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!V1YF3SqZ!qW6TaJBn1vLYi2xzOv4IWa__PrheJLh_5okEYqXYzNU"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-05-720p-29e438f1,2738170,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/a4wslvfy3rjp"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!ItBBxK5C!quLADubPRZGIN43fBjKD5kx5PSg4V4TvSvCK9N0lo8w"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-05-480p-fcfa8cf6,2738166,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/dl7o4emnzkkf"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 06:</b> "Camilan Aneh"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!Y9YBgQIQ!SDB33uhjZ4CSE1pMprIk75u-IVWe5YCbCRmkUZLtoP4"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-06-720p-22645d2f,2847385,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/dgxppvjc7u0n"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!dwB3RDiZ!qSg4MsYTE_cV96GfAPOdDHiuQGrgLC75LyvplCIM5rs"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-06-480p-a634930f,2847384,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/gapy74dzp2fo"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!Y9YBgQIQ!SDB33uhjZ4CSE1pMprIk75u-IVWe5YCbCRmkUZLtoP4"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-06-720p-22645d2f,2847385,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/dgxppvjc7u0n"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!dwB3RDiZ!qSg4MsYTE_cV96GfAPOdDHiuQGrgLC75LyvplCIM5rs"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-06-480p-a634930f,2847384,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/gapy74dzp2fo"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 07:</b> "Kafe Concrucio"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!glgSkJQR!5Xrof34x5TIzxSyWQqNjhLZr8xcm9MatriCPjOh7c_0"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-07-720p-ed2abf2e,2889422,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/3ixq9yrqjwbw"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!ZkgTRCRB!IlSRG9wsPLEYW1m3ozBQoROQYmifMoIz7T9x9-dQGx4"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-07-480p-3d53ca3d,2889400,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/kb18rmvlij7r"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!glgSkJQR!5Xrof34x5TIzxSyWQqNjhLZr8xcm9MatriCPjOh7c_0"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-07-720p-ed2abf2e,2889422,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/3ixq9yrqjwbw"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!ZkgTRCRB!IlSRG9wsPLEYW1m3ozBQoROQYmifMoIz7T9x9-dQGx4"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-07-480p-3d53ca3d,2889400,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/kb18rmvlij7r"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 08:</b> "Pelanggan Tetap"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!ohhwxSqA!IizhTSywTnjr-l7gG6tqHQxGH6KyPPLkq01IaknJRLY"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-08-720p-e31012a1,2889388,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/7yqixpozi3un"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!515lhLIQ!8in_bsD3Qr7-rHaJUocbqyyr2JkmhISDHsf2nXLwcPM"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-08-480p-1999061b,2889420,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/2aawz6dw2qmn"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!ohhwxSqA!IizhTSywTnjr-l7gG6tqHQxGH6KyPPLkq01IaknJRLY"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-08-720p-e31012a1,2889388,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/7yqixpozi3un"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!515lhLIQ!8in_bsD3Qr7-rHaJUocbqyyr2JkmhISDHsf2nXLwcPM"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-08-480p-1999061b,2889420,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/2aawz6dw2qmn"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 09:</b> "Sekarang adalah Lusa"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!RsR2wZbK!Ega3CTy82YKQQ8NdsNor3vhB-ojpTR83L9xeVJXD_XY"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-09-720p-6e8a4faa,2889396,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/giknjcuvia6z"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!NkpTjRbY!EKD-KZm2JaH4KCzU616_TIHiBb0lOG-KtyYiULJhCI0"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-09-480p-77053c95,2889421,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/ehc5yustardp"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!RsR2wZbK!Ega3CTy82YKQQ8NdsNor3vhB-ojpTR83L9xeVJXD_XY"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-09-720p-6e8a4faa,2889396,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/giknjcuvia6z"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!NkpTjRbY!EKD-KZm2JaH4KCzU616_TIHiBb0lOG-KtyYiULJhCI0"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-09-480p-77053c95,2889421,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/ehc5yustardp"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 10:</b> "Permasalahan Saat Memasak dan Lebah"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!1wg2gJBC!rUMYFPAJJGxGZdThZ0r_SRe0uiARWSaxGD6IrMqCE6U"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-10-720p-9814d1a5,2903104,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/5bsqwpa9perk"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!oxRknLxL!sg0zZa2stWuTMJlTZw6QDNu8JMpjcfHeHS_dEhxLNb4"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-10-480p-edba0fac,2903079,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/1vvrpih3rgb0"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!1wg2gJBC!rUMYFPAJJGxGZdThZ0r_SRe0uiARWSaxGD6IrMqCE6U"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-10-720p-9814d1a5,2903104,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/5bsqwpa9perk"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!oxRknLxL!sg0zZa2stWuTMJlTZw6QDNu8JMpjcfHeHS_dEhxLNb4"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-10-480p-edba0fac,2903079,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/1vvrpih3rgb0"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 11:</b> "Ikan Paus Di Langit"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!pwZjXKjY!YBeKD0wn6jaelClfxu_K7A4W6wVyZgBNup3riZx5Unw"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-11-720p-a10bb82d,2925949,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/o96kx4ifm3yh"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!sshHRLqZ!8M_rzHU7jtKmbWz_bik7lIxTXci6IMAzBxE5OjPfbns"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-11-480p-a113d63d,2925947,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/wr2u1a0yok4g"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!pwZjXKjY!YBeKD0wn6jaelClfxu_K7A4W6wVyZgBNup3riZx5Unw"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-11-720p-a10bb82d,2925949,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/o96kx4ifm3yh"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!sshHRLqZ!8M_rzHU7jtKmbWz_bik7lIxTXci6IMAzBxE5OjPfbns"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-11-480p-a113d63d,2925947,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/wr2u1a0yok4g"target=_blank>[Usersfiles]</a><br>
 <br>
 &nbsp;&nbsp;<b>Episode 12:</b> "Jubah Penyihir dan Cara Lain Menjalani Hari"<br>
-&nbsp;&nbsp;720p: <a href="https://mega.nz/#!U0IWlBKR!8S5jfmqSSvQ5LgIb2zaRvIsdRxWOLriMHMpOA4nWI-M"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-12-720p-1a91f005,2925953,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/ljf0p2fpayfn"target=_blank>[Usersfiles]</a><br>
-&nbsp;&nbsp;480p: <a href="https://mega.nz/#!U9hAgLDB!xQboWbb2kmPteBbA7IDIfvNQP_c8eA6cPo0fFL5zjbE"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/blast-flying-witch-12-480p-b70784c6,2925950,list,1,1.mkv"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/yj9yx40w6gbx"target=_blank>[Usersfiles]</a><br></span>
+&nbsp;&nbsp;720p: <a href="https://mega.nz/#!U0IWlBKR!8S5jfmqSSvQ5LgIb2zaRvIsdRxWOLriMHMpOA4nWI-M"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-12-720p-1a91f005,2925953,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/ljf0p2fpayfn"target=_blank>[Usersfiles]</a><br>
+&nbsp;&nbsp;480p: <a href="https://mega.nz/#!U9hAgLDB!xQboWbb2kmPteBbA7IDIfvNQP_c8eA6cPo0fFL5zjbE"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/blast-flying-witch-12-480p-b70784c6,2925950,list,1,1.mkv"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/yj9yx40w6gbx"target=_blank>[Usersfiles]</a><br></span>
 <hr>
-&nbsp;&nbsp;<a id="show_unduh_batch" onclick="document.getElementById('spoiler_unduh_batch').style.display=''; document.getElementById('show_unduh_batch').style.display='none';" class="link">Download Batches</a><span id="spoiler_unduh_batch" style="display: none"><a onclick="document.getElementById('spoiler_unduh_batch').style.display='none'; document.getElementById('show_unduh_batch').style.display='';" class="link">[-] Download Batches</a><br> 
-&nbsp;&nbsp;<b>Download:</b> <a href="https://mega.nz/#F!Rt5ARAYC!_yhINbgu3EiGhUoWhHCO8Q"target=_blank>[Mega]</a> <a href="http://kumpulbagi.id/rakaosd/flying-witch-350062/list,1,1"target=_blank>[KumpulBagi]</a> <a href="https://usersfiles.com/go/kil9ua1ztqcg"target=_blank>[UsersFiles]</a> </span><hr>
+&nbsp;&nbsp;<a id="show_unduh_batch" onclick="document.getElementById('spoiler_unduh_batch').style.display=''; document.getElementById('show_unduh_batch').style.display='none';" class="link">Tautan Unduh Batch</a><span id="spoiler_unduh_batch" style="display: none"><a onclick="document.getElementById('spoiler_unduh_batch').style.display='none'; document.getElementById('show_unduh_batch').style.display='';" class="link">[-] Tautan Unduh Batch</a><br> 
+&nbsp;&nbsp;<b>Tautan Unduh:</b> <a href="http://wagnaria.kentutneraka.org/[BLAST]%20Flying%20Witch%20[720p]/"target=_blank>[DDL]</a> <a href="https://mega.nz/#F!Rt5ARAYC!_yhINbgu3EiGhUoWhHCO8Q"target=_blank>[Mega]</a> <a href="http://kbagi.com/rakaosd/flying-witch-350062/list,1,1"target=_blank>[kbagi]</a> <a href="https://usersfiles.com/go/kil9ua1ztqcg"target=_blank>[UsersFiles]</a> </span><hr>
 <br>
 <div id="disqus_thread"></div>
 <script>
