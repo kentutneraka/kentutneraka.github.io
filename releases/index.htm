@@ -84,6 +84,14 @@ body {
 <th width="10%">Kategori</th>
 </tr></thead>
 
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">29 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://www.kentutneraka.org/releases/under-the-dog-ova.htm">The Seven Deadly Sins - Signs of Holy War (Nanatsu no Taizai - Seisen no Shirushi) - 01</a></div></td>
+  <td><div align="left">Serial TV/Spesial</div></td>
+</tr>
+
 <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 <tr class="">
