@@ -84,6 +84,16 @@ body {
 <th width="10%">Kategori</th>
 </tr></thead>
 
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">31 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://www.kentutneraka.org/releases/battery.htm">Battery - 05 & 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 <tr class="hijau">
 <td class="tanggal rilis">29 Agu 2016
