@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="Wagnaria">
+<head>
+  <title>Bantuan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/pure-min.css" rel="stylesheet" media="screen">
+  <link href="css/glyphs.min.css" rel="stylesheet" media="screen">
+  <link href="css/main.css" rel="stylesheet" media="screen">
+  <link rel="shortcut icon" href="http://puu.sh/kjiKX/97d5bb4118.png"/>
+  <style type="text/css">
+<!--
+.style4 {color: #FFFFFF}
+.style5 {color: #fbd3c3}
+.style6 {color: #2f7ab9}
+.style7 {color: #000000}
+-->
+  </style>
+</head>
+<body>
+<br>
+  <div id="parasol" class="pure-u">
+    <div class="pure-menu pure-menu-open">
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
+      <ul ng-controller="StatusCtrl">
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://www.nyaa.se/?user=252429">Torrent</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- JavaScript -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular-resource.min.js"></script>
+  <script src="lib/angular-piwik.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/lang/ja.js"></script>
+  <script src="js/main.js"></script>
+
+</style>
+
+<style type="text/css">
+<!--
+body {
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 200px;
+	background-color: ;
+}
+
+-->
+</style>
+<style>
+#disqus_thread {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+<html>
+<head>
+<h1>Fitur Website KN</h1>
+<p>
+Website ini berlandaskan/diberdayakan pada/oleh Github. Mungkin tampilannya terlihat simpel, namun tidak sesimpel cara menggunakannya. Karena semua laman yang diperbaharui dilakukan secara manual. Tidak ada RSS untuk website ini, jadi kami sarankan untuk menggunakan RSS nyaa saja jika ingin berlangganan. Untuk tampilan di HP/mobile, tidak maksimal dan tidak akan pernah maksimal, karena kamu pasti tahu betapa buruknya website ini. Tampilan terbaik website ini adalah pada resolusi 1366x768 dengan Google Chrome. Mozila Firefox atau browser lain mungkin ada sedikit tampilan laman yang kurang rapi. Tidak perlu menggunakan flash player ataupun plugin tinggi sebab tidak ada satu pun iklan/shortlink/adsense (apalah itu) di website ini. Ya, KN masih suci hingga sekarang.
+
++ Rilisan Terbaru
+Entri putih: Anime kategori Serial TV.
+Entri hijau: Anime kategori Bluray, DVD, OVA/OAD, Serial TV Spesial. 
+Entri biru: Anime kategori Film Layar Lebar/Movie.
+Entri merah: Anime yang tidak dilanjutkan/drop.
+
++ Sedang Tayang
+Di laman tersebut kamu bisa mengetahui semua kegiatan ngesub kami. Terdapat proyek delay, sedang tayang, dan proyek yang akan datang. Kamu juga bisa mengetahui informasi anime tersebut secara detail dengan mengklik judul anime, dan klik arsip untuk mengunduh/menuju postingan anime. 
+
+Status ungu: Anime yang sudah tayang dan sedang digarap.
+Status putih: Anime yang akan tayang.
+Status merah (tabel staf): Belum digarap oleh staf bersangkutan.
+Status hijau (tabel staf): Sudah digarap/setor oleh staf bersangkutan.
+
+*Jika status di tabel staf "hijau" semua, berarti sedang proses QC/tinggal diunggah/edarkan.
+*Tetaplah sabar dan menjadi wibu yang baik.   
+
++ Tidak Selesai: Proyek Drop!
+
++ Selesai
+Arsip proyek KN dari awal ngesub sampai sekarang. Klik judul anime untuk informasi lebih detail.   
+Kunjungi arsip untuk mengetahui formasi full staff dan tautan unduh alternatif.
+
++ Staf: Parang pejuang ngesub di KN.
+
++ Perjalanan Grup: Laman yang menceritakan perjalanan KN dari 2013-sekarang.
+
++ Perekrutan: Kamu boleh bergabung jika tertarik dengan KN.
+
++ Donasi: Bagi kamu yang ingin memberikan donasi, bisa cek laman tersebut untuk keterangannya.
+
++ DDL: Download file langsung dari server Wagnaria!/KN.
+
++ Torrent: Download file via torrent dengan tracker http://open.nyaatorrents.info:6544/announce
+</p>
