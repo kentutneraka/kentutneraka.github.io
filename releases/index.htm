@@ -89,12 +89,20 @@ body {
 <tr class="">
 <td class="tanggal rilis">06 Nov 2016
 </div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/shuumatsu-no-izetta.htm"><b>Shuumatsu no Izetta - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>	
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">06 Nov 2016
+</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 18</a></div></td>
   <td><div align="left">Serial TV</div></td>
 </tr>
 	
 <!-- tanda -->
-
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 <tr class="hijau">
 <td class="tanggal rilis">03 Nov 2016
