@@ -83,6 +83,15 @@ body {
 <th width="25%">Judul Anime</th>
 <th width="10%">Kategori</th>
 </tr></thead>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="biru">
+<td class="tanggal rilis">09 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/zutto-mae-kara-suki-deshita.htm"><b>Zutto Mae Kara Suki Deshita. ~Kokuhaku Jikkou Iinkai~</a></div></td>
+  <td><div align="left">Film Layar Lebar</div></td>
+</tr>
 	
 <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
