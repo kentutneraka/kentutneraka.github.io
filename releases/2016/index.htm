@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="Wagnaria">
+<head>
+  <title>Rilisan Terbaru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/pure-min.css" rel="stylesheet" media="screen">
+  <link href="css/glyphs.min.css" rel="stylesheet" media="screen">
+  <link href="css/main.css" rel="stylesheet" media="screen">
+  <link rel="shortcut icon" href="http://puu.sh/kjiKX/97d5bb4118.png"/>
+  <style type="text/css">
+<!--
+.style4 {color: #FFFFFF}
+-->
+  </style>
+</head>
+<body>
+<br>
+  <div id="parasol" class="pure-u">
+    <div class="pure-menu pure-menu-open">
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
+      <ul ng-controller="StatusCtrl">
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://nyaa.se/?user=252429">Torrent</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- JavaScript -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular-resource.min.js"></script>
+  <script src="lib/angular-piwik.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/lang/ja.js"></script>
+  <script src="js/main.js"></script>
+
+<!-- Templates -->
+  <style type="text/css">
+<!--
+.style31 {color: 0000}
+.style4 {color: #FFFFFF}
+.style5 {color: #fbd3c3}
+.style6 {color: #2f7ab9}
+.style7 {color: #000000}
+-->
+</style>
+</head>
+<style type="text/css">
+<!--
+body {
+	margin-top: -20px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #fffff;
+}
+
+-->
+</style>
+<style>
+#disqus_thread {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+</style>
+<link href="favicon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body hola-ext-player="1">
+<div class="pure-g-r" id="basket"><span class="pure-menu-toggle" id="toggle" pbzloc="66">?</span>
+<div class="pure-u" data-ui-view="" id="?H???">
+<div class="ng-scope" data-ui-view="" id="muffinbox">
+<table class="pure-table pure-table-horizontal ng-scope">
+<thead>
+<tr><th width="7%">Tanggal Rilis</th>
+<th width="25%">Judul Anime</th>
+<th width="10%">Kategori</th>
+</tr></thead>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">26 Des 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/all-out.htm"><b>All Out!! - 11</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">24 Des 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - Batch</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">22 Des 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/ajin-ova.htm"><b>Ajin - OVA 2</a></div></td>
+  <td><div align="left">OAD/OVA</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">20 Des 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 24</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">19 Des 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/shuumatsu-no-izetta.htm"><b>Shuumatsu no Izetta - Batch</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">16 Des 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/all-out.htm"><b>All Out!! 09-10</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">15 Des 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 23</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">07 Des 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 22</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">04 Des 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 22</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+		
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">03 Des 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/zaregoto.htm"><b>Kubikiri Cycle - Aoiro Savant to Zaregototsukai - 02</a></div></td>
+  <td><div align="left">OVA/Bluray</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">30 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 21</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">29 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 20</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">28 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/keijo.htm"><b>Keijo!!!!!!!! - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">27 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/all-out.htm"><b>All Out!! - 08</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">27 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 21</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">26 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 19</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">24 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/shuumatsu-no-izetta.htm"><b>Shuumatsu no Izetta - 08</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 18</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/all-out.htm"><b>All Out!! - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">21 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/keijo.htm"><b>Keijo!!!!!!!! 03-06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">20 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 20</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">17 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 17</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">13 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 19</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">13 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/shuumatsu-no-izetta.htm"><b>Shuumatsu no Izetta - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">11 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/all-out.htm"><b>All Out!! - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="biru">
+<td class="tanggal rilis">09 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/zutto-mae-kara-suki-deshita.htm"><b>Zutto Mae Kara Suki Deshita. ~Kokuhaku Jikkou Iinkai~</a></div></td>
+  <td><div align="left">Film Layar Lebar</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">07 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/all-out.htm"><b>All Out!! - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">06 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/shuumatsu-no-izetta.htm"><b>Shuumatsu no Izetta - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>	
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">06 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 18</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">03 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/zaregoto.htm"><b>Kubikiri Cycle - Aoiro Savant to Zaregototsukai - 01</a></div></td>
+  <td><div align="left">OVA/Bluray</div></td>
+</tr>
+
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">01 Nov 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/keijo.htm"><b>Keijo!!!!!!!! - 02v2</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">31 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/www-working.htm"><b>WWW.WORKING!! - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">30 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/all-out.htm"><b>All Out!! - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">30 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/shuumatsu-no-izetta.htm"><b>Shuumatsu no Izetta - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>	
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">30 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 17</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">27 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/vivid-strike.htm"><b>ViVid Strike! - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">26 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/vivid-strike.htm"><b>ViVid Strike! - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">25 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/www-working.htm"><b>WWW.WORKING!! - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 16</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/shuumatsu-no-izetta.htm"><b>Shuumatsu no Izetta - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>	
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/all-out.htm"><b>All Out!! - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 16</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 15</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">19 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/www-working.htm"><b>WWW.WORKING!! - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">18 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 14</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">17 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 15</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">16 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/all-out.htm"><b>All Out!! - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>	
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">16 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/shuumatsu-no-izetta.htm"><b>Shuumatsu no Izetta 01-03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>	
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">16 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/www-working.htm"><b>WWW.WORKING!! - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>	
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">15 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/vivid-strike.htm"><b>ViVid Strike! - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">14 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/keijo.htm"><b>Keijo!!!!!!!! - 01v3</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">10 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/all-out.htm"><b>All Out!! - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">09 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 14</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">09 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 13</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">08 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/outcast.htm"><b>hitorinoshita - The Outcast - Batch</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">06 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/vivid-strike.htm"><b>ViVid Strike! - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">05 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 13</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">04 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/www-working.htm"><b>WWW.WORKING!! - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">01 Okt 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/masou-gakuen-hxh.htm"><b>Masou Gakuen HxH - 12</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+	
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">30 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/qualidea-code.htm"><b>Qualidea Code 10-12</a></div></td>
+  <td><div align="left"></div>Serial TV</td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">19 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/7sins-signs-of-holy-war.htm"><b>The Seven Deadly Sins - Signs of Holy War (Nanatsu no Taizai - Seisen no Shirushi) - 04</a></div></td>
+  <td><div align="left">Serial TV/Spesial</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">18 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 12</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">17 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/arslan-senki-2.htm"><b>Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) - 07 & 08</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">16 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/masou-gakuen-hxh.htm"><b>Masou Gakuen HxH 09-11</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">11 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/7sins-signs-of-holy-war.htm"><b>The Seven Deadly Sins - Signs of Holy War (Nanatsu no Taizai - Seisen no Shirushi) - 03</a></div></td>
+  <td><div align="left">Serial TV/Spesial</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">11 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 11</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">09 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/qualidea-code.htm"><b>Qualidea Code - 09</a></div></td>
+  <td><div align="left"></div>Serial TV</td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">06 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/qualidea-code.htm"><b>Qualidea Code - 08</a></div></td>
+  <td><div align="left"></div>Serial TV</td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">04 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/7sins-signs-of-holy-war.htm"><b>The Seven Deadly Sins - Signs of Holy War (Nanatsu no Taizai - Seisen no Shirushi) - 02</a></div></td>
+  <td><div align="left">Serial TV/Spesial</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">04 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 10</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">03 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/masou-gakuen-hxh.htm"><b>Masou Gakuen HxH - 08</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">02 Sep 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/battery.htm"><b>Battery - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">31 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/battery.htm"><b>Battery - 05 & 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">29 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/7sins-signs-of-holy-war.htm"><b>The Seven Deadly Sins - Signs of Holy War (Nanatsu no Taizai - Seisen no Shirushi) - 01</a></div></td>
+  <td><div align="left">Serial TV/Spesial</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">28 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 09</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">24 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/orange.htm"><b>Orange - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/arslan-senki-2.htm"><b>Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/qualidea-code.htm"><b>Qualidea Code - 07</a></div></td>
+  <td><div align="left"></div>Serial TV</td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">21 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 08</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">19 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/orange.htm"><b>Orange - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">18 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/masou-gakuen-hxh.htm"><b>Masou Gakuen HxH - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="biru">
+<td class="tanggal rilis">17 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/doukyuusei.htm"><b>Doukyuusei - Classmates</a></div></td>
+  <td><div align="left">Film Layar Lebar</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">14 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/qualidea-code.htm"><b>Qualidea Code - 06</a></div></td>
+  <td><div align="left"></div>Serial TV</td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">14 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">13 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/masou-gakuen-hxh.htm"><b>Masou Gakuen HxH - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">13 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/battery.htm"><b>Battery - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">11 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/arslan-senki-2.htm"><b>Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">10 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/outcast.htm"><b>hitorinoshita - The Outcast 02-04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">08 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/under-the-dog-ova.htm"><b>Under the Dog</a></div></td>
+  <td><div align="left">OVA</div></td>
+</tr>
+
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">07 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/qualidea-code.htm"><b>Qualidea Code - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">07 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">07 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/masou-gakuen-hxh.htm"><b>Masou Gakuen HxH - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">07 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/battery.htm"><b>Battery - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">04 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/qualidea-code.htm"><b>Qualidea Code - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">04 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/orange.htm"><b>Orange - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">03 Agu 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/arslan-senki-2.htm"><b>Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) 03-04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">31 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">31 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/masou-gakuen-hxh.htm"><b>Masou Gakuen HxH - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">31 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/orange.htm"><b>Orange - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">31 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/battery.htm"><b>Battery - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">29 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/qualidea-code.htm"><b>Qualidea Code - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">24 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days 03-04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">24 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/masou-gakuen-hxh.htm"><b>Masou Gakuen HxH - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/orange.htm"><b>Orange - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">22 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/qualidea-code.htm"><b>Qualidea Code - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="delayed">
+<td class="tanggal rilis">20 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/alderamin-on-the-sky.htm"><b>Alderamin on the Sky - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">17 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kabaneri.htm"><b>Kabaneri of the Iron Fortress - Batch</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="delayed">
+<td class="tanggal rilis">16 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/alderamin-on-the-sky.htm"><b>Alderamin on the Sky - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">15 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/battery.htm"><b>Battery - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">13 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/masou-gakuen-hxh.htm"><b>Masou Gakuen HxH - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">12 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">12 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/orange.htm"><b>Orange - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">11 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/arslan-senki-2.htm"><b>Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">11 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/qualidea-code.htm"><b>Qualidea Code - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">10 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/outcast.htm"><b>hitorinoshita - The Outcast - 01v2</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">08 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/aria-the-avvenire.htm"><b>Aria The Avvenire - 03</a></div></td>
+  <td><div align="left">OVA/Bluray</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">07 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/masou-gakuen-hxh.htm"><b>Masou Gakuen HxH - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">06 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/arslan-senki-2.htm"><b>Arslan Senki (The Heroic Legend of Arslan - Dust Storm Dance) - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">05 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/orange.htm"><b>Orange - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">03 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/days.htm"><b>Days - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">03 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/fw.htm"><b>Flying Witch 11-12</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">02 Jul 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days 23-24</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">20 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days 20-22</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">27 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/fw.htm"><b>Flying Witch - 10</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">27 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days 18-19</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">27 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 12</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">26 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kagewani2.htm"><b>Kagewani S2 - 13</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">25 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days 15-17</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">24 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kabaneri.htm"><b>Kabaneri of the Iron Fortress 07-09</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">24 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/fw.htm"><b>Flying Witch 07-09</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">20 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kagewani2.htm"><b>Kagewani S2 09-12</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">19 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/sakamoto.htm"><b>Sakamoto desu ga - 08</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">18 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 14</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">16 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 11</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">12 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/fw.htm"><b>Flying Witch - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">10 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 10</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">09 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/dimension-w.htm"><b>Dimension W - batch</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">04 Jun 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 09</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">30 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/ajin-ova.htm"><b>Ajin - OVA 2</a></div></td>
+  <td><div align="left">OAD/OVA</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">29 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 13</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">29 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 08</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">27 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/sakamoto.htm"><b>Sakamoto desu ga - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">26 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kagewani2.htm"><b>Kagewani S2 07-08</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">24 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kabaneri.htm"><b>Kabaneri of the Iron Fortress - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">20 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/sakamoto.htm"><b>Sakamoto desu ga - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">19 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/sakamoto.htm"><b>Sakamoto desu ga 03-05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">16 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">16 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kabaneri.htm"><b>Kabaneri of the Iron Fortress - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">12 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kabaneri.htm"><b>Kabaneri of the Iron Fortress - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">11 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/fw.htm"><b>Flying Witch - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">09 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kagewani2.htm"><b>Kagewani S2 - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">08 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">07 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/burst-bd.htm"><b>Shinmai Maou no Testament BURST - BD Batch</a></div></td>
+  <td><div align="left">Bluray</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">04 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/fw.htm"><b>Flying Witch - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">03 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kabaneri.htm"><b>Kabaneri of the Iron Fortress - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">02 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kagewani2.htm"><b>Kagewani S2 - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">01 Mei 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 04v2</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">27 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kowabon.htm"><b>Kowabon - Batch</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">26 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days 10-12</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">25 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/fw.htm"><b>Flying Witch - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">24 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kabaneri.htm"><b>Kabaneri of the Iron Fortress - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">24 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 03v3</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">22 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/sakamoto.htm"><b>Sakamoto desu ga - 02v2</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">18 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/fw.htm"><b>Flying Witch - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">17 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kagewani2.htm"><b>Kagewani S2 - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">17 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kagewani2.htm"><b>Kagewani S2 - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">17 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">14 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kabaneri.htm"><b>Kabaneri of the Iron Fortress - 01v2</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">11 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/fw.htm"><b>Flying Witch - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">10 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/bungo-stray-dogs.htm"><b>Bungo Stray Dogs - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">08 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/sakamoto.htm"><b>Sakamoto desu ga - 01v1</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">07 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 09</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">05 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 08</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">04 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/burst-bd.htm"><b>Shinmai Maou no Testament BURST Vol. 4</a></div></td>
+  <td><div align="left">Bluray</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">03 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">02 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/kagewani2.htm"><b>Kagewani S2 - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">01 Apr 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr class="hijau">
+<td class="tanggal rilis">28 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/aria-the-avvenire.htm"><b>Aria The Avvenire - 02</a></div></td>
+  <td><div align="left">OVA/Bluray</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">26 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 12</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">25 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">25 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">21 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 11</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">18 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 10</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">14 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/burst-bd.htm"><b>Shinmai Maou no Testament BURST Vol. 3</a></div></td>
+  <td><div align="left">Bluray</div></td>
+</tr>
+
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">10 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 09</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">09 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/one-outs.htm"><b>One Outs - TV Batch</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">08 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">06 Mar 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/prison-school-ova.htm"><b>Prison School OVA - 1</a></div></td>
+  <td><div align="left">OAD/OVA</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">28 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/dimension-w.htm"><b>Dimension W - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">28 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/dimension-w.htm"><b>Dimension W - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">28 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 08</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">20 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 07</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">20 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/rainbow-days.htm"><b>Rainbow Days - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">14 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 06</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">08 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/dimension-w.htm"><b>Dimension W - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">08 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 05</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">07 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/burst-bd.htm"><b>Shinmai Maou no Testament BURST Vol. 2</a></div></td>
+  <td><div align="left">Bluray</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">04 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/burst-ova.htm"><b>Shinmai Maou no Testament BURST - OVA</a></div></td>
+  <td><div align="left">OVA/Bluray</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">03 Feb 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/dimension-w.htm"><b>Dimension W - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+ 
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">30 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 04</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">25 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/dimension-w.htm"><b>Dimension W - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+ <!-- tanda -->
+	<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">23 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 03</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">20 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/dimension-w.htm"><b>Dimension W - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">18 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 02</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">15 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/dimension-w.htm"><b>Dimension W - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="biru">
+<td class="tanggal rilis">13 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/ajin-movie.htm"><b>Ajin Part 1 Shoudou</a></div></td>
+  <td><div align="left">Film Layar Lebar</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">12 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/erased.htm"><b>Boku dake ga Inai Machi - 01</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">03 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/sakurako.htm"><b>A Corpse is Buried Under Sakurako's Feet - 12</a></div></td>
+  <td><div align="left">Serial TV</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr class="hijau">
+<td class="tanggal rilis">02 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/aria-the-avvenire.htm"><b>Aria The Avvenire - 01</a></div></td>
+  <td><div align="left">OVA/Bluray</div></td>
+</tr>
+
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="hijau">
+<td class="tanggal rilis">01 Jan 2016
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/burst-bd.htm"><b>Shinmai Maou no Testament BURST Vol. 1</a></div></td>
+  <td><div align="left">Bluray</div></td>
+</tr>
+</tr></tbody></table>
+</div>
+</body></html>
