@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="Wagnaria">
+<head>
+  <title>Staf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/pure-min.css" rel="stylesheet" media="screen">
+  <link href="css/glyphs.min.css" rel="stylesheet" media="screen">
+  <link href="css/main.css" rel="stylesheet" media="screen">
+  <link rel="shortcut icon" href="http://puu.sh/kjiKX/97d5bb4118.png"/>
+  <style type="text/css">
+<!--
+.style1 {color: #2f7ab9}
+.style2 {color: #CC6666}
+.style3 {color: #000000; }
+-->
+  </style>
+</head>
+<body>
+<br>
+  <div id="parasol" class="pure-u">
+    <div class="pure-menu pure-menu-open">
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
+      <ul ng-controller="StatusCtrl">
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://www.nyaa.se/?user=252429">Torrent</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- JavaScript -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular-resource.min.js"></script>
+  <script src="lib/angular-piwik.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/lang/ja.js"></script>
+  <script src="js/main.js"></script>
+
+    <!-- Templates -->
+  <style type="text/css">
+<!--
+.style31 {color: 0000}
+-->
+</style>
+</head>
+<style type="text/css">
+<!--
+body {
+	margin-top: -51px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #fffff;
+}
+
+-->
+</style>
+<link href="favicon.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body hola-ext-player="1">
+<div class="pure-g-r" id="basket"><span class="pure-menu-toggle" id="toggle" pbzloc="66">?</span>
+<div class="pure-u" data-ui-view="" id="?H???">
+<div class="ng-scope" data-ui-view="" id="muffinbox">
+<table class="pure-table pure-table-horizontal ng-scope">
+	<thead><br><br>
+		<tr>
+			<th width="27%">Nama</th>
+			<th width="48%">Posisi</th>
+			<th width="25%">Twitter</th>
+		</tr>
+	</thead>
+	<tbody>
+		</tr>
+	<!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">rakaosd</td>
+			<td class="ng-binding">Diktator</td>
+			<td><a class="ng-binding" href="https://twitter.com/rakapriadika">@rakapriadika</a></td>
+		</tr>
+	
+			<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">calutak</td>
+			<td class="ng-binding">Penerjemah, Server</td>
+			<td><a class="ng-binding" href="https://twitter.com/hanifhilmy">@hanifhilmy</a></td>
+		</tr>
+				<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">titidus</td>
+			<td class="ng-binding">Penerjemah</td>
+			<td><a class="ng-binding" href="https://twitter.com/titidus">@titidus</a></td>
+		</tr>
+				<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Panji</td>
+			<td class="ng-binding">Pengolah Video</td>
+			<td><a class="ng-binding" href="http://twitter.com/jul14n_tk">@jul14n_tk</a></td>
+		</tr>
+	
+				<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">irzie</td>
+			<td class="ng-binding">Penerjemah, Penyunting, Penyelaras Akhir</td>
+			<td><a class="ng-binding" href="https://twitter.com/irzie_">@irzie_</a></td>
+		</tr>
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Yatogami</td>
+			<td class="ng-binding">Pengolah Video</td>
+			<td><a class="ng-binding" href="https://twitter.com">@__</a></td>
+		</tr>
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Bismarck</td>
+			<td class="ng-binding">Penerjemah, Penyelaras Waktu, Pengolah Video</td>
+			<td><a class="ng-binding" href="https://twitter.com/extigatiga">@Extigatiga</a></td>
+		</tr>
+				<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Yupina</td>
+			<td class="ng-binding">Mata-mata dari Fansub Excalibur</td>
+			<td><a class="ng-binding" href="https://twitter.com/Fitri_Lupph">@Fitri_Lupph</a></td>
+		</tr>
+
+		<!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">alphonse</td>
+			<td class="ng-binding">Pengolah Video</td>
+			<td><a class="ng-binding" href="https://twitter.com/primakashi">@primakashi</a></td>
+		</tr>
+			<!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Ik</td>
+			<td class="ng-binding">Penerjemah</td>
+			<td><a class="ng-binding" href="https://twitter.com/MozaikTM">@MozaikTM</a></td>
+		</tr>
+		
+		<!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Ram</td>
+			<td class="ng-binding">Penata Rias</td>
+			<td><a class="ng-binding" href="https://twitter.com/senpai28">@senpai28</a></td>
+		</tr>
+	
+	<!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Abe</td>
+			<td class="ng-binding">Penerjemah</td>
+			<td><a class="ng-binding" href="https://twitter.com">@</a></td>
+		</tr>
+	
+	<!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Alexia</td>
+			<td class="ng-binding">Penerjemah</td>
+			<td><a class="ng-binding" href="https://twitter.com">@</a></td>
+		</tr>
+	
+	<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="delayed">
+			<td class="ng-binding">OmBobby</td>
+			<td class="ng-binding">Tiran</td>
+			<td><a class="ng-binding" href="https://twitter.com/Irfanarya55">@irfanarya55</a></td>
+		</tr>
+
+	<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="nonaktif">
+			<td class="ng-binding">cacaJuwita</td>
+			<td class="ng-binding">Despot</td>
+			<td><a class="ng-binding" href="https://twitter.com/sarahgartika">@sarahgartika</a></td>
+		</tr>
+	
+			<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="nonaktif">
+			<td class="ng-binding">NandoL</td>
+			<td class="ng-binding">Penyunting</td>
+			<td><a class="ng-binding" href="https://twitter.com/ScrNando007">@ScrNando007</a></td>
+		</tr>
+	
+			<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="nonaktif">
+			<td class="ng-binding">Berpergian</td>
+			<td class="ng-binding">Pengolah Video</td>
+			<td><a class="ng-binding" href="https://twitter.com/">@_</a></td>
+		</tr>
+	
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="nonaktif">
+			<td class="ng-binding">Invidia</td>
+			<td class="ng-binding">Pengolah Video</td>
+			<td><a class="ng-binding" href="https://twitter.com/fridtzz">@fridtzz</a></td>
+		</tr>
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="nonaktif">
+			<td class="ng-binding">Hariri</td>
+			<td class="ng-binding">Pengolah Video</td>
+			<td><a class="ng-binding" href="https://twitter.com/">@</a></td>
+		</tr>
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="cewek">
+			<td class="ng-binding">Nezumikyun</td>
+			<td class="ng-binding">Pengolah Video</td>
+			<td><a class="ng-binding" href="https://twitter.com/">@</a></td>
+		</tr>
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="nonaktif">
+			<td class="ng-binding">A.J</td>
+			<td class="ng-binding">Pengolah Video</td>
+			<td><a class="ng-binding" href="https://twitter.com/CherilynMoses68">@CherilynMoses68</a></td>
+		</tr>
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="nonaktif">
+			<td class="ng-binding">Dani</td>
+			<td class="ng-binding">Penyelaras Akhir</td>
+			<td><a class="ng-binding" href="https://twitter.com/">@</a></td>
+		</tr>
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="nonaktif">
+			<td class="ng-binding">Nelly</td>
+			<td class="ng-binding">Penerjemah</td>
+			<td><a class="ng-binding" href="https://twitter.com/yvonneamigo945">@nelly</a></td>
+		</tr>
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="nonaktif">
+			<td class="ng-binding">Amaburi</td>
+			<td class="ng-binding">Penerjemah, Penyelaras Akhir </td>
+			<td><a class="ng-binding" href="https://twitter.com/">@</a></td>
+		</tr>
+		<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="nonaktif">
+			<td class="ng-binding">Yuchan98</td>
+			<td class="ng-binding">Penerjemah</td>
+			<td><a class="ng-binding" href="https://twitter.com/">@</a></td>
+		</tr>
+			
+</div>
+</body>
+</html>
