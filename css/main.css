@@ -56,6 +56,7 @@ dd { margin-left: 10px; }
 .done { background: #30c149; }
 .cewek { background: #fec5ff; }
 .cowok { background: #70fff7; }
+.nonaktif { background: #c0c0c0; }
 .airing_now td, .airing_1 td, .airing_3 td, .airing_6 td, .airing_12 td, .subbing td, .qc td { border: none; }
 
 dd.staff-status-false, .subbing .staff-status-false { background: rgba(247,47,55,0.8) !important; color: rgba(255,255,255,0.8) !important; }
