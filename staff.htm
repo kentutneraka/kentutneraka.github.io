@@ -168,6 +168,14 @@ body {
 			<td><a class="ng-binding" href="https://twitter.com">@</a></td>
 		</tr>
 	
+	<!-- ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
+		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
+			<tr class="">
+			<td class="ng-binding">Alexia</td>
+			<td class="ng-binding">Penerjemah</td>
+			<td><a class="ng-binding" href="https://twitter.com">@</a></td>
+		</tr>
+	
 	<!-- end ngRepeat: member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name'] -->
 		<tr class="ng-scope" ng-repeat="member in staff | filter:{status:'active'}:true | orderBy:['-level', 'name']"><!-- ng-click="$state.go('staff.detail', {'memberId': member._id.$oid})">-->
 			<tr class="nonaktif">
