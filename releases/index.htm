@@ -84,7 +84,16 @@ body {
 <th width="10%">Kategori</th>
 </tr></thead>
 	
-<!-- tanda -->
+	<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="tanggal rilis">18 Apr 2017
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/subete-ga-f-ni-naru.htm"><b>Subete ga F ni Naru (The Perfect Insider) - BD BOX</a></div></td>
+  <td><div align="left">Bluray</div></td>
+</tr>
+	
+	<!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 <tr class="">
 <td class="tanggal rilis">17 Apr 2017
