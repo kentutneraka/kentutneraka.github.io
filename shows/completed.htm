@@ -80,8 +80,25 @@ body {
 <th width="12%">Penata Rias</th>
 <th width="12%">Pengolah Video</th>
 </tr></thead>
-  <!-- tanda -->
-
+		<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="title"></b> <a id="show_Perfect_Blue" onclick="document.getElementById('spoiler_Perfect_Blue').style.display=''; document.getElementById('show_Perfect_Blue').style.display='none';" class="link">Perfect Blue</a><span id="spoiler_Perfect_Blue" style="display: none"><a onclick="document.getElementById('spoiler_Perfect_Blue').style.display='none'; document.getElementById('show_Perfect_Blue').style.display='';" class="link">[-] Perfect Blue</a><br><br>
+<a href="https://www.nyaa.se/?page=view&tid=919276">[Torrent]</a> |
+<a href="https://mega.nz/#!a40mRTJA!QPgd6n8_RgGea2RxtlypkbmPVapLdjNqdqa9g2Th1yY">[Mega]</a> |
+<a href="https://drive.google.com/open?id=0B_CsWvUrV08IY2xYM0kzMHVGTTQ">[GD]</a> |
+<a href="http://kentutneraka.org/releases/perfect-blue.htm">Arsip<br></a>
+</div></td>
+  <td><div align="left">1</div></td>
+  <td><div align="left">28 Feb 1998</div></td>
+  <td><div align="left">IDFL™</div></td>
+  <td><div align="left">Yupina</div></td>
+  <td><div align="left">rakaosd</div></td>
+  <td><div align="left">Yatogami</div></td>
+</tr>
+	
+  
+	<!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 <tr class="">
 <td class="title"></b> <a id="show_FLCL" onclick="document.getElementById('spoiler_FLCL').style.display=''; document.getElementById('show_FLCL').style.display='none';" class="link">FLCL</a><span id="spoiler_FLCL" style="display: none"><a onclick="document.getElementById('spoiler_FLCL').style.display='none'; document.getElementById('show_FLCL').style.display='';" class="link">[-] FLCL</a><br><br>
@@ -97,6 +114,7 @@ body {
   <td><div align="left">\an8</div></td>
   <td><div align="left">rakaosd</div></td>
 </tr>
+	
 	<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 	<tr class="">
 	<td class="title"></b> <a id="show_Full Metal Panic!" onclick="document.getElementById('spoiler_Full Metal Panic!').style.display=''; document.getElementById('show_Full Metal Panic!').style.display='none';" class="link">Full Metal Panic!</a><span id="spoiler_Full Metal Panic!" style="display: none"><a onclick="document.getElementById('spoiler_Full Metal Panic!').style.display='none'; document.getElementById('show_Full Metal Panic!').style.display='';" class="link">[-] Full Metal Panic!</a><br><br>
