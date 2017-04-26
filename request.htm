@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="Wagnaria">
+<head>
+  <title>Request Anime?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/pure-min.css" rel="stylesheet" media="screen">
+  <link href="css/glyphs.min.css" rel="stylesheet" media="screen">
+  <link href="css/main.css" rel="stylesheet" media="screen">
+  <link rel="shortcut icon" href="http://puu.sh/kjiKX/97d5bb4118.png"/>
+  <style type="text/css">
+<!--
+.style4 {color: #FFFFFF}
+.style5 {color: #fbd3c3}
+.style6 {color: #2f7ab9}
+.style7 {color: #000000}
+-->
+  </style>
+</head>
+<body>
+<br>
+  <div id="parasol" class="pure-u">
+    <div class="pure-menu pure-menu-open">
+      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
+      <ul ng-controller="StatusCtrl">
+        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
+			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
+			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
+        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
+		<li id="nav_staff" class="menu-item-divided"><a href="http://wagnaria.kentutneraka.org/">DDL</a></li>
+			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://www.nyaa.se/?user=252429">Torrent</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- JavaScript -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular-resource.min.js"></script>
+  <script src="lib/angular-piwik.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/lang/ja.js"></script>
+  <script src="js/main.js"></script>
+
+</style>
+
+<style type="text/css">
+<!--
+body {
+	margin-top: 0px;
+	margin-right: 40px;
+	margin-bottom: 0px;
+	margin-left: 200px;
+	background-color: ;
+}
+
+-->
+</style>
+<style>
+#disqus_thread {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+</style>
+<html>
+<head>
+<h1>Request Anime?</h1>
+
+Berhubung saya tidak banyak ngambil judul kartun musim spring 2017, dan proyek BD KN maupun proyek delay sedang digarap oleh staf bersangkutan, KN menerima rekues anime jadul atau baru tapi hanya anime kategori <bold>MOVIE</b> dan <b>OVA</b>. Dengat syarat judul anime tersebut belum di-sub oleh fansub internasional atau fansub Indonesia.
+<br><br>
+Saat ini yang masuk list garapan kami adalah:
+<a href="https://myanimelist.net/anime/1051/Ao_no_6-gou"target=_blank>Blue Submarine No. 6</a> (Rekomendasi dari Ik)<br>
+<a href="https://myanimelist.net/anime/6172/Layton_Kyouju_to_Eien_no_Utahime"target=_blank> Professor Layton and the Eternal Diva</a> (Rekomendasi dari Yatogami)<br>
+<br><br>
+Kalau kamu mau ngasih rekomendasi, silakan ajukan judul anime beserta link MAL-nya.
+<br><br>
+Keep Watching Anime, - rakaosd.
+
+<hr>
+<br>
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//kentutneraka.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><script id="dsq-count-scr" src="//kentutneraka.disqus.com/count.js" async></script>
