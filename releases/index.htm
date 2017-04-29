@@ -84,6 +84,15 @@ body {
 <th width="10%">Kategori</th>
 </tr></thead>
 	
+	<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="biru">
+<td class="tanggal rilis">29 Apr 2017
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/jin-roh-the-wolf-brigade.htm"><b>Jin-Roh: The Wolf Brigade</a></div></td>
+  <td><div align="left">Film Layar Lebar</div></td>
+</tr>
+	
 <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 <tr class="hijau">
