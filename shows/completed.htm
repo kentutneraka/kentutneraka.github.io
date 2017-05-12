@@ -66,10 +66,7 @@ body {
 
 -->
 </style>
-		<div class="alert alert-success alert-dismissible text-center" role="alert">
-        					<button id="read_announcement_button" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<strong>Latest news:</strong> Better categorisation/search/RSS coming very soon!<br />
-        </div>
+
 <link href="favicon.png" rel="shortcut icon" type="image/x-icon">
 </head>
 <body hola-ext-player="1">
@@ -265,6 +262,23 @@ body {
   <td><div align="left">\an8</div></td>
   <td><div align="left">rakaosd</div></td>
 </tr>
+
+
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="">
+<td class="title"></b> <a id="show_poppy" onclick="document.getElementById('spoiler_poppy').style.display=''; document.getElementById('show_poppy').style.display='none';" class="link">From Up on Poppy Hill (Coquelicot-zaka kara)</a><span id="spoiler_poppy" style="display: none"><a onclick="document.getElementById('spoiler_poppy').style.display='none'; document.getElementById('show_poppy').style.display='';" class="link">[-] From Up on Poppy Hill (Coquelicot-zaka kara)</a><br><br>
+<a href="https://anidex.info/dl/41837">[Torrent]</a> |
+<a href="magnet:?xt=urn:btih:6KWCYPZ5RHZOJXZD3CII5TKYIV5O3KNU&tr=http://anidex.moe:6969/announce">[Magnet]</a> |
+<a href="https://mega.nz/#!e502WbwB!mTRgEbxH3KRJ8jaJjLX7n4RLzUR63Omp8CNBaBDvJGc">[Mega]</a> |
+<a href="http://kentutneraka.org/releases/from-up-on-poppy-hill.htm">Arsip<br></a>
+  <td><div align="left">1</div></td>
+  <td><div align="left">16 Jul 2011</div></td>
+  <td><div align="left">IDFL™</div></td>
+  <td><div align="left">rakaosd</div></td>
+  <td><div align="left">rakaosd</div></td>
+  <td><div align="left">Yatogami</div></td>
+</tr>
+
 	<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
 	<tr class="">
 	<td class="title"></b> <a id="show_Working_S2" onclick="document.getElementById('spoiler_Working_S2').style.display=''; document.getElementById('show_Working_S2').style.display='none';" class="link">Working'!!</a><span id="spoiler_Working_S2" style="display: none"><a onclick="document.getElementById('spoiler_Working_S2').style.display='none'; document.getElementById('show_Working_S2').style.display='';" class="link">[-] Working'!!</a><br><br>
