@@ -45,12 +45,10 @@ dd { margin-left: 10px; }
 .show-header { border-bottom: 1px solid #dfdfdf; background: #1f1f1f; color: #fff; padding: 1em 2em; }
 .show-body { padding: 1em 2em; }
 
+.red { background: #e87161; }
 .qc { background: #fffea1; }
 .hijau { background: #98d9a8; }
 .biru { background: #60b0f0; }
-.airing_3 { background: #cf6f7f; }
-.airing_6 { background: #afafdf; }
-.airing_12 { background: #afcfef; }
 .subbing { background: #dfdfff; }
 .delayed { background: #f1515e; }
 .done { background: #30c149; }
