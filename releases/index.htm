@@ -85,6 +85,15 @@ body {
 <th width="25%">Judul Anime</th>
 <th width="10%">Kategori</th>
 </tr></thead>
+
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="biru">
+<td class="tanggal rilis">28 Mei 2017
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/ajin-movie-2.htm"><b>Ajin The Movie Part 2 Shoutotsu</a></div></td>
+  <td><div align="left"><img src="https://cdn.discordapp.com/attachments/309678221098483713/311524502406430721/film.png"></div></td>
+</tr>
 	
 <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
