@@ -85,6 +85,15 @@ body {
 <th width="25%">Judul Anime</th>
 <th width="10%">Kategori</th>
 </tr></thead>
+	
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+<tr class="red">
+<td class="tanggal rilis">1 Jun 2017
+</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/souryo-to-majiwaru-shikiyoku-no-yoru-ni.htm"><b>Souryo to Majiwaru Shikiyoku no Yoru ni (Uncensored) - 09</a></div></td>
+  <td><div align="left"><img src="https://cdn.discordapp.com/attachments/309678221098483713/311511184455106562/serialTV.png"></div></td>
+</tr>
 
 <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
