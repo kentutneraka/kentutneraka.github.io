@@ -1,65 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="Wagnaria">
-<head>
-  <title>Wagnaria!/KN - Ngesub Nyata!</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/pure-min.css" rel="stylesheet" media="screen">
-  <link href="css/glyphs.min.css" rel="stylesheet" media="screen">
-  <link href="css/main.css" rel="stylesheet" media="screen">
-  <link rel="shortcut icon" href="http://puu.sh/kjiKX/97d5bb4118.png"/>
-  <style type="text/css">
-<!--
-.style4 {color: #FFFFFF}
-.style5 {color: #fbd3c3}
-.style6 {color: #2f7ab9}
-.style7 {color: #000000}
--->
-  </style>
+<html lang="en"><head><title>Wagnaria!/KN - Ngesub Nyata!</title>
+<meta charset="utf-8">
+<META NAME="description" CONTENT="KentutNeraka Fansubs">
+<META NAME="keywords" CONTENT="KentutNeraka, Kentut Neraka, kentut neraka, kentutneraka, Fansub, Anime, rakaosd">
+<link href="css/pure-min.css" rel="stylesheet" media="screen">
+<link href="css/main.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="kn.css" type="text/css" />
+<link rel="shortcut icon" href="http://puu.sh/kjiKX/97d5bb4118.png"/>
+ </style>
 </head>
-<body>
-<br>
-  <div id="parasol" class="pure-u">
-    <div class="pure-menu pure-menu-open">
-      <a class="pure-menu-heading" href="http://kentutneraka.org/">kentutneraka</a>
-      <ul ng-controller="StatusCtrl">
-        <li id="nav_airing" ng-if="counts.airing"><a href="http://kentutneraka.org/releases">Rilisan Terbaru</a></li>
-			<li id="nav_airing" ng-if="counts.airing > 0"><a href="http://kentutneraka.org/shows/airing.htm">Sedang Tayang</a></li>
-			<li id="nav_incomplete" ng-if="counts.incomplete > 0"><a href="http://kentutneraka.org/shows/incomplete.htm">Tidak Selesai</a></li>
-			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/shows/completed.htm">Selesai</a></li>
-        <li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/staff.htm">Staf</a></li>
-			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/about.htm">Perjalanan Grup</a></li>
-			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/recruitment.htm">Perekrutan</a></li>
-			<li id="nav_complete" ng-if="counts.complete > 0"><a href="http://kentutneraka.org/donation.htm">Donasi</a></li>
-		<li id="nav_staff" class="menu-item-divided"><a href="http://kentutneraka.org/help.htm">Bantuan</a></li>
-			
-      </ul>
-    </div>
-  </div>
-  <!-- JavaScript -->
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
-  <script src="lib/angular-ui-router.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular-resource.min.js"></script>
-  <script src="lib/angular-piwik.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/lang/ja.js"></script>
-  <script src="js/main.js"></script>
+<style>
+body {background:#f7f7f7}
 </style>
-	
-	<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-  return t;
-}(document, "script", "twitter-wjs"));</script>
-	
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -68,87 +20,85 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=178828899723";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<style type="text/css">
-<!--
-body {
-	margin-top: 0px;
-	margin-right: 20px;
-	margin-bottom: 0px;
-	margin-left: 200px;
-	background-color: ;
-	background: url('http://puu.sh/vAMSu/d31a415cbb.png');
-   	background-image: url('http://puu.sh/vAMSu/d31a415cbb.png');
-}
--->
-</style>
-<style>
-#disqus_thread {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 0px;
-}
-</style>
-</style>
-
-<style>
-#sidebar-right {
-border-left: 1px solid #00000;
-border-bottom: 1px solid #00000;
-background:#00000;
-width:300px;
-float:right;
-padding:0px;
-}
-#sidebar-wrapper {
-background:transparent
-url(http://2.bp.blogspot.com/_rLYhkzmU7RY/TDvfgoOK5uI/AAAAAAAAAAU/kOXGkdBkMT4/s1600/sidebg.gif) repeat-y scroll left
-top;
-float:right;
-overflow:hidden;
-padding-left:8px;
-margin-right:13px;
-width:362px;
-word-wrap:break-word;
-}
-</style>
-<style>
-#sidebar-left {
-border-left: 0px solid #00000;
-border-bottom: 1px solid #00000;
-background:#00000;
-width:650px;
-float:left;
-padding:0px;
-}
-#sidebar-wrapper {
-background:transparent
-url(http://2.bp.blogspot.com/_rLYhkzmU7RY/TDvfgoOK5uI/AAAAAAAAAAU/kOXGkdBkMT4/s1600/sidebg.gif) repeat-y scroll left
-top;
-float:left;
-overflow:hidden;
-padding-left:0px;
-margin-right:0px;
-width:400x;
-word-wrap:break-word;
-}
-</style>
-<style>
-#disqus_thread {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 0px;
-}
-</style>
-
-<div id="sidebar-right">
-<div id="sidebar" class="sidebar section">
-<div style="text-align: right;">
-<a class="twitter-follow-button"
-  href="https://twitter.com/kn_ebook"
-  data-size="large"></a><br>	
-<div class="fb-page" data-href="https://www.facebook.com/KentutNerakaFansubs/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/KentutNerakaFansubs/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KentutNerakaFansubs/">KentutNeraka Indonesia</a></blockquote></div><br><br>
-<iframe src="https://discordapp.com/widget?id=198826031719776256&theme=dark" width="300" height="340" allowtransparency="true" frameborder="0"></iframe>
-&nbsp;&nbsp;<img src="https://cdn.discordapp.com/attachments/309678221098483713/311889880743673857/eyev2.png"><!-- Start of StatCounter Code for Default Guide -->
+<div id="box" class="main">
+<div id="☭" class="pure-u">
+<table class="pure-table pure-table-horizontal">
+<thead>
+<a href="http://kentutneraka.org/">☭</a> |
+<a href="http://kentutneraka.org/shows/airing.htm">SHOWTIMES</a> |
+<a href="http://kentutneraka.org/shows/completed.htm">ANIME</a> |
+<a href="http://kentutneraka.org/staff.htm">STAF</a> |
+<a href="http://kentutneraka.org/about.htm">TENTANG</a> |
+<a href="http://kentutneraka.org/donation.htm">DONASI</a> |
+<a href="http://kentutneraka.org/recruitment.htm">PEREKRUTAN</a> |
+<a href="https://nyaa.si/user/rakaosd"target=_blank>TORRENT</a> |
+<a href="http://xdcc.kentutneraka.org/"target=_blank>XDCC</a> |
+<a href="irc://irc.rizon.net/kentutneraka"target=_blank>IRC</a> |
+<a href="https://discord.gg/MvUCMdr"target=_blank>DISCORD</a><hr>
+<b>Informasi</b><br>
+[26-04-2017] KN membuka request anime Movie dan OVA. Cek halaman <a href="http://kentutneraka.org/request.htm">Request Anime</a>.<br>
+[27-08-2016] Informasikan bila ada tautan unduh atau tampilan laman yang bermasalah.<hr>
+<center><div class="fb-page" data-href="https://www.facebook.com/KentutNerakaFansubs/" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/KentutNerakaFansubs/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KentutNerakaFansubs/">KentutNeraka Indonesia</a></blockquote></div></center>
+<tr>
+<th width="12%">Rilisan Terbaru</th>
+<th></th>
+</tr></thead>
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">11-06-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/suki-ni-naru-sono-shunkan-wo.htm">Suki ni Naru Sono Shunkan wo. ~Kokuhaku Jikkou Iinkai~</a></div></td>
+</tr>
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">08-06-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/seikaisuru-kado.htm">Seikaisuru Kado - 08</a></div></td>
+</tr>
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">07-06-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/souryo-to-majiwaru-shikiyoku-no-yoru-ni.htm">Souryo to Majiwaru Shikiyoku no Yoru ni (Uncensored) - 10</a></div></td>
+</tr>
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">04-06-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/seikaisuru-kado.htm">Seikaisuru Kado - 07</a></div></td>
+</tr>
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">03-06-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/zaregoto.htm">Kubikiri Cycle - Aoiro Savant to Zaregototsukai - 06</a></div></td>
+</tr>
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">02-06-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/sukasuka.htm">SukaSuka - 05</a></div></td>
+</tr>
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">01-06-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/dimension-w-special.htm">Dimension W Special</a></div></td>
+</tr>
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">01-06-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/souryo-to-majiwaru-shikiyoku-no-yoru-ni.htm">Souryo to Majiwaru Shikiyoku no Yoru ni (Uncensored) - 09</a></div></td>
+</tr>
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">28-05-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/ajin-movie-2.htm">Ajin The Movie Part 2 Shoutotsu</a></div></td>
+</tr>
+<!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">25-05-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/souryo-to-majiwaru-shikiyoku-no-yoru-ni.htm">Souryo to Majiwaru Shikiyoku no Yoru ni (Uncensored) - 08</a></div></td>
+</tr>
+</tbody></table>
+<a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
+<center>KentutNeraka ☭ 2013 - 2017</center>
+</div>
+</body>
+Dilihat:<!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=11340576; 
 var sc_invisible=0; 
@@ -167,23 +117,5 @@ src="//c.statcounter.com/11340576/0/944c579d/0/" alt="web
 analytics"></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
 <a href="http://statcounter.com/p11340576/?guest=1"></a>
-</div><br>
-KentutNeraka ☭ 2013 - 2017.<br>
-<em>FS. KentutNeraka Bermartabat.</em>
-</div></div>
-<html>
-<head>
-
-<div id="sidebar-left">
-<div id="sidebar" class="sidebar section">
-<div style="text-align: left;">
-	<h1>Informasi:</h1> 
-<p>
-<b>[15-05-2017]</b> Kembali menggunakan <a href="https://nyaa.si/user/rakaosd"target=_blank>nyaa.si</a> untuk unggah file torrent.<br><br>
-<b>[02-05-2017]</b> Karena nyaa.se mati, sementara torrent pindah ke <a href="https://anidex.info/?page=user&id=7088"target=_blank>anidex</a>.<br><br>
-<b>[26-04-2017]</b> KN membuka request anime Movie dan OVA. Cek halaman <a href="http://kentutneraka.org/request.htm">Request Anime</a>.<br><br>
-<b>[01-01-2017]</b> Selamat Tahun Baru 2017. Selamat tinggal 480p untuk rilisan serial TV.<br><br>
-<b>[27-08-2016]</b> Informasikan bila ada tautan unduh atau tampilan laman yang bermasalah.<br><br>
-</p>
 </div>
-<br></div></div>
+</html>
