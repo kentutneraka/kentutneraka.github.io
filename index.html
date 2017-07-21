@@ -43,6 +43,10 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">22-07-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/smartphone.htm">In Another World With My Smartphone - 02</a></div></td>
+</tr>
  <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">17-07-2017</div></td>
@@ -87,11 +91,6 @@ body {background:#f7f7f7}
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">03-07-2017</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/kakegurui.htm">Kakegurui - 01</a></div></td>
-</tr>
-<!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">30-06-2017</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/interviews-with-monster-girls.htm">Interviews With Monster Girls - 13</a></div></td>
 </tr>
 </tbody></table>
 <a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
