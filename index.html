@@ -43,6 +43,11 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">07-08-2017</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/netsuzou-trap.htm">Netsuzou TRap - 04</a></div></td>
+</tr>
 <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">06-08-2017</div></td>
@@ -93,11 +98,6 @@ body {background:#f7f7f7}
   <td><div align="left">22-07-2017</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/welcome-to-the-ballroom.htm">Welcome to the Ballroom - 02</a></div></td>
 </tr>
-<!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">22-07-2017</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/koi-to-uso.htm">Koi to Uso - 02</a></div></td>
-</tr> 
 </tbody></table>
 <a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
 <center>KentutNeraka ☭ 2013 - 2017</center>
