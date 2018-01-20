@@ -43,6 +43,11 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">20-01-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/violet-evergarden.htm">Violet Evegarden - 02</a></div></td>
+</tr> 
 <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">14-01-2018</div></td>
@@ -87,11 +92,6 @@ body {background:#f7f7f7}
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">20-09-2017</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/smartphone.htm">In Another World With My Smartphone - 07 & 08</a></div></td>
-</tr>
-<!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">19-09-2017</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/katsugeki-touken-ranbu.htm">Katsugeki - Touken Ranbu - 09-11</a></div></td>
 </tr>
 </tbody></table>
 <a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
