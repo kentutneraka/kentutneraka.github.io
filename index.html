@@ -43,6 +43,11 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">28-01-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/violet-evergarden.htm">Violet Evegarden - 03</a></div></td>
+</tr> 
 <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">21-01-2018</div></td>
@@ -87,11 +92,6 @@ body {background:#f7f7f7}
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">23-11-2017</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/welcome-to-the-ballroom.htm">Welcome to the Ballroom - 06</a></div></td>
-</tr>
- <!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">20-11-2017</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/zaregoto.htm">Kubikiri Cycle - Aoiro Savant to Zaregototsukai - 07</a></div></td>
 </tr>
 </tbody></table>
 <a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
