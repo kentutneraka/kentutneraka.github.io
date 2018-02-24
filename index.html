@@ -44,6 +44,11 @@ body {background:#f7f7f7}
 <th></th>
 </tr></thead>
 <!-- tanda -->
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">24-02-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/violet-evergarden.htm">Violet Evegarden - 06</a></div></td>
+</tr> 
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">21-02-2018</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/karakai-jouzu-no-takagi-san.htm">Karakai Jouzu no Takagi-san - 05 & 06</a></div></td>
@@ -88,11 +93,6 @@ body {background:#f7f7f7}
   <td><div align="left">20-01-2018</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/karakai-jouzu-no-takagi-san.htm">Karakai Jouzu no Takagi-san - 01 & 02</a></div></td>
 </tr>
- <!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">20-01-2018</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/violet-evergarden.htm">Violet Evegarden - 02</a></div></td>
-</tr> 
 </tbody></table>
 <a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
 <center>KentutNeraka ☭ 2013 - 2017</center>
