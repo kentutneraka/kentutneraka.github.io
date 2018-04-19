@@ -43,6 +43,11 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+  <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">19-04-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/violet-evergarden.htm">Violet Evegarden - 11-13</a></div></td>
+</tr> 
    <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">15-04-2018</div></td>
@@ -87,11 +92,6 @@ body {background:#f7f7f7}
   <td><div align="left">07-02-2018</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/godzilla.htm">Godzilla Part 1</a></div></td>
 </tr>
- <!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">06-02-2018</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/violet-evergarden.htm">Violet Evegarden - 04</a></div></td>
-</tr> 
 </tbody></table>
 <a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
 <center>KentutNeraka ☭ 2013 - 2018</center>
