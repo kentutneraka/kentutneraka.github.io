@@ -1,4 +1,4 @@
-﻿body { font-family: sans-serif; background: #f7f7f7; font-size: 0.95em; }
+body { font-family: sans-serif; background: #f7f7f7; font-size: 0.95em; }
 a { color: #9f2f3f; text-decoration: none; }
 
 
@@ -6,14 +6,13 @@ table { table-layout: fixed; width: 100%; }
 #muffinbox .title { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
 .dl-horizontal > dd:after { display: table; content: ""; clear: both; }
 dl { margin-bottom: 20px; }
-dt, dd { line-height: 20px; }
 dt { font-weight: bold; }
 dd { margin-left: 10px; }
 .dl-horizontal { *zoom: 1; }
 .dl-horizontal:before, .dl-horizontal:after { display: table; content: ""; line-height: 0; }
 .dl-horizontal:after { clear: both; }
-.dl-horizontal dt { float: left; width: 160px; clear: left; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.dl-horizontal dd { margin-left: 180px; }
+.dl-horizontal dt { float: left; width: 160px; clear: left; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 2.0em; font-size: 14px;}
+.dl-horizontal dd { margin-left: 180px; margin-right: -90px; margin-bottom: 0px; line-height: 2.0em; font-size: 14px;}
 
 #basket { padding-left: 192px; left: 0; }
 #食べ物 { width: 100%; }
@@ -58,7 +57,7 @@ dd { margin-left: 10px; }
 
 dd.staff-status-false, .subbing .staff-status-false { background: rgba(247,47,55,0.8) !important; color: rgba(255,255,255,0.8) !important; }
 dd.staff-status-true, .subbing .staff-status-true { background: rgba(31,191,55,0.9) !important; }
-dd.staff-status-false, dd.staff-status-true { line-height: 1.7em; text-indent: 0.7em; }
+dd.staff-status-false, dd.staff-status-true { line-height: 2.0em; text-indent: 0.7em; }
 .encoded-status { color: transparent; }
 .subbing .encoded-status { color: inherit; }
 
