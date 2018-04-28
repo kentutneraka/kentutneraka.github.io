@@ -44,6 +44,11 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+     <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">28-04-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/full-metal-panic-invisible-victory.htm">Full Metal Panic! Invisible Victory - 03</a></div></td>
+</tr> 
     <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">22-04-2018</div></td>
@@ -87,11 +92,6 @@ body {background:#f7f7f7}
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">21-02-2018</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/karakai-jouzu-no-takagi-san.htm">Karakai Jouzu no Takagi-san - 05 & 06</a></div></td>
-</tr>
- <!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">10-02-2018</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/violet-evergarden.htm">Violet Evergarden - 05</a></div></td>
 </tr>
 </tbody></table>
 <a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
