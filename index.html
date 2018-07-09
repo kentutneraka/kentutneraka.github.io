@@ -44,6 +44,11 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">09-07-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Hanebado! - 02</a></div></td>
+</tr> 
     <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">02-07-2018</div></td>
@@ -99,11 +104,7 @@ body {background:#f7f7f7}
   <td><div align="left">08-04-2018</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/zaregoto.htm">Kubikiri Cycle - Aoiro Savant to Zaregototsukai - 08</a></div></td>
 </tr>
-<!-- tanda -->
- <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">04-04-2018</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/violet-evergarden.htm">Violet Evegarden - 07 & 08</a></div></td>
-</tr> 
+
 </tbody></table>
 <a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
 <center>KentutNeraka ☭ 2013 - 2018</center>
