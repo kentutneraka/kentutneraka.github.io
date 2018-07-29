@@ -44,6 +44,11 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+  <!-- tanda -->
+ <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">29-07-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/mahou-shoujo-site.htm">Mahou Shoujo Site - 02</a></div></td>
+</tr> 
    <!-- tanda -->
  <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">24-07-2018</div></td>
@@ -89,11 +94,7 @@ body {background:#f7f7f7}
   <td><div align="left">28-04-2018</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/full-metal-panic-invisible-victory.htm">Full Metal Panic! Invisible Victory - 03</a></div></td>
 </tr> 
-    <!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">22-04-2018</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/full-metal-panic-invisible-victory.htm">Full Metal Panic! Invisible Victory - 02</a></div></td>
-</tr> 
+    
 
 
 
