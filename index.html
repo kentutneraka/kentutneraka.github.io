@@ -44,6 +44,11 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+  <!-- tanda -->
+ <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">14-08-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Hanebado! - 07</a></div></td>
+</tr> 
  <!-- tanda -->
  <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">07-08-2018</div></td>
@@ -94,11 +99,7 @@ body {background:#f7f7f7}
   <td><div align="left">21-05-2018</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/wotakoi.htm">Wotaku ni Koi wa Muzukashii - 02</a></div></td>
 </tr> 
-     <!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">06-05-2018</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/full-metal-panic-invisible-victory.htm">Full Metal Panic! Invisible Victory - 04</a></div></td>
-</tr> 
+
 
 </tbody></table>
 <a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
