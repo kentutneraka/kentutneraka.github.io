@@ -44,6 +44,11 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+     <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">19-09-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Hanebado! - 08 - 10</a></div></td>
+</tr> 
   <!-- tanda -->
  <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">14-08-2018</div></td>
@@ -84,11 +89,7 @@ body {background:#f7f7f7}
   <td><div align="left">09-07-2018</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Hanebado! - 02</a></div></td>
 </tr> 
-    <!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">02-07-2018</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Hanebado! - 01</a></div></td>
-</tr> 
+
 
 </tbody></table>
 <a href="https://nyaa.si/user/rakaosd"> « Lainnya</a><br>
