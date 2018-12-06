@@ -44,6 +44,11 @@ body {background:#f7f7f7}
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
 </tr></thead>
+    <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">07-12-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Tsurune: Kazemai Koukou Kyuudoubu- 01</a></div></td>
+</tr> 
      <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">19-09-2018</div></td>
@@ -84,11 +89,7 @@ body {background:#f7f7f7}
   <td><div align="left">16-07-2018</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Hanebado! - 03</a></div></td>
 </tr> 
- <!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">09-07-2018</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Hanebado! - 02</a></div></td>
-</tr> 
+
 
 
 </tbody></table>
