@@ -43,6 +43,16 @@ body {background:#f7f7f7}
 <tr>
 <th width="12%">Rilisan Terbaru</th>
 <th></th>
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">09-12-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Tsurune: Kazemai Koukou Kyuudoubu- 03</a></div></td>
+</tr> 
+ <!-- tanda -->
+<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
+  <td><div align="left">09-12-2018</div></td>
+  <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Tsurune: Kazemai Koukou Kyuudoubu- 02</a></div></td>
+</tr> 
 </tr></thead>
     <!-- tanda -->
 <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
@@ -78,16 +88,6 @@ body {background:#f7f7f7}
  <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
   <td><div align="left">24-07-2018</div></td>
   <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Hanebado! - 04</a></div></td>
-</tr> 
-  <!-- tanda -->
- <tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">21-07-2018</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/violet-evergarden.htm">Violet Evegarden - 14 OVA</a></div></td>
-</tr> 
-  <!-- tanda -->
-<tr ng-repeat="show in shows" ng-click="$state.go('shows.detail', {'showId': show._id.$oid})">
-  <td><div align="left">16-07-2018</div></td>
-  <td><div align="left"><a href="http://kentutneraka.org/releases/hanebado.htm">Hanebado! - 03</a></div></td>
 </tr> 
 
 
